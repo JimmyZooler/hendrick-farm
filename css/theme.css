@@ -9228,6 +9228,51 @@ h1.navbar-brand a:hover {
 .gallery-caption {
   display: block; }
 
+/****************************************
+*  Navbar Styles
+****************************************/
+#wrapper-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding-top: 1.3rem;
+  height: 70px; }
+  #wrapper-navbar nav {
+    padding: 0 1rem; }
+    #wrapper-navbar nav .navbar-brand {
+      position: absolute;
+      top: 0;
+      left: 25px; }
+    #wrapper-navbar nav #navbarNavDropdown {
+      justify-content: flex-end; }
+      #wrapper-navbar nav #navbarNavDropdown #main-menu li a {
+        color: #000;
+        padding-top: 0;
+        font-size: 20px;
+        text-transform: uppercase; }
+
+/****************************************
+*  Home Page Styles
+****************************************/
+.hero-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px;
+  min-height: 460px;
+  height: calc(100vh);
+  background-size: cover; }
+
+.hero-section-1 {
+  background-position: bottom;
+  padding-top: 141px;
+  padding-right: 75px;
+  justify-content: flex-end;
+  display: flex;
+  align-items: flex-start; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

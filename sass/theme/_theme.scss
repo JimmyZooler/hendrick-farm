@@ -1,1 +1,63 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+body {
+//    padding-top: 70px;
+}
+
+
+/****************************************
+*  Navbar Styles
+****************************************/
+
+#wrapper-navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding-top: 1.3rem;
+    height: 70px;
+    nav {
+        padding: 0 1rem;
+        .navbar-brand {
+            position: absolute;
+            top: 0;
+            left: 25px;
+        }
+        #navbarNavDropdown {
+            justify-content: flex-end;
+            #main-menu {
+                li {
+                    a {
+                        color: #000;
+                        padding-top: 0;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/****************************************
+*  Home Page Styles
+****************************************/
+
+.hero-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -1px;
+    min-height: 460px;
+    height: calc(100vh);
+    background-size: cover;
+}
+.hero-section-1 {
+    background-position: bottom;
+    padding-top: 141px;
+    padding-right: 75px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: flex-start;
+}
