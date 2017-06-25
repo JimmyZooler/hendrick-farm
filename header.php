@@ -35,8 +35,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<nav class="navbar navbar-toggleable-md  navbar-inverse">
 
-		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
 				</button>
 
 					<!-- Your site title as branding in the menu -->

@@ -9228,6 +9228,16 @@ h1.navbar-brand a:hover {
 .gallery-caption {
   display: block; }
 
+body {
+  font-family: "rm_proregular", Helvetica, Arial, sans-serif; }
+
+button:focus {
+  outline: none; }
+
+h2, .h2 {
+  text-transform: uppercase;
+  font-weight: bold; }
+
 /****************************************
 *  Navbar Styles
 ****************************************/
@@ -9240,18 +9250,44 @@ h1.navbar-brand a:hover {
   padding-top: 1.3rem;
   height: 70px; }
   #wrapper-navbar nav {
-    padding: 0 1rem; }
+    padding: 0 1.5rem; }
+    #wrapper-navbar nav button {
+      position: relative; }
+      #wrapper-navbar nav button .line {
+        background: #000;
+        position: absolute;
+        right: 0px;
+        display: block;
+        width: 40px;
+        height: 5px; }
     #wrapper-navbar nav .navbar-brand {
       position: absolute;
       top: 0;
       left: 25px; }
     #wrapper-navbar nav #navbarNavDropdown {
+      text-align: center;
       justify-content: flex-end; }
       #wrapper-navbar nav #navbarNavDropdown #main-menu li a {
         color: #000;
         padding-top: 0;
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase; }
+
+.navbar-toggler {
+  align-self: flex-end;
+  border: none; }
+
+#wrapper-navbar nav button .line:nth-child(1) {
+  top: 0; }
+
+#wrapper-navbar nav button .line:nth-child(2) {
+  top: 13px; }
+
+#wrapper-navbar nav button .line:nth-child(3) {
+  top: 26px; }
+
+.white-background {
+  background: rgba(255, 255, 255, 0.9); }
 
 /****************************************
 *  Home Page Styles
@@ -9263,15 +9299,64 @@ h1.navbar-brand a:hover {
   margin-top: -1px;
   min-height: 460px;
   height: calc(100vh);
-  background-size: cover; }
+  background-size: cover;
+  display: flex; }
+  .hero-section h2 {
+    font-size: 46px;
+    font-family: 'rm_probold'; }
 
-.hero-section-1 {
+#hero-section-1 {
   background-position: bottom;
-  padding-top: 141px;
-  padding-right: 75px;
-  justify-content: flex-end;
-  display: flex;
+  padding-top: 181px;
+  padding-left: 15%;
+  justify-content: flex-start;
   align-items: flex-start; }
+
+#hero-section-2 {
+  background-position: bottom;
+  padding-top: 181px;
+  padding-left: 15%;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  #hero-section-2 h2 {
+    color: #fff; }
+
+#hero-section-3 {
+  padding-top: 181px;
+  padding-right: 15%;
+  justify-content: flex-end;
+  align-items: flex-start; }
+
+#hero-section-4 {
+  background-position: top;
+  padding-top: 320px;
+  padding-left: 10%;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  #hero-section-4 h2 {
+    color: #fff; }
+
+@media screen and (min-width: 992px) {
+  .navbar-toggleable-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+
+/****************************************
+*  Font Styles
+****************************************/
+@font-face {
+  font-family: 'rm_proregular';
+  src: url("../fonts/rmpro-regular-webfont.eot");
+  src: url("../fonts/rmpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rmpro-regular-webfont.woff2") format("woff2"), url("../fonts/rmpro-regular-webfont.woff") format("woff"), url("../fonts/rmpro-regular-webfont.ttf") format("truetype"), url("../fonts/rmpro-regular-webfont.svg#rm_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'rm_probold';
+  src: url("../fonts/rmpro-bold-webfont.eot");
+  src: url("../fonts/rmpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rmpro-bold-webfont.woff2") format("woff2"), url("../fonts/rmpro-bold-webfont.woff") format("woff"), url("../fonts/rmpro-bold-webfont.ttf") format("truetype"), url("../fonts/rmpro-bold-webfont.svg#rm_probold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 /*
 * Use existing Bootstrap 4 classes and
