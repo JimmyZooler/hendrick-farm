@@ -34,5 +34,16 @@ get_header(); ?>
         <a href="#"><?php the_field('hero_4_link_text'); ?></a>
     </div>
 </div>
+<div id="home-section-5">
+    <div class="row">
+        <div class="col-2">
+            <img src="<?php the_field('section_5_image'); ?>" />
+        </div>
+        <div class="col-8 text-column">
+            <h3><?php the_field('section_5_heading'); ?></h3>
+            <p><?php the_field('section_5_subheading'); ?></p>
+        </div>
+    </div>
+</div>
 <?php 
 get_footer();

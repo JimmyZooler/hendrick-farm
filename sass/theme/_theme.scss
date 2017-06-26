@@ -21,25 +21,31 @@ h2, .h2 {
     top: 0;
     left: 0;
     z-index: 100;
-    padding-top: 1.3rem;
-    height: 70px;
+    padding-top: 0.8rem;
+    height: 62px;
+    transition: background 0.2s;
     nav {
-        padding: 0 1.5rem;
+        padding: 0 0.8rem;
         button {
             position: relative;
+            margin-top: 5px;
             .line {
                 background: #000;
                 position: absolute;
                 right: 0px;
                 display: block;
-                width: 40px;
-                height: 5px;
+                width: 32px;
+                height: 4px;
             }
         }
         .navbar-brand {
             position: absolute;
             top: 0;
-            left: 25px;
+            padding-top: 0;
+            padding-bottom: 0;
+            .img-fluid {
+                max-width: 70px;
+            }
         }
         #navbarNavDropdown {
             text-align: center;
@@ -60,15 +66,17 @@ h2, .h2 {
 .navbar-toggler {
     align-self: flex-end;
     border: none;
+    width: 36px;
+    height: 30px;
 }
 #wrapper-navbar nav button .line:nth-child(1) {
     top: 0;
 }
 #wrapper-navbar nav button .line:nth-child(2) {
-    top: 13px;
+    top: 11px;
 }
 #wrapper-navbar nav button .line:nth-child(3) {
-    top: 26px;
+    top: 22px;
 }
 .white-background {
     background: rgba(255, 255, 255, 0.9);
@@ -88,41 +96,119 @@ h2, .h2 {
     background-size: cover;
     display: flex;
     h2 {
-        font-size: 46px;
+        font-size: calc(40px + (64 - 40)*(100vw - 320px)/(760-320));
         font-family: 'rm_probold';
+    }
+    a {
+        color: #000;
+        font-style: italic;
+        font-size: calc(21px + (32 - 21)*(100vw - 320px)/(1366-320));
     }
 }
 #hero-section-1 {
     background-position: bottom;
-    padding-top: 181px;
-    padding-left: 15%;
+    padding-top: calc(20vh);
+    padding-left: 10%;
     justify-content: flex-start;
     align-items: flex-start;
 }
 #hero-section-2 {
     background-position: bottom;
-    padding-top: 181px;
-    padding-left: 15%;
+    padding-top: 121px;
+    padding-left: 8%;
     justify-content: flex-start;
     align-items: flex-start;
-    h2 {
+    h2, a {
         color: #fff;
     }
 }
  #hero-section-3 {
-    padding-top: 181px;
-    padding-right: 15%;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+     .hero-content {
+         text-align: center;
+         h2, a {
+            color: #fff;
+        }
+     }
 }
 #hero-section-4 {
     background-position: top;
-    padding-top: 320px;
+    padding-top: calc(45vh);
     padding-left: 10%;
     justify-content: flex-start;
     align-items: flex-start;
-    h2 {
-        color: #fff;
+    .hero-content {
+        padding-left: 1rem;
+        h2, a {
+            color: #fff;
+        }
+    }
+}
+#home-section-5 {
+    padding: 1.5rem;
+    img {
+        max-width: 100%;
+    }
+    .text-column {
+        text-align: center;
+        margin-top: 1rem;
+        p {
+                margin-top: 0.5rem;
+            display: none;
+        }
+    }
+}
+
+/****************************************
+*  Footer Styles
+****************************************/
+#wrapper-footer {
+    background: #a1a4a7;
+}
+
+/****************************************
+*  Media Queries
+****************************************/
+
+@media screen and (min-width: 760px) {
+    #wrapper-navbar {
+        padding-top: 1.5rem;
+        height: 82px;
+        nav {
+            padding: 0 1.5rem;
+            .navbar-brand {
+                .img-fluid {
+                    max-width: 120px;
+                }
+            }
+            button {
+                margin-top: 5px;
+                .line {
+                    width: 36px;
+                }
+            }
+        }
+    }
+    #hero-section-1 {
+        padding-top: calc(22vh) ;
+    }
+    .hero-section {
+        h2 {
+            font-size: 82px;
+        }
+        a {
+            font-size: 25px;
+        }
+    }
+    #home-section-5 {
+        padding: 2rem;
+        .text-column {
+            p {
+                display: inline-block;
+                max-width: 650px;
+            }
+        }
     }
 }
 
@@ -130,6 +216,16 @@ h2, .h2 {
     .navbar-toggleable-md .navbar-nav .nav-link {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    #wrapper-navbar {
+        padding-top: 1.3rem;
+        height: 70px;
+        nav {
+            padding: 0 1.5rem;
+            .navbar-brand {
+                left: 25px;
+            }
+        }
     }
 }
 
