@@ -36,12 +36,14 @@ get_header(); ?>
 </div>
 <div id="home-section-5">
     <div class="row">
-        <div class="col-2">
+        <div class="hidden-xs-down col-sm-2 column-1">
             <img src="<?php the_field('section_5_image'); ?>" />
         </div>
-        <div class="col-8 text-column">
-            <h3><?php the_field('section_5_heading'); ?></h3>
-            <p><?php the_field('section_5_subheading'); ?></p>
+        <div class="col-12 col-sm-10 col-xl-8 column-2">
+            <div class="text-column">
+                <h3><?php the_field('section_5_heading'); ?></h3>
+                <p><?php the_field('section_5_subheading'); ?></p>
+            </div>
         </div>
     </div>
 </div>

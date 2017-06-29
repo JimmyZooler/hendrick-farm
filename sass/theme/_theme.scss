@@ -158,6 +158,7 @@ h2, .h2 {
         overflow: hidden;
         color: #000;
         font-style: italic;
+        font-family: 'rm_prolight_italic';
         font-size: calc(21px + (32 - 21)*(100vw - 320px)/(1366-320));
         img {
             transform: rotate(90deg);
@@ -230,14 +231,27 @@ h2, .h2 {
 }
 #home-section-5 {
     padding: 1.5rem;
+    .column-1 {
+        padding-right: 0;
+    }
+    .column-2 {
+        display: flex;
+    }
     img {
         max-width: 100%;
     }
     .text-column {
         text-align: center;
-        margin-top: 1rem;
+        max-width: 400px;
+        margin: 10px auto;
+        align-self: center;
+        h3 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
         p {
-                margin-top: 0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0;
             display: none;
         }
     }
@@ -346,9 +360,14 @@ h2, .h2 {
     #home-section-5 {
         padding: 2rem;
         .text-column {
+            max-width: 100%;
+            align-self: center;
+            h3 {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
             p {
                 display: inline-block;
-                max-width: 650px;
             }
         }
     }
@@ -387,11 +406,31 @@ h2, .h2 {
             }
         }
     }
-//    .white-bg-navbar {
-//        padding-top: 1.3rem!important;
-//    }
     .white-bg-modal {
         background: none!important;
+    }
+    #home-section-5 {
+        .text-column {
+            h3 {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1.1rem
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    #home-section-5 {
+        .text-column {
+            h3 {
+                font-size: calc(38.4px + (64 - 38.4)*(100vw - 1360px)/(2560-1360));
+            }
+            p {
+                font-size: calc(17.6px + (38.4 - 17.6)*(100vw - 1360px)/(2560-1360));
+            }
+        }
     }
 }
 
@@ -420,5 +459,17 @@ h2, .h2 {
          url('../fonts/rmpro-bold-webfont.svg#rm_probold') format('svg');
     font-weight: bold;
     font-style: normal;
+
+}
+@font-face {
+    font-family: 'rm_prolight_italic';
+    src: url('../fonts/rmpro-lightitalic-webfont.eot');
+    src: url('../fonts/rmpro-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rmpro-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/rmpro-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/rmpro-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/rmpro-lightitalic-webfont.svg#rm_prolight_italic') format('svg');
+    font-weight: 200;
+    font-style: italic;
 
 }
