@@ -9364,12 +9364,11 @@ h2, .h2 {
     overflow: hidden;
     color: #000;
     font-style: italic;
-    font-size: calc(21px + (32 - 21)*(100vw - 320px)/(1366-320));
-    padding-left: 10px; }
+    font-size: calc(21px + (32 - 21)*(100vw - 320px)/(1366-320)); }
     .hero-section a img {
       transform: rotate(90deg);
-      max-width: 50px;
-      margin-left: 30px;
+      max-width: 23px;
+      margin-left: 19px;
       transition: all 0.2s; }
 
 #hero-section-1 {
@@ -9403,15 +9402,17 @@ h2, .h2 {
 #hero-section-4 {
   background-position: top;
   padding-top: calc(45vh);
-  padding-left: 10%;
   justify-content: flex-start;
   align-items: flex-start; }
   #hero-section-4 .hero-content {
     padding-left: 1rem; }
-    #hero-section-4 .hero-content h2, #hero-section-4 .hero-content a {
+    #hero-section-4 .hero-content h2 {
+      color: #fff;
+      padding-right: 50px; }
+    #hero-section-4 .hero-content a {
       color: #fff; }
-    #hero-section-4 .hero-content a img {
-      fill: #fff; }
+      #hero-section-4 .hero-content a img {
+        fill: #fff; }
 
 #home-section-5 {
   padding: 1.5rem; }
@@ -9425,7 +9426,7 @@ h2, .h2 {
       display: none; }
 
 .hero-section .hero-content a:hover img {
-  margin-left: 35px; }
+  margin-left: 22px; }
 
 /****************************************
 *  Footer Styles
@@ -9485,10 +9486,18 @@ h2, .h2 {
           width: 36px; }
   #hero-section-1 {
     padding-top: calc(22vh); }
-  .hero-section h2 {
+  .hero-section .hero-content h2 {
     font-size: 82px; }
-  .hero-section a {
-    font-size: 25px; }
+  .hero-section .hero-content a {
+    padding-left: 10px;
+    font-size: 32px; }
+  .hero-section .hero-content img {
+    max-width: 40px;
+    margin-left: 25px; }
+  .hero-section .hero-content a:hover img {
+    margin-left: 29px; }
+  #hero-section-4 {
+    padding-left: 10% !important; }
   #home-section-5 {
     padding: 2rem; }
     #home-section-5 .text-column p {
