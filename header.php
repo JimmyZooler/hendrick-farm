@@ -63,8 +63,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
+						'container_class' => 'navbar-collapse white-bg-modal',
+						'container_id'    => 'menu-modal-wrap',
 						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
