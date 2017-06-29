@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="#">
                         <h4 class="heading-sitemap">Lifestyle</h4>
                     </a>
-                    <ul>
+                    <ul class="hidden-xs-down">
                         <li>Village Centre</li>
                         <li>Farm</li>
                         <li>Hendrick Foundation</li>
@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="#">
                         <h4 class="heading-sitemap">Listings</h4>
                     </a>
-                    <ul>
+                    <ul class="hidden-xs-down">
                         <li>Single Family</li>
                         <li>Townhouses</li>
                         <li>Commercial</li>
@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="#">
                         <h4 class="heading-sitemap">Who We Are</h4>
                     </a>
-                    <ul>
+                    <ul class="hidden-xs-down">
                         <li>Landlab</li>
                         <li>Team</li>
                     </ul>
@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="#">
                         <h4 class="heading-sitemap">News</h4>
                     </a>
-                    <ul>
+                    <ul class="hidden-xs-down">
                         <li>Upcoming Events</li>
                         <li>Blog</li>
                         <li>Media</li>

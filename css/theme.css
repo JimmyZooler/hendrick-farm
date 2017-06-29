@@ -9440,8 +9440,7 @@ h2, .h2 {
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
-  background: #a1a4a7;
-  padding-bottom: 0; }
+  background: #a1a4a7; }
   #wrapper-footer .container-fluid {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -9475,6 +9474,8 @@ h2, .h2 {
         margin-bottom: 0;
         font-size: 18px;
         font-weight: bold; }
+      #wrapper-footer .container-fluid .site-footer .row .site-info p:last-child {
+        margin-bottom: 0; }
     #wrapper-footer .container-fluid .site-footer .row .column:last-child {
       text-align: center;
       border-left: 1px solid #444; }
@@ -9482,7 +9483,7 @@ h2, .h2 {
       color: #000; }
     #wrapper-footer .container-fluid .site-footer .landlab {
       text-align: right;
-      margin-top: 2rem; }
+      margin-top: 1rem; }
       #wrapper-footer .container-fluid .site-footer .landlab img {
         max-width: 200px; }
     #wrapper-footer .container-fluid .site-footer .footer-bottom-row {
@@ -9613,8 +9614,7 @@ h2, .h2 {
 
 @media screen and (max-width: 576px) {
   #wrapper-footer div .row .column {
-    text-align: center;
-    margin-bottom: 1rem; }
+    text-align: center; }
   #wrapper-footer div .row .column:last-child {
     border-left: transparent !important; }
     #wrapper-footer div .row .column:last-child #footer-subscribe-button {
@@ -9624,7 +9624,7 @@ h2, .h2 {
     margin-top: 0 !important; }
     #wrapper-footer div .footer-bottom-row .landlab {
       text-align: center !important;
-      margin-bottom: 2rem; } }
+      margin-top: 2rem; } }
 
 /****************************************
 *  Font Styles
