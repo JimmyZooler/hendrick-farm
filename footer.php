@@ -16,34 +16,92 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_html( $container ); ?>">
-
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
-							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
-				
-							(<?php printf( // WPCS: XSS ok.
-							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
+        
+        <footer class="site-footer" id="colophon">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-xl-2 column">
+                    <a href="#">
+                        <h4 class="heading-sitemap">Lifestyle</h4>
+                    </a>
+                    <ul>
+                        <li>Village Centre</li>
+                        <li>Farm</li>
+                        <li>Hendrick Foundation</li>
+                        <li>Parks &amp; Trails</li>
+                        <li>Adaptive Urbanism</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 column">
+                    <a href="#">
+                        <h4 class="heading-sitemap">Listings</h4>
+                    </a>
+                    <ul>
+                        <li>Single Family</li>
+                        <li>Townhouses</li>
+                        <li>Commercial</li>
+                        <li>Currently Available</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 column">
+                    <a href="#">
+                        <h4 class="heading-sitemap">Gallery</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="heading-sitemap">Who We Are</h4>
+                    </a>
+                    <ul>
+                        <li>Landlab</li>
+                        <li>Team</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 column">
+                    <a href="#">
+                        <h4 class="heading-sitemap">News</h4>
+                    </a>
+                    <ul>
+                        <li>Upcoming Events</li>
+                        <li>Blog</li>
+                        <li>Media</li>
+                    </ul>
+                    <a href="#">
+                        <h4 class="heading-sitemap">Contact</h4>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 column">
+                    <a href="#">
+                        <h4 class="heading-sitemap">FAQ</h4>
+                    </a>
+                    <h4 class="heading-sitemap">Model Home Hours</h4>
+                    <ul>
+                        <li>Wed-Fri 11am-6pm</li>
+                        <li>Sat-Sun 12pm-5pm</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-2 column">
+                    <a href="#" id="footer-subscribe-button">Subscribe</a>
+                    <ul id="footer-social">
+                        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-bottom-row">
+                <div class="col-sm-6">
+                        <div class="site-info">
+                            <p>193 ch Ladyfield, Chelsea, QC j9B 0B3 • sales@hendrickfarm.ca</p>
+                            <p>© Hendrick Farm • Privacy &amp;Terms</p>
+                        </div>
+                </div><!--col end -->
+                <div class="col-sm-6">
+                    <div class="landlab">
+                        <img src="http://localhost/wp/hendrick/wp-content/uploads/2017/06/LandlabLogo_400.png" />
+                    </div>
+                    
+                </div><!--col end -->
+            </div><!-- row end -->
+            
+        </footer><!-- #colophon -->
 
 	</div><!-- container end -->
 

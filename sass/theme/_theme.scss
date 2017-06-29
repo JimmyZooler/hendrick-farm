@@ -102,9 +102,6 @@ h2, .h2 {
 #wrapper-navbar nav #menu-modal-wrap #main-menu li a:hover {
     color: #6c8e6e;
 }
-#wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
-    border-color: #6c8e6e;
-}
 
 .white-bg-navbar {
     background: rgba(255, 255, 255, 0.95);
@@ -264,11 +261,83 @@ h2, .h2 {
 ****************************************/
 #wrapper-footer {
     background: #a1a4a7;
+    padding-bottom: 0;
+    .container-fluid {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        .site-footer {
+            .row {
+                .column {
+                    .heading-sitemap {
+                        font-size: 1.2rem;
+                        text-transform: uppercase;
+                        color: #000;
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                    }
+                    #footer-subscribe-button {
+                        display: block;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        padding: 10px 16px;
+                        border: 2px solid #333;
+                        margin: 0 1rem 1rem;
+                        transition: all .3s;
+                    }
+                    #footer-social {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        li {
+                            margin: 0 10px;
+                            i {
+                                font-size: 44px;
+                            }
+                        }
+                    }
+                }
+                .site-info {
+                    margin-top: 2rem;
+                    p:first-child() {
+                        margin-bottom: 0;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+                .column:last-child() {
+                    text-align: center;
+                    border-left: 1px solid #444;
+                }
+            }
+           a {
+               color: #000;
+            }
+            .landlab {
+                text-align: right;
+                margin-top: 2rem;
+                img {
+                    max-width: 200px;
+               }
+            }
+            .footer-bottom-row {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+#footer-subscribe-button:hover {
+    background: #333;
+    color: #fff!important;
+    text-decoration: none;
 }
 
 /****************************************
 *  Media Queries
 ****************************************/
+
 @media screen and (max-width: 992px) {
     #menu-modal-wrap {
         align-items: center;
@@ -311,6 +380,9 @@ h2, .h2 {
     #wrapper-navbar #main-menu li a:hover:after {
         width: 100%;
         opacity: 1;
+    }
+    #footer-subscribe-button {
+        margin-top: 2rem!important;
     }
     
 }
@@ -409,13 +481,19 @@ h2, .h2 {
     .white-bg-modal {
         background: none!important;
     }
+    #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
+        background-color: #6c8e6e;
+        color: #fff;
+        border-color: transparent;
+    }
     #home-section-5 {
         .text-column {
             h3 {
                 font-size: 2.2rem;
             }
             p {
-                font-size: 1.1rem
+                font-size: 1.1rem;
+                max-width: 800px;
             }
         }
     }
@@ -423,17 +501,51 @@ h2, .h2 {
 
 @media screen and (min-width: 1360px) {
     #home-section-5 {
+        img {
+            
+            max-width: 256px;
+        }
         .text-column {
             h3 {
                 font-size: calc(38.4px + (64 - 38.4)*(100vw - 1360px)/(2560-1360));
             }
             p {
                 font-size: calc(17.6px + (38.4 - 17.6)*(100vw - 1360px)/(2560-1360));
+                max-width: 1200px;
             }
         }
     }
 }
 
+@media screen and (max-width: 576px) { 
+    #wrapper-footer {
+        div {
+            .row {
+                .column {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+                .column:last-child() {
+                    border-left: transparent!important;
+//                    border-top: 1px solid #333;
+//                    padding-top: 2rem;
+                    #footer-subscribe-button {
+                        margin: 0 auto 2rem;
+                    }
+                }
+                
+            }
+            .footer-bottom-row {
+                text-align: center;
+                margin-top: 0!important;
+                .landlab {
+                    text-align: center!important;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
 /****************************************
 *  Font Styles
 ****************************************/

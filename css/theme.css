@@ -9318,9 +9318,6 @@ h2, .h2 {
 #wrapper-navbar nav #menu-modal-wrap #main-menu li a:hover {
   color: #6c8e6e; }
 
-#wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
-  border-color: #6c8e6e; }
-
 .white-bg-navbar {
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
@@ -9443,7 +9440,58 @@ h2, .h2 {
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
-  background: #a1a4a7; }
+  background: #a1a4a7;
+  padding-bottom: 0; }
+  #wrapper-footer .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem; }
+    #wrapper-footer .container-fluid .site-footer .row .column .heading-sitemap {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #000; }
+    #wrapper-footer .container-fluid .site-footer .row .column ul {
+      list-style: none;
+      padding: 0; }
+    #wrapper-footer .container-fluid .site-footer .row .column #footer-subscribe-button {
+      display: block;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      border: 2px solid #333;
+      margin: 0 1rem 1rem;
+      transition: all .3s; }
+    #wrapper-footer .container-fluid .site-footer .row .column #footer-social {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      #wrapper-footer .container-fluid .site-footer .row .column #footer-social li {
+        margin: 0 10px; }
+        #wrapper-footer .container-fluid .site-footer .row .column #footer-social li i {
+          font-size: 44px; }
+    #wrapper-footer .container-fluid .site-footer .row .site-info {
+      margin-top: 2rem; }
+      #wrapper-footer .container-fluid .site-footer .row .site-info p:first-child {
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: bold; }
+    #wrapper-footer .container-fluid .site-footer .row .column:last-child {
+      text-align: center;
+      border-left: 1px solid #444; }
+    #wrapper-footer .container-fluid .site-footer a {
+      color: #000; }
+    #wrapper-footer .container-fluid .site-footer .landlab {
+      text-align: right;
+      margin-top: 2rem; }
+      #wrapper-footer .container-fluid .site-footer .landlab img {
+        max-width: 200px; }
+    #wrapper-footer .container-fluid .site-footer .footer-bottom-row {
+      margin-top: 2rem; }
+
+#footer-subscribe-button:hover {
+  background: #333;
+  color: #fff !important;
+  text-decoration: none; }
 
 /****************************************
 *  Media Queries
@@ -9481,7 +9529,9 @@ h2, .h2 {
     transition: all .3s; }
   #wrapper-navbar #main-menu li a:hover:after {
     width: 100%;
-    opacity: 1; } }
+    opacity: 1; }
+  #footer-subscribe-button {
+    margin-top: 2rem !important; } }
 
 @media screen and (min-width: 760px) {
   #wrapper-navbar {
@@ -9542,16 +9592,39 @@ h2, .h2 {
             font-size: 18px; }
   .white-bg-modal {
     background: none !important; }
+  #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
+    background-color: #6c8e6e;
+    color: #fff;
+    border-color: transparent; }
   #home-section-5 .text-column h3 {
     font-size: 2.2rem; }
   #home-section-5 .text-column p {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem;
+    max-width: 800px; } }
 
 @media screen and (min-width: 1360px) {
+  #home-section-5 img {
+    max-width: 256px; }
   #home-section-5 .text-column h3 {
     font-size: calc(38.4px + (64 - 38.4)*(100vw - 1360px)/(2560-1360)); }
   #home-section-5 .text-column p {
-    font-size: calc(17.6px + (38.4 - 17.6)*(100vw - 1360px)/(2560-1360)); } }
+    font-size: calc(17.6px + (38.4 - 17.6)*(100vw - 1360px)/(2560-1360));
+    max-width: 1200px; } }
+
+@media screen and (max-width: 576px) {
+  #wrapper-footer div .row .column {
+    text-align: center;
+    margin-bottom: 1rem; }
+  #wrapper-footer div .row .column:last-child {
+    border-left: transparent !important; }
+    #wrapper-footer div .row .column:last-child #footer-subscribe-button {
+      margin: 0 auto 2rem; }
+  #wrapper-footer div .footer-bottom-row {
+    text-align: center;
+    margin-top: 0 !important; }
+    #wrapper-footer div .footer-bottom-row .landlab {
+      text-align: center !important;
+      margin-bottom: 2rem; } }
 
 /****************************************
 *  Font Styles
