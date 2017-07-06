@@ -213,7 +213,7 @@ h2, .h2 {
 }
 #hero-section-4 {
     background-position: top;
-    padding-top: calc(45vh);
+    padding-top: calc(25vh);
     padding-left: 10%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -324,8 +324,9 @@ h2, .h2 {
                         font-size: 18px;
                         text-transform: uppercase;
                         padding: 10px 16px;
-                        border: 2px solid #333;
-                        margin: 0 1rem 1rem;
+                        background: #fff;
+                        margin: 0 auto 1rem;
+                        max-width: 200px;
                         transition: all .3s;
                     }
                     #footer-social {
@@ -373,7 +374,7 @@ h2, .h2 {
     }
 }
 #footer-subscribe-button:hover {
-    background: #333;
+    background: #6c8e6e!important;
     color: #fff!important;
     text-decoration: none;
 }

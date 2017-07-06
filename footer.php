@@ -71,11 +71,13 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="#">
                         <h4 class="heading-sitemap">FAQ</h4>
                     </a>
-                    <h4 class="heading-sitemap">Model Home Hours</h4>
+                    <h4 class="heading-sitemap"><a href="#">Model Home Hours</a></h4>
+<!--
                     <ul>
                         <li>Wed-Fri 11am-6pm</li>
                         <li>Sat-Sun 12pm-5pm</li>
                     </ul>
+-->
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-2 column">
                     <a href="#" id="footer-subscribe-button">Subscribe</a>
@@ -89,13 +91,13 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="row footer-bottom-row">
                 <div class="col-sm-6">
                         <div class="site-info">
-                            <p>193 ch Ladyfield, Chelsea, QC j9B 0B3 • sales@hendrickfarm.ca</p>
+                            <p>193 ch Ladyfield, Chelsea, QC J9B 0B3 • info@hendrickfarm.ca</p>
                             <p>© Hendrick Farm • Privacy &amp;Terms</p>
                         </div>
                 </div><!--col end -->
                 <div class="col-sm-6">
                     <div class="landlab">
-                        <img src="http://localhost/wp/hendrick/wp-content/uploads/2017/06/LandlabLogo_400.png" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/LandlabLogo_400.png" />
                     </div>
                     
                 </div><!--col end -->
