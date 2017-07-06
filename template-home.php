@@ -39,7 +39,7 @@ get_header(); ?>
         <div class="col-3 col-md-2 column-1">
             <img src="<?php the_field('section_5_image'); ?>" />
         </div>
-        <div class="col-9 col-md-10 col-xl-8 column-2">
+        <div class="col-9 col-md-10 column-2">
             <div class="text-column">
                 <h3><?php the_field('section_5_heading'); ?></h3>
                 <p><?php the_field('section_5_subheading'); ?></p>
@@ -47,5 +47,27 @@ get_header(); ?>
         </div>
     </div>
 </div>
+<ul class="hero--pager">
+    <li class="pager--indicator">
+        <a href="#">
+            <span id="indicator-1" class="active"></span>
+        </a>
+    </li>
+    <li class="pager--indicator">
+        <a href="#">
+            <span id="indicator-2"></span>
+        </a>
+    </li>
+    <li class="pager--indicator">
+        <a href="#">
+            <span id="indicator-3"></span>
+        </a>
+    </li>
+    <li class="pager--indicator">
+        <a href="#">
+            <span id="indicator-4"></span>
+        </a>
+    </li>
+</ul>
 <?php 
 get_footer();
