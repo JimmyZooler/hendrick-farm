@@ -44,9 +44,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-2 column">
                     <a href="#">
-                        <h4 class="heading-sitemap">Gallery</h4>
-                    </a>
-                    <a href="#">
                         <h4 class="heading-sitemap">Who We Are</h4>
                     </a>
                     <ul class="hidden-xs-down">
@@ -63,21 +60,17 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <li>Blog</li>
                         <li>Media</li>
                     </ul>
-                    <a href="#">
-                        <h4 class="heading-sitemap">Contact</h4>
-                    </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-2 column">
                     <a href="#">
+                        <h4 class="heading-sitemap">Gallery</h4>
+                    </a>
+                    <a href="#">
+                        <h4 class="heading-sitemap">Contact</h4>
+                    </a>
+                    <a href="#">
                         <h4 class="heading-sitemap">FAQ</h4>
                     </a>
-                    <h4 class="heading-sitemap"><a href="#">Model Home Hours</a></h4>
-<!--
-                    <ul>
-                        <li>Wed-Fri 11am-6pm</li>
-                        <li>Sat-Sun 12pm-5pm</li>
-                    </ul>
--->
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-2 column">
                     <a href="#" id="footer-subscribe-button">Subscribe</a>
@@ -85,6 +78,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
                         <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                         <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    </ul>
+                    <h4 class="heading-sitemap"><a href="#">Model Home Hours</a></h4>
+                    <ul>
+                        <li>Wed-Fri 11am-6pm</li>
+                        <li>Sat-Sun 12pm-5pm</li>
                     </ul>
                 </div>
             </div>
