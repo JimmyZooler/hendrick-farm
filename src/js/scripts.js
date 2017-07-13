@@ -7,7 +7,8 @@
 (function($) {
     var $navbar = $('#wrapper-navbar'),
         $document = $(document),
-        $window = $(window);
+        $window = $(window),
+        $body = $("body");
     $document.scroll(function() {
         if ($window.width() >= 991 ) {
             if ($document.scrollTop() >= 4 ) {
@@ -25,9 +26,18 @@
       
     });
     $document.ready( function() {
-        $(".navbar-toggler").on('click', function () {
+        var menuOpen = function () {
             $navbar.toggleClass('menu-open');
-        });
+            $body.toggleClass('noscroll');
+        }
+        $(".navbar-toggler").on('click', function() {
+            menuOpen();
+        } );
+//        $window.resize( function() {
+//            if ($window.width() > 991 ) {
+//                menuOpen();
+//            }
+//        });
     });
     
     $document.ready( function() {
