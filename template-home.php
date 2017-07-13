@@ -17,19 +17,19 @@ get_header(); ?>
     </div>
 </div>
 <div class="hero-section" id="hero-section-2" style="background-image: url('<?php the_field('hero_image_2') ?>'); ">
-    <div class="hero-content">
+    <div class="hero-content animated">
         <h2><?php the_field('hero_2_title'); ?></h2>
         <a href="#"><?php the_field('hero_2_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" /></a>
     </div>
 </div>
 <div class="hero-section" id="hero-section-3" style="background-image: url('<?php the_field('hero_image_3') ?>'); ">
-    <div class="hero-content">
+    <div class="hero-content animated">
         <h2><?php the_field('hero_3_title'); ?></h2>
         <a href="#"><?php the_field('hero_3_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" /></a>
     </div>
 </div>
 <div class="hero-section" id="hero-section-4" style="background-image: url('<?php the_field('hero_image_4') ?>'); ">
-    <div class="hero-content">
+    <div class="hero-content animated">
         <h2><?php the_field('hero_4_title'); ?></h2>
         <a href="#"><?php the_field('hero_4_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" /></a>
     </div>

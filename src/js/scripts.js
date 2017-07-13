@@ -118,5 +118,29 @@
         });
         
     });
+    
+    // scripts for home animations 
+    
+    $(document).ready(function(){
+            var $heroContent2 = $('#hero-section-2 .hero-content'),
+                $heroContent3 = $('#hero-section-3 .hero-content'),
+                $heroContent4 = $('#hero-section-4 .hero-content');
+        
+          // hide our element on page load
+          $heroContent2.css('opacity', 0);
+          $heroContent3.css('opacity', 0);
+          $heroContent4.css('opacity', 0);
+
+          $heroContent2.waypoint(function() {
+              $heroContent2.addClass('fadeInUp');
+          }, { offset: '50%' });
+          $heroContent3.waypoint(function() {
+              $heroContent3.addClass('fadeInUp');
+          }, { offset: '50%' });
+        $heroContent4.waypoint(function() {
+              $heroContent4.addClass('fadeInUp'); 
+          }, { offset: '50%' });
+
+    });
   
 })( jQuery );

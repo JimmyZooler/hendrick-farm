@@ -163,9 +163,6 @@ h2, .h2 {
     border: none!important;
 }
 
-.noscroll {
-    overflow: hidden;
-}
 
 /****************************************
 *  Home Page Styles
@@ -451,6 +448,7 @@ h2, .h2 {
                     display: inline-block;
                 }
                 .dropdown-menu {
+                    padding-top: 0!important;
                     margin-bottom: 10px;
                     overflow: auto;
                     display: block;
@@ -491,6 +489,10 @@ h2, .h2 {
 //    }
     #footer-subscribe-button {
         margin-top: 2rem!important;
+    }
+    
+    .noscroll {
+        overflow: hidden;
     }
     
 }

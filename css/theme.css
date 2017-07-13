@@ -9364,9 +9364,6 @@ h2, .h2 {
 .dropdown-menu .menu-item:last-child a {
   border: none !important; }
 
-.noscroll {
-  overflow: hidden; }
-
 /****************************************
 *  Home Page Styles
 ****************************************/
@@ -9588,6 +9585,7 @@ h2, .h2 {
         #menu-modal-wrap #main-menu li a {
           display: inline-block; }
         #menu-modal-wrap #main-menu li .dropdown-menu {
+          padding-top: 0 !important;
           margin-bottom: 10px;
           overflow: auto;
           display: block;
@@ -9599,7 +9597,9 @@ h2, .h2 {
   #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a {
     border: transparent; }
   #footer-subscribe-button {
-    margin-top: 2rem !important; } }
+    margin-top: 2rem !important; }
+  .noscroll {
+    overflow: hidden; } }
 
 @media screen and (min-width: 760px) {
   #wrapper-navbar {
