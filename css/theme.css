@@ -9325,7 +9325,7 @@ h2, .h2 {
   color: #6c8e6e; }
 
 .white-bg-navbar {
-  background: rgba(255, 255, 255, 0.95);
+  background: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   position: fixed !important;
   padding-top: 0.8rem !important; }
@@ -9346,14 +9346,6 @@ h2, .h2 {
 
 .menu-open #menu-modal-wrap {
   transform: translateY(0%); }
-  .menu-open #menu-modal-wrap #main-menu {
-    margin-left: 40px; }
-    .menu-open #menu-modal-wrap #main-menu li {
-      text-align: left; }
-    .menu-open #menu-modal-wrap #main-menu .dropdown-menu {
-      display: block;
-      float: none;
-      background: transparent !important; }
 
 #main-menu li.dropdown:hover > .dropdown-menu {
   display: block !important; }
@@ -9588,16 +9580,22 @@ h2, .h2 {
     transform: translateY(-100%);
     transition: transform 500ms ease-out,-webkit-transform 500ms ease-out; }
     #menu-modal-wrap #main-menu {
+      margin-left: 40px;
       padding-top: 40px;
       padding-bottom: 40px; }
-      #menu-modal-wrap #main-menu li a {
-        display: inline-block; }
-      #menu-modal-wrap #main-menu li .dropdown-menu {
-        margin-bottom: 10px;
-        overflow: auto; }
-        #menu-modal-wrap #main-menu li .dropdown-menu .menu-item a {
-          margin-left: 15px;
-          padding: 0; }
+      #menu-modal-wrap #main-menu li {
+        text-align: left; }
+        #menu-modal-wrap #main-menu li a {
+          display: inline-block; }
+        #menu-modal-wrap #main-menu li .dropdown-menu {
+          margin-bottom: 10px;
+          overflow: auto;
+          display: block;
+          float: none;
+          background: transparent !important; }
+          #menu-modal-wrap #main-menu li .dropdown-menu .menu-item a {
+            margin-left: 15px;
+            padding: 0; }
   #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a {
     border: transparent; }
   #footer-subscribe-button {

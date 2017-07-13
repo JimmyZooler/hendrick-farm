@@ -49,22 +49,22 @@ get_header(); ?>
 </div>
 <ul class="hero--pager">
     <li class="pager--indicator">
-        <a href="#">
+        <a class="pager--indicator-link" href="#hero-section-1">
             <span id="indicator-1" class="active"></span>
         </a>
     </li>
     <li class="pager--indicator">
-        <a href="#">
+        <a class="pager--indicator-link" href="#hero-section-2">
             <span id="indicator-2"></span>
         </a>
     </li>
     <li class="pager--indicator">
-        <a href="#">
+        <a class="pager--indicator-link" href="#hero-section-3">
             <span id="indicator-3"></span>
         </a>
     </li>
     <li class="pager--indicator">
-        <a href="#">
+        <a class="pager--indicator-link" href="#hero-section-4">
             <span id="indicator-4"></span>
         </a>
     </li>

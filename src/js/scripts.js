@@ -33,11 +33,6 @@
         $(".navbar-toggler").on('click', function() {
             menuOpen();
         } );
-//        $window.resize( function() {
-//            if ($window.width() > 991 ) {
-//                menuOpen();
-//            }
-//        });
     });
     
     $document.ready( function() {
@@ -113,6 +108,14 @@
             offset: 68
         });
         
+        //Linking the dots to each section
+        
+        $(".pager--indicator-link").click( function() {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 1200);
+        });
         
     });
   

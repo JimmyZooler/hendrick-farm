@@ -111,7 +111,7 @@ h2, .h2 {
 }
 
 .white-bg-navbar {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
     position: fixed!important;
     padding-top: 0.8rem!important;
@@ -138,17 +138,6 @@ h2, .h2 {
     }
     #menu-modal-wrap {
         transform: translateY(0%);
-        #main-menu {
-            margin-left: 40px;
-            li {
-                text-align: left;
-            }
-            .dropdown-menu {
-                display: block;
-                float: none;
-                background: transparent!important;
-            }
-        }
     }
 }
 
@@ -444,8 +433,6 @@ h2, .h2 {
 @media screen and (max-width: 992px) {
     #menu-modal-wrap {
         overflow: scroll;
-//        align-items: center;
-//        display: flex;
         position: fixed;
         width: 100%;
         height: 100%;
@@ -455,15 +442,20 @@ h2, .h2 {
         transform: translateY(-100%);
         transition: transform 500ms ease-out,-webkit-transform 500ms ease-out;
         #main-menu {
+            margin-left: 40px;
             padding-top: 40px;
             padding-bottom: 40px;
             li {
+                text-align: left;
                 a {
                     display: inline-block;
                 }
                 .dropdown-menu {
                     margin-bottom: 10px;
                     overflow: auto;
+                    display: block;
+                    float: none;
+                    background: transparent!important;
                     .menu-item {
                         a {
                             margin-left: 15px;
@@ -560,9 +552,7 @@ h2, .h2 {
 }
 
 @media screen and (min-width: 992px) {
-    body {
-//        padding: 1.25rem;
-    }
+
     .navbar-toggleable-md .navbar-nav .nav-link {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -617,7 +607,6 @@ h2, .h2 {
 @media screen and (min-width: 1360px) {
     #home-section-5 {
         img {
-            
             max-width: 256px;
         }
         .text-column {
