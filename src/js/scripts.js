@@ -142,5 +142,12 @@
           }, { offset: '50%' });
 
     });
+    
+    $(document).ready(function(){
+        
+        $('.dropdown').addClass('disabled');
+        $('.dropdown-toggle').removeAttr('data-toggle');
+
+    });
   
 })( jQuery );
