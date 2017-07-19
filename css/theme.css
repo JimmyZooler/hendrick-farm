@@ -9248,15 +9248,16 @@ h2, .h2 {
 *  Navbar Styles
 ****************************************/
 #wrapper-navbar {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
   padding-top: 0.8rem;
   height: 62px;
-  transition-property: background, top, opacity;
-  transition-duration: 0.5s, 0.15s, 0.3s; }
+  transition-property: background, top, opacity, height;
+  transition-duration: 0.5s, 0.15s, 0.3s, 0.4s;
+  background: white; }
   #wrapper-navbar nav {
     padding: 0 0.8rem; }
     #wrapper-navbar nav button {
@@ -9324,14 +9325,16 @@ h2, .h2 {
 #wrapper-navbar nav #menu-modal-wrap #main-menu li a:hover {
   color: #6c8e6e; }
 
-.white-bg-navbar {
-  background: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-  position: fixed !important;
-  padding-top: 0.8rem !important; }
-
 .white-bg-modal {
   background: rgba(255, 255, 255, 0.97); }
+
+.stickied {
+  padding-top: 62px !important; }
+  .stickied #wrapper-navbar {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    position: fixed !important;
+    padding-top: 0.8rem !important;
+    height: 62px; }
 
 .menu-open nav button .line:nth-child(1) {
   transform: rotate(45deg);
@@ -9373,7 +9376,7 @@ h2, .h2 {
   overflow: hidden;
   margin-top: -1px;
   min-height: 460px;
-  height: calc(100vh);
+  height: calc(100vh - 68px);
   background-size: cover;
   display: flex; }
   .hero-section h2 {
@@ -9394,7 +9397,7 @@ h2, .h2 {
 
 #hero-section-1 {
   background-position: bottom;
-  padding-top: calc(18vh);
+  padding-top: calc(10vh);
   padding-right: 8%;
   justify-content: flex-end;
   align-items: flex-start; }
@@ -9402,8 +9405,9 @@ h2, .h2 {
     fill: #000; }
 
 #hero-section-2 {
-  background-position: bottom;
-  padding-top: calc(25vh);
+  background-position-x: center;
+  background-position-y: 55%;
+  padding-top: calc(15vh);
   padding-left: 8%;
   justify-content: flex-start;
   align-items: flex-start; }
@@ -9413,8 +9417,10 @@ h2, .h2 {
     fill: #fff; }
 
 #hero-section-3 {
+  background-position-y: center;
+  background-position-x: 37%;
   justify-content: flex-end;
-  padding-top: calc(25vh);
+  padding-top: calc(15vh);
   padding-right: 8%; }
   #hero-section-3 .hero-content h2, #hero-section-3 .hero-content a {
     color: #fff; }
@@ -9423,10 +9429,10 @@ h2, .h2 {
 
 #hero-section-4 {
   background-position: top;
-  padding-top: calc(25vh);
+  padding-bottom: calc(15vh);
   padding-left: 10%;
   justify-content: flex-start;
-  align-items: flex-start; }
+  align-items: flex-end; }
   #hero-section-4 .hero-content h2 {
     color: #fff;
     padding-right: 50px; }
@@ -9436,6 +9442,7 @@ h2, .h2 {
       fill: #fff; }
 
 #home-section-5 {
+  background: rgba(161, 164, 167, 0.31);
   padding: 1.5rem; }
   #home-section-5 .column-1 {
     padding-right: 0; }
@@ -9493,10 +9500,51 @@ h2, .h2 {
   background: #fff; }
 
 /****************************************
+*  Lifestyle Landing Page Styles
+****************************************/
+#life-section-1, #life-section-2, #life-section-3, #life-section-4, #life-section-5 {
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #life-section-1 .hero-content, #life-section-2 .hero-content, #life-section-3 .hero-content, #life-section-4 .hero-content, #life-section-5 .hero-content {
+    text-align: center; }
+    #life-section-1 .hero-content h2, #life-section-2 .hero-content h2, #life-section-3 .hero-content h2, #life-section-4 .hero-content h2, #life-section-5 .hero-content h2 {
+      color: #fff; }
+    #life-section-1 .hero-content a img, #life-section-2 .hero-content a img, #life-section-3 .hero-content a img, #life-section-4 .hero-content a img, #life-section-5 .hero-content a img {
+      max-width: 55px;
+      padding-left: 0;
+      margin-left: 0;
+      margin-top: -25px; }
+
+#life-section-1 {
+  background-position-x: 55%; }
+
+#life-section-2 {
+  padding-bottom: calc(10vh);
+  background-position-x: 65%; }
+
+#life-section-3 {
+  padding-bottom: calc(5vh);
+  background-position-x: 85%; }
+
+#life-section-4, #life-section-5 {
+  align-items: flex-start;
+  padding-top: calc(15vh); }
+
+#life-section-5 .hero-content {
+  text-align: left;
+  padding-left: 20px; }
+  #life-section-5 .hero-content a img {
+    margin-left: 20px; }
+
+/****************************************
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
-  background: #a1a4a7; }
+  background: #fff; }
   #wrapper-footer .container-fluid {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -9604,7 +9652,7 @@ h2, .h2 {
 @media screen and (min-width: 760px) {
   #wrapper-navbar {
     padding-top: 1rem;
-    height: 64px; }
+    height: 68px; }
     #wrapper-navbar nav {
       padding: 0 1.5rem; }
       #wrapper-navbar nav .navbar-brand {
@@ -9615,10 +9663,12 @@ h2, .h2 {
         margin-top: 7px; }
         #wrapper-navbar nav button .line {
           width: 36px; }
+  .stickied #wrapper-navbar {
+    height: 64px; }
   #hero-section-1 {
-    padding-top: calc(19vh); }
+    padding-top: calc(10vh); }
   .hero-section .hero-content h2 {
-    font-size: 82px; }
+    font-size: calc(64px + (88 - 64)*(100vw - 760px)/(2000-760)); }
   .hero-section .hero-content a {
     padding-left: 10px;
     font-size: 32px; }
@@ -9636,7 +9686,11 @@ h2, .h2 {
       align-self: center; }
       #home-section-5 .text-column h3 {
         font-size: 1.5rem;
-        font-weight: bold; } }
+        font-weight: bold; }
+  #life-section-1 .hero-content h2, #life-section-2 .hero-content h2, #life-section-3 .hero-content h2, #life-section-4 .hero-content h2, #life-section-5 .hero-content h2 {
+    color: #fff; }
+  #life-section-1 .hero-content a img, #life-section-2 .hero-content a img, #life-section-3 .hero-content a img, #life-section-4 .hero-content a img, #life-section-5 .hero-content a img {
+    max-width: 95px; } }
 
 @media screen and (min-width: 992px) {
   .navbar-toggleable-md .navbar-nav .nav-link {
@@ -9644,7 +9698,7 @@ h2, .h2 {
     padding-right: 1rem; }
   #wrapper-navbar {
     padding-top: 1.25rem;
-    height: 68px; }
+    height: 80px; }
     #wrapper-navbar nav {
       padding: 0 1.5rem; }
       #wrapper-navbar nav .navbar-brand {
@@ -9658,12 +9712,22 @@ h2, .h2 {
           transition: all 0.5s; }
           #wrapper-navbar nav #menu-modal-wrap #main-menu li a {
             font-size: 18px; }
+  .stickied {
+    padding-top: 68px !important; }
+    .stickied #wrapper-navbar {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+      padding-top: 0.8rem !important;
+      height: 68px; }
   .white-bg-modal {
     background: none !important; }
   #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
     background-color: #6c8e6e;
     color: #fff;
     border-color: transparent; }
+  #hero-section-2 {
+    padding-top: calc(25vh); }
+  #hero-section-4 {
+    padding-bottom: calc(30vh); }
   #home-section-5 .text-column {
     max-width: 100%; }
     #home-section-5 .text-column h3 {

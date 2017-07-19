@@ -11,16 +11,16 @@
         $body = $("body");
     $document.scroll(function() {
         if ($window.width() >= 991 ) {
-            if ($document.scrollTop() >= 4 ) {
-                $navbar.addClass("white-bg-navbar");
+            if ($document.scrollTop() >= 6 ) {
+                $body.addClass("stickied");
             } else {
-                $navbar.removeClass("white-bg-navbar");
+                $body.removeClass("stickied");
             }
         } else {
             if ($document.scrollTop() >= 1) {
-                $navbar.addClass("white-bg-navbar");
+                $body.addClass("stickied");
             } else {
-                $navbar.removeClass("white-bg-navbar");
+                $body.removeClass("stickied");
             }
         }
       
@@ -113,7 +113,7 @@
         $(".pager--indicator-link").click( function() {
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: $( $.attr(this, 'href') ).offset().top
+                scrollTop: $( $.attr(this, 'href') ).offset().top - 68
             }, 1200);
         });
         
@@ -139,12 +139,12 @@
           }, { offset: '50%' });
         $heroContent4.waypoint(function() {
               $heroContent4.addClass('fadeInUp'); 
-          }, { offset: '50%' });
+          }, { offset: '70%' });
 
     });
     
     $(document).ready(function(){
-        
+         
         $('.dropdown').addClass('disabled');
         $('.dropdown-toggle').removeAttr('data-toggle');
 

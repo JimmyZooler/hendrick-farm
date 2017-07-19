@@ -1,7 +1,6 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
 body {
-//    padding: 0.8rem;
     font-family: "rm_proregular", Helvetica, Arial, sans-serif;
 }
 button:focus {
@@ -22,15 +21,16 @@ h2, .h2 {
 ****************************************/
 
 #wrapper-navbar {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100;
     padding-top: 0.8rem;
     height: 62px;
-    transition-property: background, top, opacity;
-    transition-duration: 0.5s, 0.15s, 0.3s;
+    transition-property: background, top, opacity, height;
+    transition-duration: 0.5s, 0.15s, 0.3s, 0.4s;
+    background: rgba(255, 255, 255, 1);
     nav {
         padding: 0 0.8rem;
         button {
@@ -110,14 +110,17 @@ h2, .h2 {
     color: #6c8e6e;
 }
 
-.white-bg-navbar {
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
-    position: fixed!important;
-    padding-top: 0.8rem!important;
-}
 .white-bg-modal {
     background: rgba(255, 255, 255, 0.97);
+}
+.stickied {
+    padding-top: 62px!important;
+    #wrapper-navbar {
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+        position: fixed!important;
+        padding-top: 0.8rem!important;
+        height: 62px;
+    }
 }
 
 .menu-open {
@@ -174,7 +177,7 @@ h2, .h2 {
     overflow: hidden;
     margin-top: -1px;
     min-height: 460px;
-    height: calc(100vh);
+    height: calc(100vh - 68px);
     background-size: cover;
     display: flex;
     h2 {
@@ -198,7 +201,7 @@ h2, .h2 {
 }
 #hero-section-1 {
     background-position: bottom;
-    padding-top: calc(18vh);
+    padding-top: calc(10vh);
     padding-right: 8%;
     justify-content: flex-end;
     align-items: flex-start;
@@ -209,8 +212,9 @@ h2, .h2 {
     }
 }
 #hero-section-2 {
-    background-position: bottom;
-    padding-top: calc(25vh);
+    background-position-x: center;
+    background-position-y: 55%;
+    padding-top: calc(15vh);
     padding-left: 8%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -224,8 +228,10 @@ h2, .h2 {
     }
 }
  #hero-section-3 {
+     background-position-y: center;
+     background-position-x: 37%;
     justify-content: flex-end;
-    padding-top: calc(25vh);
+    padding-top: calc(15vh);
     padding-right: 8%;
      .hero-content {
          h2, a {
@@ -240,10 +246,10 @@ h2, .h2 {
 }
 #hero-section-4 {
     background-position: top;
-    padding-top: calc(25vh);
+    padding-bottom: calc(15vh);
     padding-left: 10%;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     .hero-content {
         h2 {
             color: #fff;
@@ -258,6 +264,7 @@ h2, .h2 {
     }
 }
 #home-section-5 {
+    background: rgba(161, 164, 167, 0.31);
     padding: 1.5rem;
     .column-1 {
         padding-right: 0;
@@ -326,10 +333,82 @@ h2, .h2 {
 }
 
 /****************************************
+*  Lifestyle Landing Page Styles
+****************************************/
+#life-section-1, #life-section-2, #life-section-3, #life-section-4, #life-section-5 {
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .hero-content {
+        text-align: center;
+        h2 {
+            color: #fff;
+        }
+        a {
+            img {
+                max-width: 55px;
+                padding-left: 0;
+                margin-left: 0;
+                margin-top: -25px;
+            }
+        }
+    }
+}
+#life-section-1 {
+    background-position-x: 55%;
+}
+#life-section-2 {
+    padding-bottom: calc(10vh);
+    background-position-x: 65%;
+}
+#life-section-3 {
+    padding-bottom: calc(5vh);
+    background-position-x: 85%;
+}
+#life-section-4, #life-section-5 {
+    align-items: flex-start;
+    padding-top: calc(15vh);
+}
+ #life-section-5 {
+    .hero-content {
+        text-align: left;
+        padding-left: 20px;
+        a {
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.page-template-template-lifestyle {
+    #wrapper-navbar {
+        nav {
+            button {
+                .line {
+                }
+            }
+        }
+    }
+}
+.page-template-template-lifestyle {
+    .menu-open {
+        nav {
+            button {
+                .line {
+                }
+            }
+        }
+    }
+}
+
+/****************************************
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
-    background: #a1a4a7;
+    background: #fff;
     .container-fluid {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -499,7 +578,7 @@ h2, .h2 {
 @media screen and (min-width: 760px) {
     #wrapper-navbar {
         padding-top: 1rem;
-        height: 64px;
+        height: 68px;
         nav {
             padding: 0 1.5rem;
             .navbar-brand {
@@ -516,13 +595,15 @@ h2, .h2 {
             }
         }
     }
+    .stickied #wrapper-navbar {
+        height: 64px; }
     #hero-section-1 {
-        padding-top: calc(19vh) ;
+        padding-top: calc(10vh) ;
     }
     .hero-section {
         .hero-content {
             h2 {
-                font-size: 82px;
+                font-size: calc(64px + (88 - 64)*(100vw - 760px)/(2000-760));
             }
             a {
                 padding-left: 10px;
@@ -551,6 +632,18 @@ h2, .h2 {
             }
         }
     }
+    #life-section-1, #life-section-2, #life-section-3, #life-section-4, #life-section-5 {
+        .hero-content {
+            h2 {
+                color: #fff;
+            }
+            a {
+                img {
+                    max-width: 95px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -561,7 +654,7 @@ h2, .h2 {
     }
     #wrapper-navbar {
         padding-top: 1.25rem;
-        height: 68px;
+        height: 80px;
         nav {
             padding: 0 1.5rem;
             .navbar-brand {
@@ -584,6 +677,14 @@ h2, .h2 {
             }
         }
     }
+    .stickied {
+        padding-top: 68px!important;
+        #wrapper-navbar {
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+            padding-top: 0.8rem!important;
+            height: 68px;
+        }
+    }
     .white-bg-modal {
         background: none!important;
     }
@@ -591,6 +692,12 @@ h2, .h2 {
         background-color: #6c8e6e;
         color: #fff;
         border-color: transparent;
+    }
+    #hero-section-2 {
+        padding-top: calc(25vh);
+    }
+    #hero-section-4 {
+        padding-bottom: calc(30vh);
     }
     #home-section-5 {
         .text-column {
