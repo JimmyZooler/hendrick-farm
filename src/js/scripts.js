@@ -158,16 +158,55 @@
             offset: 68
         });
         
-//        $('#wrapper-footer').waypoint({
-//          handler: function(direction) {
-//              if ( direction == 'down' ) {
-//                  $heroPager.addClass("zero-opacity");
-//              } else {
-//                  $heroPager.removeClass("zero-opacity");
-//              }
-//          },
-//            offset: '-80%'
-//        });
+        $('#list-section-2').waypoint({
+          handler: function(direction) {
+              if ( direction == 'down' ) {
+                  $indicatorOne.removeClass("active");
+                  $indicatorTwo.addClass("active");
+              } else {
+                  $indicatorTwo.removeClass("active");
+                  $indicatorOne.addClass("active");
+              }
+          },
+            offset: 68
+        });
+        
+        $('#list-section-3').waypoint({
+          handler: function(direction) {
+              if ( direction == 'down' ) {
+                  $indicatorTwo.removeClass("active");
+                  $indicatorThree.addClass("active");
+              } else {
+                  $indicatorThree.removeClass("active");
+                  $indicatorTwo.addClass("active");
+              }
+          },
+            offset: 68
+        });
+        
+        $('#list-section-4').waypoint({
+          handler: function(direction) {
+              if ( direction == 'down' ) {
+                  $indicatorThree.removeClass("active");
+                  $indicatorFour.addClass("active");
+              } else {
+                  $indicatorFour.removeClass("active");
+                  $indicatorThree.addClass("active");
+              }
+          },
+            offset: 68
+        });
+        
+        $('#wrapper-footer').waypoint({
+          handler: function(direction) {
+              if ( direction == 'down' ) {
+                  $heroPager.addClass("zero-opacity");
+              } else {
+                  $heroPager.removeClass("zero-opacity");
+              }
+          },
+            offset: '70%'
+        });
         
     });
     
@@ -181,7 +220,11 @@
                 $heroContent6 = $('#life-section-2 .hero-content'),
                 $heroContent7 = $('#life-section-3 .hero-content'),
                 $heroContent8 = $('#life-section-4 .hero-content'),
-                $heroContent9 = $('#life-section-5 .hero-content');
+                $heroContent9 = $('#life-section-5 .hero-content'),
+                $heroContent10 = $('#list-section-1 .hero-content'),
+                $heroContent11 = $('#list-section-2 .hero-content'),
+                $heroContent12 = $('#list-section-3 .hero-content'),
+                $heroContent13 = $('#list-section-4 .hero-content');
         
           // hide our element on page load
           $heroContent2.css('opacity', 0);
@@ -191,6 +234,10 @@
           $heroContent7.css('opacity', 0);
           $heroContent8.css('opacity', 0);
           $heroContent9.css('opacity', 0);
+          $heroContent10.css('opacity', 0);
+        $heroContent11.css('opacity', 0);
+        $heroContent12.css('opacity', 0);
+        $heroContent13.css('opacity', 0);
 
           $heroContent2.waypoint(function() {
               $heroContent2.addClass('fadeInUp');
@@ -212,6 +259,18 @@
           }, { offset: '70%' });
         $heroContent9.waypoint(function() {
               $heroContent9.addClass('fadeInUp'); 
+          }, { offset: '70%' });
+        $heroContent10.waypoint(function() {
+              $heroContent10.addClass('fadeInUp'); 
+          }, { offset: '70%' });
+        $heroContent11.waypoint(function() {
+              $heroContent11.addClass('fadeInUp'); 
+          }, { offset: '70%' });
+        $heroContent12.waypoint(function() {
+              $heroContent12.addClass('fadeInUp'); 
+          }, { offset: '70%' });
+        $heroContent13.waypoint(function() {
+              $heroContent13.addClass('fadeInUp'); 
           }, { offset: '70%' });
 
     });
@@ -236,6 +295,12 @@
         });
         $('.life-link').mouseleave( function() {
             $(this).closest('.life-section').removeClass('hover');
+        });
+        $('.life-link').mouseover( function() {
+            $(this).closest('.list-section').addClass('hover');
+        });
+        $('.life-link').mouseleave( function() {
+            $(this).closest('.list-section').removeClass('hover');
         });
 
     });

@@ -2,6 +2,7 @@
 
 body {
     font-family: "rm_proregular", Helvetica, Arial, sans-serif;
+    height: 100%;
 }
 button:focus {
     outline: none;
@@ -345,7 +346,7 @@ h2, .h2 {
 /****************************************
 *  Lifestyle Landing Page Styles
 ****************************************/
-.life-section {
+.life-section, .list-section {
     padding-bottom: 5px;
     justify-content: center;
     align-items: flex-end;
@@ -389,6 +390,11 @@ h2, .h2 {
         }
     }
 }
+.list-section {
+    .hero-content {
+        text-align: left;
+    }
+}
 #life-section-1 {
     .sect-background {
         background-position-x: 55%;
@@ -421,10 +427,27 @@ h2, .h2 {
         }
     }
 }
-.life-section.hover .sect-background {
+#list-section-1 {
+    align-items: flex-start;
+    padding-top: calc(20vh);
+} 
+
+#list-section-2 {
+    align-items: flex-start;
+    padding-top: calc(25vh);
+}
+#list-section-3 {
+    align-items: flex-end;
+    padding-bottom: calc(15vh);
+}
+#list-section-4 {
+    align-items: flex-start;
+    padding-top: calc(12vh);
+}
+.life-section.hover .sect-background, .list-section.hover .sect-background {
     transform: scale(1.05, 1.05);
 }
-.life-section .hero-content:hover div img {
+.life-section .hero-content:hover div img, .list-section .hero-content:hover div img {
     margin-left: 50px!important;
 }
 /****************************************
@@ -529,75 +552,6 @@ h2, .h2 {
     }
 }
 
-@media screen and (max-width: 992px) {
-    #menu-modal-wrap {
-        overflow: scroll;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: 250;
-        top:0;
-        left: 0;
-        transform: translateY(-100%);
-        transition: transform 500ms ease-out,-webkit-transform 500ms ease-out;
-        #main-menu {
-            margin-left: 40px;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            li {
-                text-align: left;
-                a {
-                    display: inline-block;
-                }
-                .dropdown-menu {
-                    padding-top: 0!important;
-                    margin-bottom: 10px;
-                    overflow: auto;
-                    display: block;
-                    float: none;
-                    background: transparent!important;
-                    .menu-item {
-                        a {
-                            margin-left: 15px;
-                            padding: 0;
-
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a {
-        border: transparent;
-    }
-    
-//    #wrapper-navbar #main-menu li a:after {
-//        content: '';
-//        width: 0%;
-//        height: 1px;
-//        border-top: 2px solid #6c8e6e;
-//        display: block;
-//        position: absolute;
-//        margin: auto;
-//        left: 50%;
-//        margin-top: 9px;
-//        opacity: 0;
-//        transform: translateX(-50%);
-//        transition: all .3s;
-//    }
-//    #wrapper-navbar #main-menu li a:hover:after {
-//        width: 100%;
-//        opacity: 1;
-//    }
-    #footer-subscribe-button {
-        margin-top: 2rem!important;
-    }
-    
-    .noscroll {
-        overflow: hidden;
-    }
-    
-}
 @media screen and (min-width: 760px) {
     #wrapper-navbar {
         padding-top: 1rem;
@@ -655,7 +609,7 @@ h2, .h2 {
             }
         }
     }
-    #life-section-1, #life-section-2, #life-section-3, #life-section-4, #life-section-5 {
+    .life-section, .list-section {
         .hero-content {
             h2 {
                 color: #fff;
@@ -740,7 +694,7 @@ h2, .h2 {
             }
         }
     }
-    #life-section-1, #life-section-3, #life-section-5 {
+    #life-section-1, #life-section-3, #life-section-5, #list-section-2, #list-section-4 {
         justify-content: flex-start;
         padding-left: 5%;
         .hero-content {
@@ -752,7 +706,7 @@ h2, .h2 {
             }
         }
     }
-    #life-section-2, #life-section-4 {
+    #life-section-2, #life-section-4, #list-section-1, #list-section-3 {
         justify-content: flex-end;
         padding-right: 5%;
         .hero-content {
@@ -764,6 +718,81 @@ h2, .h2 {
             }
         }
     }
+    #list-section-1 {
+        .sect-background {
+            background-position-y: 70%;
+        }
+    } 
+}
+
+@media screen and (max-width: 992px) {
+    #menu-modal-wrap {
+        overflow: scroll;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 250;
+        top:0;
+        left: 0;
+        transform: translateY(-100%);
+        transition: transform 500ms ease-out,-webkit-transform 500ms ease-out;
+        #main-menu {
+            margin-left: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            li {
+                text-align: left;
+                a {
+                    display: inline-block;
+                }
+                .dropdown-menu {
+                    padding-top: 0!important;
+                    margin-bottom: 10px;
+                    overflow: auto;
+                    display: block;
+                    float: none;
+                    background: transparent!important;
+                    .menu-item {
+                        a {
+                            margin-left: 15px;
+                            padding: 0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a {
+        border: transparent;
+    }
+    
+//    #wrapper-navbar #main-menu li a:after {
+//        content: '';
+//        width: 0%;
+//        height: 1px;
+//        border-top: 2px solid #6c8e6e;
+//        display: block;
+//        position: absolute;
+//        margin: auto;
+//        left: 50%;
+//        margin-top: 9px;
+//        opacity: 0;
+//        transform: translateX(-50%);
+//        transition: all .3s;
+//    }
+//    #wrapper-navbar #main-menu li a:hover:after {
+//        width: 100%;
+//        opacity: 1;
+//    }
+    #footer-subscribe-button {
+        margin-top: 2rem!important;
+    }
+    
+    .noscroll {
+        overflow: hidden;
+    }
+    
 }
 
 @media screen and (min-width: 1360px) {
