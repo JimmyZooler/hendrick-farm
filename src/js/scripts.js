@@ -304,6 +304,12 @@
         $('.life-link').mouseleave( function() {
             $(this).closest('.list-section').removeClass('hover');
         });
+        $('.hero-link').mouseover( function() {
+            $(this).closest('.hero-section').addClass('hover');
+        });
+        $('.hero-link').mouseleave( function() {
+            $(this).closest('.hero-section').removeClass('hover');
+        });
 
     });
     

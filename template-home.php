@@ -10,40 +10,44 @@
 
 get_header(); ?>
 
-<div class="hero-section" id="hero-section-1" style="background-image: url('<?php the_field('hero_1_image') ?>'); ">
+<div class="hero-section" id="hero-section-1">
+    <div class="sect-background" style="background-image: url('<?php the_field('hero_1_image') ?>'); "></div>
     <div class="hero-content animated fadeInUp">
         <h2><?php the_field('hero_title_1'); ?></h2>
         <div>
             <?php the_field('hero_link_text_1'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_black.svg" />
         </div>
-        <a href="#"></a>
+        <a href="#" class="hero-link"></a>
     </div>
 </div>
-<div class="hero-section" id="hero-section-2" style="background-image: url('<?php the_field('hero_image_2') ?>'); ">
+<div class="hero-section" id="hero-section-2" >
+    <div class="sect-background" style="background-image: url('<?php the_field('hero_image_2') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('hero_2_title'); ?></h2>
         <div>
             <?php the_field('hero_2_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="#"></a>
+        <a href="#" class="hero-link"></a>
     </div>
 </div>
-<div class="hero-section" id="hero-section-3" style="background-image: url('<?php the_field('hero_image_3') ?>'); ">
+<div class="hero-section" id="hero-section-3">
+    <div class="sect-background" style="background-image: url('<?php the_field('hero_image_3') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('hero_3_title'); ?></h2>
         <div>
             <?php the_field('hero_3_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="#"></a>
+        <a href="#" class="hero-link"></a>
     </div>
 </div>
-<div class="hero-section" id="hero-section-4" style="background-image: url('<?php the_field('hero_image_4') ?>'); ">
+<div class="hero-section" id="hero-section-4">
+    <div class="sect-background" style="background-image: url('<?php the_field('hero_image_4') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('hero_4_title'); ?></h2>
         <div>
         <?php the_field('hero_4_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="#"></a>
+        <a href="#" class="hero-link"></a>
     </div>
 </div>
 <div id="home-section-5">

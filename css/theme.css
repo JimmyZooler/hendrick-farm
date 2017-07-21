@@ -9390,7 +9390,6 @@ h2, .h2 {
   margin-top: -1px;
   min-height: 460px;
   height: calc(100vh - 68px);
-  background-size: cover;
   display: flex; }
   .hero-section .hero-content {
     position: relative; }
@@ -9417,43 +9416,47 @@ h2, .h2 {
       left: 0; }
 
 #hero-section-1 {
-  background-position: bottom;
   padding-top: calc(10vh);
   padding-right: 8%;
   justify-content: flex-end;
   align-items: flex-start; }
+  #hero-section-1 .sect-background {
+    background-position: bottom; }
   #hero-section-1 div img {
     fill: #000; }
 
 #hero-section-2 {
-  background-position-x: center;
-  background-position-y: 55%;
   padding-top: calc(15vh);
   padding-left: 8%;
   justify-content: flex-start;
   align-items: flex-start; }
+  #hero-section-2 .sect-background {
+    background-position-x: center;
+    background-position-y: 55%; }
   #hero-section-2 h2, #hero-section-2 div {
     color: #fff; }
   #hero-section-2 div img {
     fill: #fff; }
 
 #hero-section-3 {
-  background-position-y: center;
-  background-position-x: 37%;
   justify-content: flex-end;
   padding-top: calc(15vh);
   padding-right: 8%; }
+  #hero-section-3 .sect-background {
+    background-position-y: center;
+    background-position-x: 37%; }
   #hero-section-3 .hero-content h2, #hero-section-3 .hero-content div {
     color: #fff; }
   #hero-section-3 .hero-content div img {
     fill: #fff; }
 
 #hero-section-4 {
-  background-position: top;
   padding-bottom: calc(15vh);
   padding-left: 10%;
   justify-content: flex-start;
   align-items: flex-end; }
+  #hero-section-4 .sect-background {
+    background-position: top; }
   #hero-section-4 .hero-content h2 {
     color: #fff;
     padding-right: 50px; }
@@ -9523,25 +9526,26 @@ h2, .h2 {
 /****************************************
 *  Lifestyle Landing Page Styles
 ****************************************/
+.sect-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: scale(1, 1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 1.5s ease-in-out; }
+
 .life-section, .list-section {
   padding-bottom: 5px;
   justify-content: center;
   align-items: flex-end;
   position: relative; }
-  .life-section .sect-background, .list-section .sect-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    transform: scale(1, 1);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: transform 1.5s ease-in-out; }
   .life-section .hero-content, .list-section .hero-content {
     position: relative;
     text-align: center; }
@@ -9602,7 +9606,7 @@ h2, .h2 {
   align-items: flex-start;
   padding-top: calc(12vh); }
 
-.life-section.hover .sect-background, .list-section.hover .sect-background {
+.life-section.hover .sect-background, .list-section.hover .sect-background, .hero-section.hover .sect-background {
   transform: scale(1.05, 1.05); }
 
 .life-section .hero-content:hover div img, .list-section .hero-content:hover div img {
