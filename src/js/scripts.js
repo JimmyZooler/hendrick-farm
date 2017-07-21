@@ -30,6 +30,8 @@
         var menuOpen = function () {
             $navbar.toggleClass('menu-open');
             $body.toggleClass('noscroll');
+            $('.overlay--for-menu').toggleClass('hide');
+            $('.overlay--for-menu').toggleClass('zero-opacity');
         }
         $(".navbar-toggler").on('click', function() {
             menuOpen();
