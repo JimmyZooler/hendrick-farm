@@ -12,15 +12,15 @@
     
     $document.scroll(function() {
         if ($window.width() >= 991 ) {
-            if ($document.scrollTop() >= 6 ) {
+            if ($document.scrollTop() >= 66 ) {
                 $body.addClass("stickied");
-            } else {
+            } else if ($document.scrollTop() <= 1) {
                 $body.removeClass("stickied");
             }
         } else {
-            if ($document.scrollTop() >= 1) {
+            if ($document.scrollTop() >= 64) {
                 $body.addClass("stickied");
-            } else {
+            } else if ($document.scrollTop() <= 1) {
                 $body.removeClass("stickied");
             }
         }
@@ -36,6 +36,28 @@
         $(".navbar-toggler").on('click', function() {
             menuOpen();
         } );
+    });
+    
+    // Script for adding border to dropdown menu item 
+    
+    $document.ready(function() {
+        if ($window.width() < 992 ) {
+            $('.active .nav-link').first().addClass('active-border');
+        }
+      
+    });
+    
+    // Detecting iPad script
+    
+    $document.ready(function() {
+        function isiPad(){
+            return (navigator.platform.indexOf("iPad") != -1);
+        }
+        
+        if ( Modernizr.touch ) {
+            $body.addClass("ipad");
+            console.log("It's a iPad!");
+        }
     });
     
     $document.ready( function() {
@@ -303,12 +325,6 @@
         });
         $('.life-link').mouseleave( function() {
             $(this).closest('.list-section').removeClass('hover');
-        });
-        $('.hero-link').mouseover( function() {
-            $(this).closest('.hero-section').addClass('hover');
-        });
-        $('.hero-link').mouseleave( function() {
-            $(this).closest('.hero-section').removeClass('hover');
         });
 
     });

@@ -51,5 +51,9 @@
     "merge2": "^1.0.3",
     "run-sequence": "^1.2.2",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-postcss": "^7.0.0"
   }
 }

@@ -30,6 +30,7 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
+var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var merge2 = require('merge2');
@@ -87,6 +88,7 @@ gulp.task('scss-for-dev', function() {
         }))
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(sourcemaps.write(undefined, { sourceRoot: null }))
         .pipe(gulp.dest('./css'))
 });
@@ -108,6 +110,7 @@ gulp.task('sass', function () {
             }
         }))
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./css'))
         .pipe(rename('custom-editor-style.css'))
     return stream;
@@ -152,6 +155,20 @@ gulp.task('cssnano', function(){
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css/'))
 });
+
+
+//// Run: 
+//// gulp autoprefixer
+//
+//gulp.task('autoprefixer', function () {
+//    var postcss      = require('gulp-postcss');
+//
+//    return gulp.src('/css/theme.css')
+//        .pipe(sourcemaps.init())
+//        .pipe(postcss([ autoprefixer() ]))
+//        .pipe(sourcemaps.write('.'))
+//        .pipe(gulp.dest('/css'));
+//});
 
 gulp.task('minify-css', function() {
   return gulp.src('./css/theme.css')

@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="row footer-bottom-row">
                 <div class="col-sm-6">
                         <div class="site-info">
-                            <p>193 ch Ladyfield, Chelsea, QC J9B 0B3 • info@hendrickfarm.ca</p>
+                            <p>193 ch Ladyfield, Chelsea, QC J9B 0B3<span id="info-dot"> • </span>info@hendrickfarm.ca</p>
                             <p>© Hendrick Farm • Privacy &amp;Terms</p>
                         </div>
                 </div><!--col end -->
