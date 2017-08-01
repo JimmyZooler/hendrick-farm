@@ -55,8 +55,9 @@
         }
         
         if ( Modernizr.touch ) {
-            $body.addClass("ipad");
-            console.log("It's a iPad!");
+            alert('Touch Screen');
+        } else { 
+          alert('No Touch Screen');
         }
     });
     
