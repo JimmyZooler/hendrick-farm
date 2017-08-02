@@ -56,9 +56,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 						
 					
 					<?php } else {
-						the_custom_logo();
+//						the_custom_logo();
 					} ?><!-- end custom logo -->
-
+            
+                    <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/hendrick_art_1.svg" /></a>
+                    
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(

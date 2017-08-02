@@ -10077,8 +10077,8 @@ h2, .h2 {
       -webkit-transition: 0.4s all;
       transition: 0.4s all;
       z-index: 300; }
-      #wrapper-navbar nav .navbar-brand .img-fluid {
-        max-width: 70px; }
+      #wrapper-navbar nav .navbar-brand img {
+        width: 80px; }
     #wrapper-navbar nav #menu-modal-wrap {
       text-align: center;
       -webkit-box-pack: start;
@@ -10099,6 +10099,15 @@ h2, .h2 {
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
           position: relative; }
+        #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile {
+          margin-bottom: 40px; }
+          #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile .nav-link {
+            text-indent: -999px;
+            background-image: url("../img/hendrick_art_1.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 140px;
+            width: 140px; }
         #wrapper-navbar nav #menu-modal-wrap #main-menu .dropdown-toggle:after {
           display: none !important; }
 
@@ -10195,7 +10204,9 @@ h2, .h2 {
 .dropdown-menu {
   border-radius: 0 !important;
   border: none !important;
-  margin-top: 0 !important; }
+  margin-top: 0 !important;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 54px; }
   .dropdown-menu .menu-item a.nav-link {
     font-size: 14px !important; }
 
@@ -10203,16 +10214,16 @@ h2, .h2 {
   color: #6c8e6e !important;
   background: transparent !important; }
 
-.dropdown-menu .menu-item:last-child a {
-  border: none !important; }
-
 #wrapper-navbar #main-menu .dropdown-menu li.active {
   position: relative; }
 
 #wrapper-navbar #main-menu li.active .dropdown-toggle {
   color: #6c8e6e !important; }
 
-.active-border:after {
+.active-border {
+  margin-bottom: 10px; }
+
+.active-border:before {
   content: '';
   width: 100%;
   height: 1px;
@@ -10225,8 +10236,8 @@ h2, .h2 {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
-.dropdown-toggle.active-border {
-  border-bottom: 2px solid #6c8e6e !important; }
+.logo-on-mobile .nav-link:before {
+  border: none; }
 
 /****************************************
 *  Home Page Styles
@@ -10596,8 +10607,8 @@ h2, .h2 {
       padding: 0 1.5rem; }
       #wrapper-navbar nav .navbar-brand {
         padding-top: 0.5rem; }
-        #wrapper-navbar nav .navbar-brand .img-fluid {
-          max-width: 100px; }
+        #wrapper-navbar nav .navbar-brand img {
+          width: 100px; }
       #wrapper-navbar nav button {
         margin-top: 7px; }
         #wrapper-navbar nav button .line {
@@ -10647,6 +10658,8 @@ h2, .h2 {
   #wrapper-navbar {
     position: relative;
     background: rgba(255, 255, 255, 0.95); }
+    #wrapper-navbar nav .navbar-brand img {
+      width: 110px; }
   .navbar-toggleable-md .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -10657,18 +10670,6 @@ h2, .h2 {
               box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
       padding-top: 0.95rem !important;
       height: 68px; }
-  #wrapper-navbar #main-menu li.active:after {
-    content: '';
-    width: 40px;
-    height: 1px;
-    bottom: 0;
-    border-top: 2px solid #6c8e6e;
-    display: block;
-    position: absolute;
-    margin: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
   .hero-section {
     height: calc(100vh - 68px); }
   #hero-section-1 {
@@ -10709,12 +10710,16 @@ h2, .h2 {
   .stickied #menu-modal-wrap {
     top: 64px; }
   #footer-subscribe-button {
-    margin-top: 2rem !important; } }
+    margin-top: 2rem !important; }
+  .page-template-template-lifestyle #wrapper-navbar nav button .line {
+    background: #fff; }
+  .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line {
+    background: #000; } }
 
 @media screen and (max-width: 1200px) {
   #wrapper-navbar #menu-modal-wrap {
     padding-bottom: 68px;
-    overflow: scroll;
+    overflow-y: scroll;
     position: fixed;
     width: 320px;
     height: 100vh;
@@ -10740,7 +10745,9 @@ h2, .h2 {
           background: transparent !important; }
           #wrapper-navbar #menu-modal-wrap #main-menu li .dropdown-menu .menu-item a {
             margin-left: 15px;
-            padding: 0; }
+            padding: 0;
+            margin-top: 3px;
+            margin-bottom: 3px; }
   .noscroll {
     overflow: hidden; }
   #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
@@ -10755,8 +10762,6 @@ h2, .h2 {
     padding: 0 1.5rem; }
     #wrapper-navbar nav .navbar-brand {
       left: 25px; }
-      #wrapper-navbar nav .navbar-brand .img-fluid {
-        max-width: 120px; }
     #wrapper-navbar nav #menu-modal-wrap {
       text-align: center;
       -webkit-box-pack: end;
@@ -10766,19 +10771,38 @@ h2, .h2 {
       #wrapper-navbar nav #menu-modal-wrap #main-menu {
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #wrapper-navbar nav #menu-modal-wrap #main-menu li a {
-          font-size: 18px; }
+        #wrapper-navbar nav #menu-modal-wrap #main-menu li {
+          margin-left: 14px;
+          margin-right: 14px; }
+          #wrapper-navbar nav #menu-modal-wrap #main-menu li a {
+            font-size: 18px; }
+        #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile {
+          display: none; }
   .white-bg-modal {
     background: none !important; }
-  #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a {
+  #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
     border: 2px solid #444;
     color: #444;
     background: none;
-    margin-left: 10px; }
+    margin-left: 6px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem; }
   #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
     background-color: #6c8e6e;
     color: #fff;
-    border-color: transparent; } }
+    border-color: transparent; }
+  #wrapper-navbar #main-menu li.active:after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    bottom: 0;
+    border-top: 2px solid #6c8e6e;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); } }
 
 @media screen and (min-width: 1360px) {
   #home-section-5 img {

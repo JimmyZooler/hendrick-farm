@@ -64,8 +64,8 @@ h2, .h2 {
             padding-bottom: 0;
             transition: 0.4s all;
             z-index: 300;
-            .img-fluid {
-                max-width: 70px;
+            img {
+                width: 80px;
             }
         }
         #menu-modal-wrap {
@@ -87,6 +87,17 @@ h2, .h2 {
                         position: relative;
                     }
                 }
+                .logo-on-mobile {
+                    margin-bottom: 40px;
+                    .nav-link {
+                        text-indent: -999px;
+                        background-image: url("../img/hendrick_art_1.svg");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        height: 140px;
+                        width: 140px;
+                    }
+                }
                 .dropdown-toggle:after {
                     display: none!important;
                 }
@@ -94,6 +105,7 @@ h2, .h2 {
         }
     }
 }
+
 .navbar-toggler {
     align-self: flex-end;
     border: none;
@@ -179,6 +191,8 @@ h2, .h2 {
     border-radius: 0!important;
     border: none!important;
     margin-top: 0!important;
+    background-color: rgba(255, 255, 255, 0.95);
+    top: 54px;
     .menu-item {
         a.nav-link {
             font-size: 14px!important;
@@ -189,9 +203,6 @@ h2, .h2 {
     color: #6c8e6e!important;
     background: transparent!important;
 }
-.dropdown-menu .menu-item:last-child a {
-    border: none!important;
-}
 
 #wrapper-navbar #main-menu .dropdown-menu li.active {
     position: relative;
@@ -199,7 +210,10 @@ h2, .h2 {
 #wrapper-navbar #main-menu li.active .dropdown-toggle {
     color: #6c8e6e!important;
 }
-.active-border:after {
+.active-border {
+    margin-bottom: 10px;
+}
+.active-border:before {
     content: '';
     width: 100%;
     height: 1px;
@@ -211,8 +225,9 @@ h2, .h2 {
     left: 50%;
     transform: translateX(-50%);
 }
-.dropdown-toggle.active-border {
-    border-bottom: 2px solid #6c8e6e!important;
+
+.logo-on-mobile .nav-link:before {
+    border: none;
 }
 
 /****************************************
@@ -618,8 +633,8 @@ h2, .h2 {
             padding: 0 1.5rem;
             .navbar-brand {
                 padding-top: 0.5rem;
-                .img-fluid {
-                    max-width: 100px;
+                img {
+                    width: 100px;
                 }
             }
             button {
@@ -708,6 +723,13 @@ h2, .h2 {
     #wrapper-navbar {
         position: relative;
         background: rgba(255, 255, 255, 0.95);
+        nav {
+            .navbar-brand {
+                 img {
+                    width: 110px;
+                }
+            }
+        }
     }
 
     .navbar-toggleable-md .navbar-nav .nav-link {
@@ -724,19 +746,6 @@ h2, .h2 {
         }
     }
     
-    #wrapper-navbar #main-menu li.active:after {
-        content: '';
-        width: 40px;
-        height: 1px;
-        bottom: 0;
-        border-top: 2px solid #6c8e6e;
-        display: block;
-        position: absolute;
-        margin: auto;
-        left: 50%;
-    //    margin-top: 9px;
-        transform: translateX(-50%);
-    }
     .hero-section {
         height: calc(100vh - 68px);
     }
@@ -802,13 +811,19 @@ h2, .h2 {
     #footer-subscribe-button {
         margin-top: 2rem!important;
     }    
+    .page-template-template-lifestyle #wrapper-navbar nav button .line {
+        background: #fff;
+    }
+    .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line {
+        background: #000;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     #wrapper-navbar {
         #menu-modal-wrap {
             padding-bottom: 68px;
-            overflow: scroll;
+            overflow-y: scroll;
             position: fixed;
             width: 320px;
             height: 100vh;
@@ -836,7 +851,8 @@ h2, .h2 {
                             a {
                                 margin-left: 15px;
                                 padding: 0;
-
+                                margin-top: 3px;
+                                margin-bottom: 3px;
                             }
                         }
                     }
@@ -866,9 +882,6 @@ h2, .h2 {
             padding: 0 1.5rem;
             .navbar-brand {
                 left: 25px;
-                .img-fluid {
-                    max-width: 120px;
-                }
             }
             #menu-modal-wrap {
                 text-align: center;
@@ -877,9 +890,14 @@ h2, .h2 {
                 #main-menu {
                     transition: all 0.5s;
                     li {
+                        margin-left: 14px;
+                        margin-right: 14px;
                         a {
                             font-size: 18px;
                         }
+                    }
+                    .logo-on-mobile {
+                        display: none;
                     }
                 }
             }
@@ -888,16 +906,33 @@ h2, .h2 {
     .white-bg-modal {
         background: none!important;
     }
-    #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a {
+    
+    #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
         border: 2px solid #444;
         color: #444;
         background: none;
-        margin-left: 10px;
+        margin-left: 6px;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
     }
     #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
         background-color: #6c8e6e;
         color: #fff;
         border-color: transparent;
+    }
+    
+    #wrapper-navbar #main-menu li.active:after {
+        content: '';
+        width: 40px;
+        height: 1px;
+        bottom: 0;
+        border-top: 2px solid #6c8e6e;
+        display: block;
+        position: absolute;
+        margin: auto;
+        left: 50%;
+    //    margin-top: 9px;
+        transform: translateX(-50%);
     }
 }
 @media screen and (min-width: 1360px) {

@@ -58,7 +58,7 @@
     // Script for adding border to dropdown menu item 
     
     $document.ready(function() {
-        if ($window.width() < 992 ) {
+        if ($window.width() < 1200 ) {
             $('.active .nav-link').first().addClass('active-border');
         }
       
