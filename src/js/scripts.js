@@ -8,7 +8,8 @@
     var $navbar = $('#wrapper-navbar'),
         $document = $(document),
         $window = $(window),
-        $body = $("body");
+        $body = $("body"),
+        $overlay = $('.overlay--for-menu');
     
     $document.scroll(function() {
         if ($window.width() >= 991 ) {
@@ -28,14 +29,30 @@
     });
     $document.ready( function() {
         var menuOpen = function () {
+            $('.navbar-brand').toggleClass('logo-slide-up');
             $navbar.toggleClass('menu-open');
             $body.toggleClass('noscroll');
-            $('.overlay--for-menu').toggleClass('hide');
-            $('.overlay--for-menu').toggleClass('zero-opacity');
+            $overlay.toggleClass('hide');
+            $overlay.toggleClass('zero-opacity');
+        }
+        var closeMenu = function() {
+            $('.navbar-brand').removeClass('logo-slide-up');
+            $navbar.removeClass('menu-open');
+            $body.removeClass('noscroll');
+            $overlay.addClass('zero-opacity');
+            $overlay.delay(500).addClass('hide');
         }
         $(".navbar-toggler").on('click', function() {
             menuOpen();
         } );
+        $overlay.on('click', function(){
+            closeMenu();
+        });
+        $window.resize(function() {
+            if ($navbar.hasClass('menu-open') && $window.width() > 1199) {
+                closeMenu();
+            }
+        });
     });
     
     // Script for adding border to dropdown menu item 
@@ -49,17 +66,17 @@
     
     // Detecting iPad script
     
-    $document.ready(function() {
-        function isiPad(){
-            return (navigator.platform.indexOf("iPad") != -1);
-        }
-        
-        if ( Modernizr.touch ) {
-            alert('Touch Screen');
-        } else { 
-          alert('No Touch Screen');
-        }
-    });
+//    $document.ready(function() {
+//        function isiPad(){
+//            return (navigator.platform.indexOf("iPad") != -1);
+//        }
+//        
+//        if ( Modernizr.touch ) {
+//            alert('Touch Screen');
+//        } else { 
+//          alert('No Touch Screen');
+//        }
+//    });
     
     $document.ready( function() {
         var $indicatorOne = $('#indicator-1'),

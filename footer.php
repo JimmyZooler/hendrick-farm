@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <li>Farm</li>
                         <li>Hendrick Foundation</li>
                         <li>Parks &amp; Trails</li>
-                        <li>Adaptive Urbanism</li>
+                        <li>Adaptive Development</li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-2 column">
