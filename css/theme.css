@@ -10453,22 +10453,27 @@ h2, .h2 {
       top: 0;
       left: 0;
       z-index: 2; }
-    .life-section .hero-content div img, .list-section .hero-content div img {
-      max-width: 55px;
-      padding-left: 0;
-      margin-left: 0;
-      margin-top: -25px; }
+    .life-section .hero-content div, .list-section .hero-content div {
+      padding-left: 30px; }
+      .life-section .hero-content div img, .list-section .hero-content div img {
+        max-width: 55px;
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: -25px; }
 
 .list-section .hero-content {
   text-align: left; }
 
 #life-section-1 .sect-background {
-  background-position-x: 55%; }
+  background-position-x: 55%;
+  background-position-y: top; }
 
 #life-section-2 {
   padding-bottom: calc(10vh); }
   #life-section-2 .sect-background {
     background-position-x: 65%; }
+  #life-section-2 .hero-content h2 {
+    margin: 0 30px; }
 
 #life-section-3 {
   padding-bottom: calc(5vh); }
@@ -10498,25 +10503,65 @@ h2, .h2 {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: calc(25vh); }
+  #list-section-2 .hero-content h2 {
+    color: #000; }
 
 #list-section-3 {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: calc(15vh); }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: calc(15vh); }
+  #list-section-3 .hero-content h2 {
+    color: #000; }
 
 #list-section-4 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: calc(12vh); }
+  #list-section-4 .sect-background {
+    background-position-x: left; }
+  #list-section-4 .hero-content h2 {
+    color: #000; }
 
 .life-section.hover .sect-background, .list-section.hover .sect-background, .hero-section.hover .sect-background {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05); }
 
 .life-section .hero-content:hover div img, .list-section .hero-content:hover div img {
-  margin-left: 50px !important; }
+  margin-left: 30px !important; }
+
+/****************************************
+*  Page Styles
+****************************************/
+.page-header {
+  height: calc(80vw);
+  min-height: 350px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-header .heading-wrap {
+    width: 100%; }
+    .page-header .heading-wrap .page-title {
+      font-size: 2.5rem;
+      text-transform: uppercase; }
+
+.get-in-touch {
+  background: #6c8e6e;
+  color: #fff; }
+
+.tile {
+  padding: 20px 40px 0; }
+  .tile h2, .tile p {
+    margin-bottom: 2rem; }
+  .tile h2 {
+    font-size: 1.7rem; }
+  .tile p {
+    font-size: 1.1rem; }
 
 /****************************************
 *  Footer Styles

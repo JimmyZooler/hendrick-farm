@@ -25,7 +25,7 @@ get_header(); ?>
     <div class="hero-content animated">
         <h2><?php the_field('list_title_2'); ?></h2>
         <div>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
         </div>
         <a class="life-link" href="#"></a>
     </div>
@@ -35,7 +35,7 @@ get_header(); ?>
     <div class="hero-content animated">
         <h2><?php the_field('list_title_3'); ?></h2>
         <div>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
         </div>
         <a class="life-link" href="#"></a>
     </div>
@@ -45,7 +45,7 @@ get_header(); ?>
     <div class="hero-content animated">
         <h2><?php the_field('list_title_4'); ?></h2>
        <div>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
         </div>
         <a class="life-link" href="#"></a>
     </div>
