@@ -10152,6 +10152,9 @@ h2, .h2 {
 #wrapper-navbar nav #menu-modal-wrap #main-menu li a:hover {
   color: #6c8e6e; }
 
+#wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire::after {
+  display: none; }
+
 #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
   background-color: #6c8e6e;
   color: #fff;
@@ -10537,31 +10540,111 @@ h2, .h2 {
 .page-header {
   height: calc(80vw);
   min-height: 350px;
+  max-height: 650px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-size: cover;
+  background-position: center; }
   .page-header .heading-wrap {
     width: 100%; }
     .page-header .heading-wrap .page-title {
       font-size: 2.5rem;
       text-transform: uppercase; }
-
-.get-in-touch {
-  background: #6c8e6e;
-  color: #fff; }
+    .page-header .heading-wrap .page-subtitle {
+      font-style: italic; }
 
 .tile {
-  padding: 20px 40px 0; }
+  padding: 40px 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .tile h2, .tile p {
     margin-bottom: 2rem; }
   .tile h2 {
     font-size: 1.7rem; }
   .tile p {
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    font-weight: 200; }
+
+.get-in-touch {
+  background: #6c8e6e;
+  color: #fff;
+  padding-bottom: 10px; }
+
+.wpcf7 p {
+  text-align: right; }
+  .wpcf7 p label {
+    margin-bottom: 0; }
+    .wpcf7 p label .wpcf7-form-control-wrap input, .wpcf7 p label .wpcf7-form-control-wrap textarea {
+      text-align: right;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0px; }
+    .wpcf7 p label .wpcf7-form-control-wrap textarea {
+      height: 38px; }
+  .wpcf7 p input[type=submit] {
+    width: 120px !important;
+    padding: 0.8rem 1rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    color: #333; }
+  .wpcf7 p .ajax-loader {
+    float: left; }
+
+.wpcf7 input[type=submit]:hover {
+  color: #fff;
+  background-color: #6c8e6e;
+  border-color: #6c8e6e; }
+
+.wpcf7 .wpcf7-form-control-wrap input::-webkit-input-placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 300; }
+
+.wpcf7 .wpcf7-form-control-wrap input:-ms-input-placeholder, .wpcf7 .wpcf7-form-control-wrap textarea:-ms-input-placeholder {
+  font-style: italic;
+  font-weight: 300; }
+
+.wpcf7 .wpcf7-form-control-wrap input::placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::placeholder {
+  font-style: italic;
+  font-weight: 300; }
+
+#other-details {
+  padding: 40px 30px;
+  background: rgba(161, 164, 167, 0.31); }
+  #other-details h2 {
+    margin-bottom: 1.8rem; }
+  #other-details h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 1rem; }
+
+#google-map {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/google_map_hendrick.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  #google-map a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 /****************************************
 *  Footer Styles
@@ -10689,7 +10772,23 @@ h2, .h2 {
   .life-section .hero-content h2, .list-section .hero-content h2 {
     color: #fff; }
   .life-section .hero-content div img, .list-section .hero-content div img {
-    max-width: 95px; } }
+    max-width: 95px; }
+  .page-header .heading-wrap .page-title {
+    font-size: 4rem; }
+  .get-in-touch .tile-content-wrap h2 {
+    font-size: 2.5rem; }
+  .get-in-touch .tile-content-wrap p {
+    font-size: 1.5rem; }
+  #other-details h2 {
+    font-size: 2.5rem; }
+  #other-details p {
+    font-size: 1.1rem; }
+  .wpcf7 .wpcf7-form-control-wrap input::-webkit-input-placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
+    font-size: 1.2rem; }
+  .wpcf7 .wpcf7-form-control-wrap input:-ms-input-placeholder, .wpcf7 .wpcf7-form-control-wrap textarea:-ms-input-placeholder {
+    font-size: 1.2rem; }
+  .wpcf7 .wpcf7-form-control-wrap input::placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::placeholder {
+    font-size: 1.2rem; } }
 
 @media screen and (max-width: 760px) {
   .hero--pager {
@@ -10749,7 +10848,17 @@ h2, .h2 {
       #life-section-2 .hero-content div img, #life-section-4 .hero-content div img, #list-section-1 .hero-content div img, #list-section-3 .hero-content div img {
         margin-left: 20px; }
   #list-section-1 .sect-background {
-    background-position-y: 70%; } }
+    background-position-y: 70%; }
+  #other-details {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #other-details .content-wrap h2 {
+      font-size: 3rem;
+      margin-bottom: 2.5rem; }
+    #other-details .content-wrap h3 {
+      font-size: 2.2rem; }
+    #other-details .content-wrap p {
+      font-size: 1.4rem; } }
 
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
@@ -10847,7 +10956,9 @@ h2, .h2 {
     margin: auto;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); } }
+            transform: translateX(-50%); }
+  #other-details .content-wrap p {
+    font-size: 1.6rem; } }
 
 @media screen and (min-width: 1360px) {
   #home-section-5 img {
