@@ -195,7 +195,7 @@ h2, .h2 {
     border: none!important;
     margin-top: 0!important;
     background-color: rgba(255, 255, 255, 0.95);
-    top: 54px;
+    top: 44px;
     .menu-item {
         a.nav-link {
             font-size: 14px!important;
@@ -573,6 +573,7 @@ h2, .h2 {
         }
         .page-subtitle {
             font-style: italic;
+            font-family: 'rm_prolight_italic';
         }
     }
 }
@@ -671,6 +672,59 @@ h2, .h2 {
 
 .page-template-template-contact .page-header {
     background-position-y: top;
+}
+
+.dark {
+    .heading-wrap {
+        .page-title, .page-subtitle {
+            color: #fff;
+        }
+        
+    }
+}
+
+.page-block {
+    padding: 30px 20px 0;
+    p {
+        font-size: 18px;
+    }
+    .block-quote {
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 20px;
+    }
+    
+    a {
+        color: #6c8e6e;
+    }
+}
+
+.image-block {
+    background-size: cover;
+    background-position: bottom;
+}
+.image-row {
+    .image-block {
+         height: 50vh;
+    }
+}
+.solo-image {
+    height: 50vh;
+}
+
+#view-community-map {
+    padding: 60px 0;
+    text-align: center;
+    background: rgba(161,164,167,.31);
+    margin-top: 40px;
+    a {
+        padding: 8px 12px;
+        border: 2px solid #000;
+        text-transform: uppercase;
+        color: #000;
+    }
 }
 
 
@@ -881,13 +935,19 @@ h2, .h2 {
         p {
             font-size: 1.1rem;
         }
+        h3 {
+            font-family: 'rm_prolight_italic';
+        }
     }
-    
-    
     .wpcf7 .wpcf7-form-control-wrap input::placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::placeholder {
         font-size: 1.2rem;
     }
     
+    .page-block {
+        p {
+            font-size: 22px;
+        }
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -1003,6 +1063,30 @@ h2, .h2 {
             
         }
     }
+    .page-header {
+        .heading-wrap {
+            .page-subtitle {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .page-block {
+        padding: 40px 40px 0 0;
+        .block-quote {
+            font-size: 32px;
+        }
+    }
+    .page-block-wrapper {
+        padding-left: 40px;
+    }
+    .image-block {
+        background-position: center;
+    }
+    
+    .solo-image {
+        height: 100%;
+    }
     
 }
 
@@ -1016,10 +1100,10 @@ h2, .h2 {
     #footer-subscribe-button {
         margin-top: 2rem!important;
     }    
-    .page-template-template-lifestyle #wrapper-navbar nav button .line {
+    .page-template-template-lifestyle #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar nav button .line {
         background: #fff;
     }
-    .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line {
+    .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line, .page-template-template-village.stickied #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar.menu-open nav button .line {
         background: #000;
     }
 }
@@ -1164,6 +1248,11 @@ h2, .h2 {
                 max-width: 1200px;
             }
         }
+    }
+    
+    .write-up {
+        padding-top: 70px;
+        padding-bottom: 60px;
     }
 }
 

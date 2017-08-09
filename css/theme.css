@@ -10209,7 +10209,7 @@ h2, .h2 {
   border: none !important;
   margin-top: 0 !important;
   background-color: rgba(255, 255, 255, 0.95);
-  top: 54px; }
+  top: 44px; }
   .dropdown-menu .menu-item a.nav-link {
     font-size: 14px !important; }
 
@@ -10556,7 +10556,8 @@ h2, .h2 {
       font-size: 2.5rem;
       text-transform: uppercase; }
     .page-header .heading-wrap .page-subtitle {
-      font-style: italic; }
+      font-style: italic;
+      font-family: 'rm_prolight_italic'; }
 
 .tile {
   padding: 40px 40px 40px;
@@ -10648,6 +10649,43 @@ h2, .h2 {
 
 .page-template-template-contact .page-header {
   background-position-y: top; }
+
+.dark .heading-wrap .page-title, .dark .heading-wrap .page-subtitle {
+  color: #fff; }
+
+.page-block {
+  padding: 30px 20px 0; }
+  .page-block p {
+    font-size: 18px; }
+  .page-block .block-quote {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px; }
+  .page-block a {
+    color: #6c8e6e; }
+
+.image-block {
+  background-size: cover;
+  background-position: bottom; }
+
+.image-row .image-block {
+  height: 50vh; }
+
+.solo-image {
+  height: 50vh; }
+
+#view-community-map {
+  padding: 60px 0;
+  text-align: center;
+  background: rgba(161, 164, 167, 0.31);
+  margin-top: 40px; }
+  #view-community-map a {
+    padding: 8px 12px;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    color: #000; }
 
 /****************************************
 *  Footer Styles
@@ -10786,12 +10824,16 @@ h2, .h2 {
     font-size: 2.5rem; }
   #other-details p {
     font-size: 1.1rem; }
+  #other-details h3 {
+    font-family: 'rm_prolight_italic'; }
   .wpcf7 .wpcf7-form-control-wrap input::-webkit-input-placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::-webkit-input-placeholder {
     font-size: 1.2rem; }
   .wpcf7 .wpcf7-form-control-wrap input:-ms-input-placeholder, .wpcf7 .wpcf7-form-control-wrap textarea:-ms-input-placeholder {
     font-size: 1.2rem; }
   .wpcf7 .wpcf7-form-control-wrap input::placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::placeholder {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .page-block p {
+    font-size: 22px; } }
 
 @media screen and (max-width: 760px) {
   .hero--pager {
@@ -10861,16 +10903,28 @@ h2, .h2 {
     #other-details .content-wrap h3 {
       font-size: 2.2rem; }
     #other-details .content-wrap p {
-      font-size: 1.4rem; } }
+      font-size: 1.4rem; }
+  .page-header .heading-wrap .page-subtitle {
+    font-size: 2rem; }
+  .page-block {
+    padding: 40px 40px 0 0; }
+    .page-block .block-quote {
+      font-size: 32px; }
+  .page-block-wrapper {
+    padding-left: 40px; }
+  .image-block {
+    background-position: center; }
+  .solo-image {
+    height: 100%; } }
 
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
     top: 64px; }
   #footer-subscribe-button {
     margin-top: 2rem !important; }
-  .page-template-template-lifestyle #wrapper-navbar nav button .line {
+  .page-template-template-lifestyle #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar nav button .line {
     background: #fff; }
-  .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line {
+  .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line, .page-template-template-village.stickied #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar.menu-open nav button .line {
     background: #000; } }
 
 @media screen and (max-width: 1200px) {
@@ -10970,7 +11024,10 @@ h2, .h2 {
     font-size: calc(38.4px + (64 - 38.4)*(100vw - 1360px)/(2560-1360)); }
   #home-section-5 .text-column p {
     font-size: calc(17.6px + (38.4 - 17.6)*(100vw - 1360px)/(2560-1360));
-    max-width: 1200px; } }
+    max-width: 1200px; }
+  .write-up {
+    padding-top: 70px;
+    padding-bottom: 60px; } }
 
 @media screen and (max-width: 576px) {
   #hero-section-1, #hero-section-3 {
