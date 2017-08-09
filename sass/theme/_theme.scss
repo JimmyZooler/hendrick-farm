@@ -698,6 +698,7 @@ h2, .h2 {
     
     a {
         color: #6c8e6e;
+        margin-right: 40px;
     }
 }
 
@@ -707,7 +708,7 @@ h2, .h2 {
 }
 .image-row {
     .image-block {
-         height: 50vh;
+         height: 25vh;
     }
 }
 .solo-image {
@@ -828,6 +829,11 @@ h2, .h2 {
             }
         }
     }
+    .image-row {
+        .image-block {
+             height: 80vh;
+        }
+    }
 }
 
 @media screen and (min-width: 760px) {
@@ -946,6 +952,12 @@ h2, .h2 {
     .page-block {
         p {
             font-size: 22px;
+        }
+    }
+    .image-row {
+        .image-block {
+             height: 50vh;
+            max-height: 480px;
         }
     }
 }
