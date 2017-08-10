@@ -720,7 +720,7 @@ h2, .h2 {
     a {
         color: #6c8e6e;
         margin-right: 40px;
-        font-size: 18px;
+        font-size: 18px; 
     }
 }
 
@@ -1142,10 +1142,17 @@ h2, .h2 {
     #footer-subscribe-button {
         margin-top: 2rem!important;
     }    
-    .page-template-template-lifestyle #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar nav button .line {
+    .page-template-template-lifestyle #wrapper-navbar nav button .line,
+    .page-template-template-village #wrapper-navbar nav button .line,
+    .page-template-template-parks #wrapper-navbar nav button .line {
         background: #fff;
     }
-    .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line, .page-template-template-village.stickied #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar.menu-open nav button .line {
+    .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line,
+    .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line,
+    .page-template-template-village.stickied #wrapper-navbar nav button .line, 
+    .page-template-template-village #wrapper-navbar.menu-open nav button .line, 
+    .page-template-template-parks.stickied #wrapper-navbar nav button .line, 
+    .page-template-template-parks #wrapper-navbar.menu-open nav button .line {
         background: #000;
     }
 }

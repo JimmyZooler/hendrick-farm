@@ -10956,9 +10956,16 @@ h2, .h2 {
     top: 64px; }
   #footer-subscribe-button {
     margin-top: 2rem !important; }
-  .page-template-template-lifestyle #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar nav button .line {
+  .page-template-template-lifestyle #wrapper-navbar nav button .line,
+  .page-template-template-village #wrapper-navbar nav button .line,
+  .page-template-template-parks #wrapper-navbar nav button .line {
     background: #fff; }
-  .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line, .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line, .page-template-template-village.stickied #wrapper-navbar nav button .line, .page-template-template-village #wrapper-navbar.menu-open nav button .line {
+  .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line,
+  .page-template-template-lifestyle #wrapper-navbar.menu-open nav button .line,
+  .page-template-template-village.stickied #wrapper-navbar nav button .line,
+  .page-template-template-village #wrapper-navbar.menu-open nav button .line,
+  .page-template-template-parks.stickied #wrapper-navbar nav button .line,
+  .page-template-template-parks #wrapper-navbar.menu-open nav button .line {
     background: #000; } }
 
 @media screen and (max-width: 1200px) {
