@@ -29,6 +29,23 @@ h2, .h2 {
 .zero-opacity {
     opacity: 0;
 }
+
+.button {
+    border: 2px solid #333;
+    color: #333!important;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+    display: inline-block;
+}
+.button:hover {
+    color: #fff!important;
+    background-color: #6c8e6e;
+    border-color: #6c8e6e;
+    text-decoration: none;
+}
+
 /****************************************
 *  Navbar Styles  
 ****************************************/
@@ -85,6 +102,7 @@ h2, .h2 {
                         padding-bottom: 5px;
                         transition: all 0.3s;
                         position: relative;
+                        height: 100%;
                     }
                 }
                 .logo-on-mobile {
@@ -140,6 +158,7 @@ h2, .h2 {
     background-color: #6c8e6e;
     color: #fff;
     border: 2px transparent;
+    height: auto;
 }
 #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a:hover {
     background-color: #add8ac;
@@ -195,7 +214,7 @@ h2, .h2 {
     border: none!important;
     margin-top: 0!important;
     background-color: rgba(255, 255, 255, 0.95);
-    top: 44px;
+    top: 42px;
     .menu-item {
         a.nav-link {
             font-size: 14px!important;
@@ -623,6 +642,7 @@ h2, .h2 {
             text-transform: uppercase;
             border: 2px solid #000;
             color: #333;
+            border-radius: 0;
         }
         .ajax-loader {
             float: left;
@@ -685,8 +705,9 @@ h2, .h2 {
 
 .page-block {
     padding: 30px 20px 0;
-    p {
+    p  {
         font-size: 18px;
+        display: block;
     }
     .block-quote {
         text-align: center;
@@ -699,6 +720,7 @@ h2, .h2 {
     a {
         color: #6c8e6e;
         margin-right: 40px;
+        font-size: 18px;
     }
 }
 
@@ -720,12 +742,19 @@ h2, .h2 {
     text-align: center;
     background: rgba(161,164,167,.31);
     margin-top: 40px;
-    a {
-        padding: 8px 12px;
-        border: 2px solid #000;
-        text-transform: uppercase;
-        color: #000;
-    }
+}
+
+.para-section {
+    margin: 1rem 0 2rem;
+}
+
+.button-section {
+    margin: 3rem 0;
+}
+
+.link-section {
+    margin: 3rem 0;
+    clear: both;
 }
 
 
@@ -915,6 +944,7 @@ h2, .h2 {
     }
     
     .page-header {
+        height: 60vh;
         .heading-wrap {
             .page-title {
                 font-size: 4rem;
@@ -950,7 +980,7 @@ h2, .h2 {
     }
     
     .page-block {
-        p {
+        p, a {
             font-size: 22px;
         }
     }
@@ -1232,8 +1262,20 @@ h2, .h2 {
         position: absolute;
         margin: auto;
         left: 50%;
-    //    margin-top: 9px;
         transform: translateX(-50%);
+    }
+    
+    #wrapper-navbar #main-menu .dropdown-menu li.active:after {
+        content: '';
+        width: 60%;
+        height: 1px;
+        bottom: 5px;
+        border-top: 2px solid #6c8e6e;
+        display: block;
+        position: absolute;
+        margin: auto;
+        left: 10%;
+        transform: none;
     }
     
     #other-details {

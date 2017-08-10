@@ -129,7 +129,7 @@ get_header();
     
     <div id="view-community-map">
     
-        <a href="#" id="community-map-button">View Community Map</a>
+        <a href="#" class="button" id="community-map-button">View Community Map</a>
     
     </div>
     

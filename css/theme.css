@@ -10041,6 +10041,22 @@ h2, .h2 {
 .zero-opacity {
   opacity: 0; }
 
+.button {
+  border: 2px solid #333;
+  color: #333 !important;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: inline-block; }
+
+.button:hover {
+  color: #fff !important;
+  background-color: #6c8e6e;
+  border-color: #6c8e6e;
+  text-decoration: none; }
+
 /****************************************
 *  Navbar Styles  
 ****************************************/
@@ -10098,7 +10114,8 @@ h2, .h2 {
           padding-bottom: 5px;
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
-          position: relative; }
+          position: relative;
+          height: 100%; }
         #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile {
           margin-bottom: 40px; }
           #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile .nav-link {
@@ -10158,7 +10175,8 @@ h2, .h2 {
 #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
   background-color: #6c8e6e;
   color: #fff;
-  border: 2px transparent; }
+  border: 2px transparent;
+  height: auto; }
 
 #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a:hover {
   background-color: #add8ac;
@@ -10209,7 +10227,7 @@ h2, .h2 {
   border: none !important;
   margin-top: 0 !important;
   background-color: rgba(255, 255, 255, 0.95);
-  top: 44px; }
+  top: 42px; }
   .dropdown-menu .menu-item a.nav-link {
     font-size: 14px !important; }
 
@@ -10601,7 +10619,8 @@ h2, .h2 {
     font-weight: bold;
     text-transform: uppercase;
     border: 2px solid #000;
-    color: #333; }
+    color: #333;
+    border-radius: 0; }
   .wpcf7 p .ajax-loader {
     float: left; }
 
@@ -10656,7 +10675,8 @@ h2, .h2 {
 .page-block {
   padding: 30px 20px 0; }
   .page-block p {
-    font-size: 18px; }
+    font-size: 18px;
+    display: block; }
   .page-block .block-quote {
     text-align: center;
     font-size: 23px;
@@ -10665,7 +10685,8 @@ h2, .h2 {
     margin-top: 20px; }
   .page-block a {
     color: #6c8e6e;
-    margin-right: 40px; }
+    margin-right: 40px;
+    font-size: 18px; }
 
 .image-block {
   background-size: cover;
@@ -10682,11 +10703,16 @@ h2, .h2 {
   text-align: center;
   background: rgba(161, 164, 167, 0.31);
   margin-top: 40px; }
-  #view-community-map a {
-    padding: 8px 12px;
-    border: 2px solid #000;
-    text-transform: uppercase;
-    color: #000; }
+
+.para-section {
+  margin: 1rem 0 2rem; }
+
+.button-section {
+  margin: 3rem 0; }
+
+.link-section {
+  margin: 3rem 0;
+  clear: both; }
 
 /****************************************
 *  Footer Styles
@@ -10817,8 +10843,10 @@ h2, .h2 {
     color: #fff; }
   .life-section .hero-content div img, .list-section .hero-content div img {
     max-width: 95px; }
-  .page-header .heading-wrap .page-title {
-    font-size: 4rem; }
+  .page-header {
+    height: 60vh; }
+    .page-header .heading-wrap .page-title {
+      font-size: 4rem; }
   .get-in-touch .tile-content-wrap h2 {
     font-size: 2.5rem; }
   .get-in-touch .tile-content-wrap p {
@@ -10835,7 +10863,7 @@ h2, .h2 {
     font-size: 1.2rem; }
   .wpcf7 .wpcf7-form-control-wrap input::placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::placeholder {
     font-size: 1.2rem; }
-  .page-block p {
+  .page-block p, .page-block a {
     font-size: 22px; }
   .image-row .image-block {
     height: 50vh;
@@ -11020,6 +11048,18 @@ h2, .h2 {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+  #wrapper-navbar #main-menu .dropdown-menu li.active:after {
+    content: '';
+    width: 60%;
+    height: 1px;
+    bottom: 5px;
+    border-top: 2px solid #6c8e6e;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 10%;
+    -webkit-transform: none;
+            transform: none; }
   #other-details .content-wrap p {
     font-size: 1.6rem; } }
 
