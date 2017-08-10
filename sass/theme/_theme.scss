@@ -1144,7 +1144,8 @@ h2, .h2 {
     }    
     .page-template-template-lifestyle #wrapper-navbar nav button .line,
     .page-template-template-village #wrapper-navbar nav button .line,
-    .page-template-template-parks #wrapper-navbar nav button .line {
+    .page-template-template-parks #wrapper-navbar nav button .line,
+    .page-template-template-farm #wrapper-navbar nav button .line {
         background: #fff;
     }
     .page-template-template-lifestyle.stickied #wrapper-navbar nav button .line,
@@ -1152,7 +1153,9 @@ h2, .h2 {
     .page-template-template-village.stickied #wrapper-navbar nav button .line, 
     .page-template-template-village #wrapper-navbar.menu-open nav button .line, 
     .page-template-template-parks.stickied #wrapper-navbar nav button .line, 
-    .page-template-template-parks #wrapper-navbar.menu-open nav button .line {
+    .page-template-template-parks #wrapper-navbar.menu-open nav button .line, 
+    .page-template-template-farm.stickied #wrapper-navbar nav button .line, 
+    .page-template-template-farm #wrapper-navbar.menu-open nav button .line {
         background: #000;
     }
 }
