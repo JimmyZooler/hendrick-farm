@@ -10683,10 +10683,20 @@ h2, .h2 {
     font-weight: bold;
     font-style: italic;
     margin-top: 20px; }
-  .page-block a {
+  .page-block a.green-link {
     color: #6c8e6e;
     margin-right: 40px;
     font-size: 18px; }
+  .page-block .homes-quote {
+    font-family: 'rm_prolight_italic';
+    font-size: 22px;
+    text-align: center; }
+  .page-block .homes-image-block {
+    height: 90vw;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .page-block a.button {
+    margin-right: 0; }
 
 .image-block {
   background-size: cover;
@@ -10698,11 +10708,17 @@ h2, .h2 {
 .solo-image {
   height: 50vh; }
 
-#view-community-map {
+.button-bar {
   padding: 60px 0;
   text-align: center;
   background: rgba(161, 164, 167, 0.31);
   margin-top: 40px; }
+  .button-bar a {
+    margin-right: 0; }
+  .button-bar h3 {
+    font-family: 'rm_prolight_italic';
+    margin-bottom: 2rem;
+    font-size: 2rem; }
 
 .para-section {
   margin: 1rem 0 2rem; }
@@ -10713,6 +10729,18 @@ h2, .h2 {
 .link-section {
   margin: 3rem 0;
   clear: both; }
+
+.square-footage, .price {
+  font-family: 'rm_prolight_italic'; }
+
+.rooms {
+  font-family: 'rm_probold'; }
+
+.floorplans {
+  margin-bottom: 1rem; }
+
+.homes-description {
+  margin-top: 30px; }
 
 /****************************************
 *  Footer Styles
@@ -10863,11 +10891,26 @@ h2, .h2 {
     font-size: 1.2rem; }
   .wpcf7 .wpcf7-form-control-wrap input::placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::placeholder {
     font-size: 1.2rem; }
-  .page-block p, .page-block a {
+  .page-block p, .page-block a.green-link {
     font-size: 22px; }
+  .page-block p.homes-quote {
+    font-size: 32px;
+    margin-bottom: 2rem; }
+  .page-block .homes-title {
+    font-size: 2.5rem; }
+  .page-block .square-footage, .page-block .price {
+    font-size: 2rem; }
+  .page-block .rooms {
+    font-size: 1.6rem; }
+  .page-block .price {
+    margin: 1rem 0 2rem; }
+  .page-block .homes-image-block {
+    height: 60vw; }
   .image-row .image-block {
     height: 50vh;
-    max-height: 480px; } }
+    max-height: 480px; }
+  .button-bar h3 {
+    font-size: 2.5rem; } }
 
 @media screen and (max-width: 760px) {
   .hero--pager {
@@ -10944,6 +10987,8 @@ h2, .h2 {
     padding: 40px 40px 0 0; }
     .page-block .block-quote {
       font-size: 32px; }
+    .page-block .homes-image-block {
+      height: 40vw; }
   .page-block-wrapper {
     padding-left: 40px; }
   .image-block {
@@ -11071,7 +11116,27 @@ h2, .h2 {
     -webkit-transform: none;
             transform: none; }
   #other-details .content-wrap p {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .page-block p, .page-block a.green-link {
+    font-size: 28px; }
+  .page-block .homes-title {
+    font-size: 3rem; }
+  .page-block p.homes-quote {
+    font-size: 42px; }
+  .page-block .rooms-wrap {
+    margin: 3rem 0; }
+    .page-block .rooms-wrap .rooms {
+      font-size: 1.9rem; }
+  .page-block .square-footage, .page-block .price {
+    font-size: 2.2rem; }
+  .page-block .price {
+    margin-bottom: 4rem; }
+  .page-block .floorplans {
+    margin-bottom: 1.5rem; }
+  .button {
+    font-size: 2rem; }
+  .button-bar h3 {
+    font-size: 3rem; } }
 
 @media screen and (min-width: 1360px) {
   #home-section-5 img {
