@@ -81,7 +81,7 @@ get_header();
 
                 <p class="block-quote"><?php the_field('right_column_quote'); ?></p>
                 
-                <p class="text-right"><a href="#">Learn about our community planning ></a></p>
+                <p class="text-right"><a href="#" class="green-link">Learn about our community planning ></a></p>
 
             </div>
 
@@ -127,7 +127,7 @@ get_header();
     
     </div>
     
-    <div id="view-community-map" class="page-block">
+    <div class="button-bar">
     
         <a href="#" class="button" id="community-map-button">View Community Map</a>
     

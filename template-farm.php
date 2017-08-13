@@ -41,7 +41,7 @@ get_header();
 
                 <p class="block-quote"><?php the_field('first_quote'); ?></p>
                 
-                <p class="text-right"><a href="#"><?php the_field('first_link_text'); ?></a></p>
+                <p class="text-right"><a href="#" class="green-link"><?php the_field('first_link_text'); ?></a></p>
 
             </div>
 
@@ -77,7 +77,7 @@ get_header();
                 
                 <div class="para-section"><?php the_field('third_paragraph'); ?></div>
 
-                <div class="link-section"><a href="#"><?php the_field('second_link_text'); ?></a></div>
+                <div class="link-section"><a href="#" class="green-link"><?php the_field('second_link_text'); ?></a></div>
                 
                 <div class="para-section"><?php the_field('fourth_paragraph'); ?></div>
                 

@@ -74,7 +74,7 @@ get_header();
                 
                 <div class="para-section"><?php the_field('second_paragraph'); ?></div>
 
-                <div class="link-section text-right"><a href="#"><?php the_field('first_link_text'); ?></a></div>
+                <div class="link-section text-right"><a href="#" class="green-link"><?php the_field('first_link_text'); ?></a></div>
 
             </div>
 
@@ -99,7 +99,7 @@ get_header();
         
     </div>
     
-    <div id="view-community-map" class="page-block">
+    <div class="button-bar">
     
         <a href="#" class="button" id="community-map-button">View Community Map</a>
     

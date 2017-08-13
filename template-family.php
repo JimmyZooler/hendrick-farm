@@ -43,7 +43,7 @@ get_header();
         
         </div>
         
-        <div class="row page-block-wrapper">
+        <div class="row page-block-wrapper house-block">
             
             <div class="hidden-md-down col-lg-4 page-block">
 
@@ -118,7 +118,7 @@ get_header();
         
         </div> <!-- Lindenlea block -->
         
-        <div class="row page-block-wrapper"> <!-- Kingsmere block -->
+        <div class="row page-block-wrapper house-block"> <!-- Kingsmere block -->
             
                 
             <div class="col-lg-8 page-block">
@@ -170,7 +170,7 @@ get_header();
         
         </div>
     
-        <div class="row page-block-wrapper"> <!-- Blackburn block -->
+        <div class="row page-block-wrapper house-block"> <!-- Blackburn block -->
 
                 <div class="hidden-md-down col-lg-4 page-block">
 
@@ -245,7 +245,7 @@ get_header();
 
             </div>  <!-- Blackburn block -->
     
-        <div class="row page-block-wrapper"> <!-- Sawmill block -->
+        <div class="row page-block-wrapper house-block"> <!-- Sawmill block -->
                 
             <div class="col-lg-8 page-block">
 
@@ -306,13 +306,17 @@ get_header();
     
     </div>
     
-    <div class="container-fluid" id="more-details">
+    <div class="container-fluid hidden-md-down" id="more-details">
 
         <div class="row page-block-wrapper">
         
             <div class="page-block">
                 
-                <h2>More Details</h2>
+                <div class="col-12">
+                
+                    <h2>More Details</h2>
+                
+                </div>
             
                 <div class="col-lg-8">
                 

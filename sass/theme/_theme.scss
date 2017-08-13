@@ -795,6 +795,11 @@ h2, .h2 {
     margin-top: 30px;
 }
 
+#more-details {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 /****************************************
 *  Footer Styles
 ****************************************/
@@ -1194,6 +1199,9 @@ h2, .h2 {
         height: 100%;
     }
     
+    .house-block {
+        margin-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -1392,11 +1400,10 @@ h2, .h2 {
         font-size: 2rem;
     }
     
-    .button-bar {
-        h3 {
-            font-size: 3rem;
-        }
+    .button-bar h3, #more-details h2 {
+        font-size: 3rem;
     }
+    
     
 }
 @media screen and (min-width: 1360px) {

@@ -10742,6 +10742,10 @@ h2, .h2 {
 .homes-description {
   margin-top: 30px; }
 
+#more-details {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 /****************************************
 *  Footer Styles
 ****************************************/
@@ -10994,7 +10998,9 @@ h2, .h2 {
   .image-block {
     background-position: center; }
   .solo-image {
-    height: 100%; } }
+    height: 100%; }
+  .house-block {
+    margin-bottom: 3rem; } }
 
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
@@ -11135,7 +11141,7 @@ h2, .h2 {
     margin-bottom: 1.5rem; }
   .button {
     font-size: 2rem; }
-  .button-bar h3 {
+  .button-bar h3, #more-details h2 {
     font-size: 3rem; } }
 
 @media screen and (min-width: 1360px) {
