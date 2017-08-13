@@ -341,6 +341,29 @@ get_header();
         </div>
     </div>
     
+    <div class="container-fluid hidden-md-down" id="homes-video">
+
+        <div class="row page-block-wrapper">
+        
+            <div class="page-block col-lg-4">
+                    
+                <h2>Homes &amp; Architecture</h2>
+                
+            </div>
+            
+            <div class="col-lg-8 page-block" id="video-block">
+
+                <div class="video-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XjEv791GJlo" frameborder="0" allowfullscreen></iframe></div>
+
+                <a href="#" class="green-link text-right">Looking for more? View gallery ></a>
+
+            </div>            
+            
+        
+        </div>
+        
+    </div>
+    
     
 
 </div><!-- Wrapper end -->

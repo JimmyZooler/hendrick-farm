@@ -733,6 +733,7 @@ h2, .h2 {
     .homes-image-block {
         height: 90vw;
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }
     a.button {
@@ -796,8 +797,20 @@ h2, .h2 {
 }
 
 #more-details {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
+}
+
+#homes-video {
+    padding-bottom: 1.5rem;
+    background: rgba(161,164,167,.31);
+    #video-block {
+        text-align: right;
+        .video-wrap {
+            margin-bottom: 1.5rem;
+            height: 30vw;
+        }
+    }
 }
 
 /****************************************
@@ -1400,11 +1413,20 @@ h2, .h2 {
         font-size: 2rem;
     }
     
-    .button-bar h3, #more-details h2 {
+    .button-bar h3, #more-details h2, #homes-video h2 {
         font-size: 3rem;
     }
     
-    
+    #homes-video {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        #video-block {
+            .video-wrap {
+                margin-bottom: 2rem;
+                height: 30vw;
+            }
+        }
+    }
 }
 @media screen and (min-width: 1360px) {
     #home-section-5 {
