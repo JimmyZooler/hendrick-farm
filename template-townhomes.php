@@ -132,33 +132,39 @@ get_header();
 
         <div class="row page-block-wrapper">
         
-            <div class="page-block">
-                
-                <div class="col-12">
+               
+                <div class="col-12 page-block">
                 
                     <h2>More Details</h2>
                 
                 </div>
             
-                <div class="col-lg-8">
+                <div class="col-lg-8 page-block">
                 
                     <p><?php the_field('content_block_1'); ?></p>
                 
                 </div>            
-                <div class="col-lg-4 image-block" style="background-image: url('<?php the_field('more_details_image_1') ?>'); ">
+                <div class="col-lg-4" style="overflow: hidden;">
+                    
+                    <div class="image-block" style="background-image: url('<?php the_field('more_details_image_1') ?>'); ">
                 
+                    </div>
+                    
                 </div>
                 
-                <div class="col-lg-8">
+                <div class="col-lg-8 page-block">
                 
                     <p><?php the_field('content_block_2'); ?></p>
                 
                 </div>            
-                <div class="col-lg-4 image-block" style="background-image: url('<?php the_field('more_details_image_2') ?>'); ">
+                <div class="col-lg-4" style="overflow: hidden;">
                 
+                    <div class="image-block" style="background-image: url('<?php the_field('more_details_image_2') ?>'); ">
+                
+                    </div>
+                    
                 </div>
             
-            </div>
         
         </div>
     </div>
