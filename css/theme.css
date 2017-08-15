@@ -10686,7 +10686,8 @@ h2, .h2 {
   .page-block a.green-link {
     color: #6c8e6e;
     margin-right: 40px;
-    font-size: 18px; }
+    font-size: 18px;
+    display: inline-block; }
   .page-block .homes-quote {
     font-family: 'rm_prolight_italic';
     font-size: 22px;
@@ -10742,6 +10743,8 @@ h2, .h2 {
 
 .homes-description {
   margin-top: 30px; }
+  .homes-description .green-link {
+    margin-top: 30px; }
 
 #more-details {
   padding-top: 1rem;
@@ -10755,6 +10758,9 @@ h2, .h2 {
     #homes-video #video-block .video-wrap {
       margin-bottom: 1.5rem;
       height: 30vw; }
+
+#subscribe-bar h4 {
+  font-family: 'rm_prolight_italic'; }
 
 /****************************************
 *  Footer Styles
