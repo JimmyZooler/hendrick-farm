@@ -65,7 +65,7 @@ get_header();
                 
                 </div>
 
-                <a href="#" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button">Inquire</a>
 
             </div>
             
@@ -104,7 +104,7 @@ get_header();
                 
                 </div>
 
-                <a href="#" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button">Inquire</a>
                 
                 <div class="hidden-lg-up homes-description">
                     
@@ -156,7 +156,7 @@ get_header();
                 
                 </div>
 
-                <a href="#" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button">Inquire</a>
                 
                 <div class="hidden-lg-up homes-description">
                     
@@ -192,7 +192,7 @@ get_header();
 
                     </div>
 
-                    <a href="#" class="button">Inquire</a>
+                    <a href="mailto:sales@hendrickfarm.ca?subject=Blackburn&nbsp;Inquiry" class="button">Inquire</a>
 
                 </div>
 
@@ -231,7 +231,7 @@ get_header();
 
                     </div>
 
-                    <a href="#" class="button">Inquire</a>
+                    <a href="mailto:sales@hendrickfarm.ca?subject=Blackburn&nbsp;Inquiry" class="button">Inquire</a>
 
                     <div class="hidden-lg-up homes-description">
 
@@ -282,7 +282,7 @@ get_header();
                 
                 </div>
 
-                <a href="#" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Sawmill&nbsp;Inquiry" class="button">Inquire</a>
                 
                 <div class="hidden-lg-up homes-description">
                     
