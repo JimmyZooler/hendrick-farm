@@ -44,8 +44,11 @@ get_header(); ?>
     <div class="sect-background" style="background-image: url('<?php the_field('hero_image_4') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('hero_4_title'); ?></h2>
-        <div>
+        <div class="hidden-xs-down">
         <?php the_field('hero_4_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
+        </div>
+        <div class="hidden-sm-up">
+        <?php the_field('hero_4_link_text'); ?><br><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
         <a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/" class="hero-link"></a>
     </div>

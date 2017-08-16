@@ -381,10 +381,11 @@ h2, .h2 {
     .sect-background {
         background-position: top;
     }
-    .hero-content {
+    .hero-content { 
         h2 {
             color: #fff;
-            padding-right: 50px;
+            padding-right: 90px;
+            padding-left: 70px;
         }
         div {
             color: #fff;
@@ -503,7 +504,7 @@ h2, .h2 {
             z-index: 2;
         }
         div {
-            padding-left: 30px;
+            padding-left: 5px;
             img {
                 max-width: 55px;
                 padding-left: 0;
@@ -531,7 +532,7 @@ h2, .h2 {
     }
     .hero-content {
         h2 {
-            margin:0 30px;
+//            margin:0 60px 0 0;
         }
     }
 }
@@ -1243,6 +1244,16 @@ h2, .h2 {
         }
     } 
     
+    #life-section-2 {
+        .sect-background {
+        }
+        .hero-content {
+            h2 {
+                margin:0 60px 0 0;
+            }
+        }
+    }
+    
     #other-details {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -1566,6 +1577,7 @@ h2, .h2 {
             width: 100%;
             h2 {
                 padding-right: 0!important;
+                padding-left: 0!important;
             }
         }
     }

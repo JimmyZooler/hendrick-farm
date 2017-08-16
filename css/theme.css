@@ -10379,7 +10379,8 @@ h2, .h2 {
     background-position: top; }
   #hero-section-4 .hero-content h2 {
     color: #fff;
-    padding-right: 50px; }
+    padding-right: 90px;
+    padding-left: 70px; }
   #hero-section-4 .hero-content div {
     color: #fff; }
     #hero-section-4 .hero-content div img {
@@ -10495,7 +10496,7 @@ h2, .h2 {
       left: 0;
       z-index: 2; }
     .life-section .hero-content div, .list-section .hero-content div {
-      padding-left: 30px; }
+      padding-left: 5px; }
       .life-section .hero-content div img, .list-section .hero-content div img {
         max-width: 55px;
         padding-left: 0;
@@ -10513,8 +10514,6 @@ h2, .h2 {
   padding-bottom: calc(10vh); }
   #life-section-2 .sect-background {
     background-position-x: 65%; }
-  #life-section-2 .hero-content h2 {
-    margin: 0 30px; }
 
 #life-section-3 {
   padding-bottom: calc(5vh); }
@@ -11038,6 +11037,8 @@ h2, .h2 {
         margin-left: 20px; }
   #list-section-1 .sect-background {
     background-position-y: 70%; }
+  #life-section-2 .hero-content h2 {
+    margin: 0 60px 0 0; }
   #other-details {
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -11251,7 +11252,8 @@ h2, .h2 {
   #hero-section-4 .hero-content {
     width: 100%; }
     #hero-section-4 .hero-content h2 {
-      padding-right: 0 !important; }
+      padding-right: 0 !important;
+      padding-left: 0 !important; }
   #wrapper-footer div .row .column {
     text-align: center; }
   #wrapper-footer div .row .column:last-child #footer-subscribe-button {
