@@ -61,7 +61,7 @@ get_header();
 
                 <p><?php the_field('first_paragraph'); ?></p>
 
-                <p class="text-right"><a href="#" class="green-link"><?php the_field('link_text'); ?></a></p>
+                <p class="text-right"><a href="#" class="green-link"><?php the_field('link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
 
             </div>
 
@@ -90,7 +90,7 @@ get_header();
                 
                 <p><?php the_field('second_paragraph'); ?></p>
                 
-                <p class="text-right"><a href="#" class="green-link"><?php the_field('link_text_2'); ?></a></p>
+                <p class="text-right"><a href="#" class="green-link"><?php the_field('link_text_2'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
 
                 <p class="block-quote"><?php the_field('second_quote'); ?></p>
 

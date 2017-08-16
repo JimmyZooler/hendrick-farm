@@ -78,7 +78,7 @@ get_header();
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities ></a>
+                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -110,7 +110,7 @@ get_header();
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities ></a>
+                    <a href="#" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -130,7 +130,7 @@ get_header();
                     
                     <?php the_field('kingsmere_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities ></a>
+                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -162,7 +162,7 @@ get_header();
                     
                     <?php the_field('kingsmere_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities ></a>
+                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -205,7 +205,7 @@ get_header();
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="#" class="green-link">View Lot Availabilities ></a>
+                        <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
 
                     </div>
 
@@ -237,7 +237,7 @@ get_header();
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="#" class="green-link">View Lot Availabilities ></a>
+                        <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
 
                     </div>
 
@@ -256,7 +256,7 @@ get_header();
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities ></a>
+                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -288,7 +288,7 @@ get_header();
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities ></a>
+                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -361,7 +361,7 @@ get_header();
 
                 <div class="video-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XjEv791GJlo" frameborder="0" allowfullscreen></iframe></div>
 
-                <a href="#" class="green-link text-right">Looking for more? View gallery ></a>
+                <a href="#" class="green-link text-right">Looking for more? View gallery <span class="green-arrow">></span></a>
 
             </div>            
             

@@ -10763,6 +10763,12 @@ h2, .h2 {
   .homes-description .green-link {
     margin-top: 30px; }
 
+.green-arrow {
+  position: relative;
+  top: 2px;
+  text-decoration: none;
+  display: inline-block; }
+
 #more-details {
   padding-top: 1rem;
   padding-bottom: 4rem;

@@ -64,7 +64,7 @@ get_header();
                     
                     <?php the_field('white_model_description'); ?>
                 
-                    <a href="#" class="green-link">Learn more about the Village Centre ></a>
+                    <a href="#" class="green-link">Learn more about the Village Centre&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -96,7 +96,7 @@ get_header();
                     
                     <?php the_field('white_model_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities ></a>
+                    <a href="#" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
