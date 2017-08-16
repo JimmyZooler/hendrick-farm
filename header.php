@@ -73,6 +73,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+            <ul id="nav-lang">
+            
+                <li>
+                
+                    <a href="http://hendrickfarm.ca/?lang=fr" >FR</a>
+                
+                </li>
+            
+            </ul>
 
 		</nav><!-- .site-navigation -->
 

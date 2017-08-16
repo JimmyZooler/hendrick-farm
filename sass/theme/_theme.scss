@@ -130,6 +130,7 @@ h2, .h2 {
     border: none;
     width: 36px;
     height: 30px;
+    right: 30px;
 }
 #wrapper-navbar nav button .line:nth-child(1) {
     top: 0;
@@ -251,6 +252,28 @@ h2, .h2 {
 
 .logo-on-mobile .nav-link:before {
     border: none;
+}
+
+#nav-lang {
+    list-style: none;
+    padding-left: 1rem;
+    margin-bottom: 4px;
+    top: 2px;
+    right: 15px;
+    li {
+        a {
+            color: #000;
+            border-bottom: 2px solid #000;
+            font-size: 0.6rem;
+            
+        }
+    }
+}
+
+#nav-lang li a:hover {
+    text-decoration: none;
+    color: #6c8e6e;
+    border-bottom: 2px solid #6c8e6e;
 }
 
 /****************************************
@@ -1085,6 +1108,16 @@ h2, .h2 {
             font-size: 2.5rem;
         }
     }
+    
+    #nav-lang {
+        top: 3px;
+        right: 20px;
+        li {
+            a {
+                font-size: 0.7rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -1097,6 +1130,15 @@ h2, .h2 {
         }
         .overlay--for-menu {
             top: 62px!important;
+        }
+    }
+    #wrapper-footer {
+        div {
+            .row {
+                .column:last-child() {
+                    border-left: transparent!important;
+                }
+            }
         }
     }
 }
@@ -1310,6 +1352,11 @@ h2, .h2 {
         padding: 5px 8px;
     }
     
+    #nav-lang {
+        align-self: flex-end;
+        position: absolute;
+    }
+    
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     #wrapper-navbar {
@@ -1443,6 +1490,14 @@ h2, .h2 {
             }
         }
     }
+    
+    #nav-lang {
+        li {
+            a {
+                font-size: 0.8rem;
+            }
+        }
+    }
 }
 @media screen and (min-width: 1360px) {
     #home-section-5 {
@@ -1499,9 +1554,6 @@ h2, .h2 {
                     text-align: center;
                 }
                 .column:last-child() {
-                    border-left: transparent!important;
-//                    border-top: 1px solid #333;
-//                    padding-top: 2rem;
                     #footer-subscribe-button {
                         margin: 0 auto 2rem;
                     }
