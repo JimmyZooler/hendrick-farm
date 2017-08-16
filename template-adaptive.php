@@ -115,7 +115,7 @@ get_header();
                 
                 <div class="link-section text-right">
             
-                    <a href="#" class="green-link"><?php the_field('link_text_1'); ?></a>
+                    <a href="http://www.landlab.ca/" class="green-link"><?php the_field('link_text_1'); ?></a>
 
                 </div>
 

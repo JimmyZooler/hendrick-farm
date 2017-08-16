@@ -100,7 +100,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div><!--col end -->
                 <div class="col-sm-6">
                     <div class="landlab">
-                        <a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/LandlabLogo_400.png" /></a>
+                        <a href="http://www.landlab.ca/"><img src="<?php echo get_template_directory_uri(); ?>/img/LandlabLogo_400.png" /></a>
                     </div>
                     
                 </div><!--col end -->
