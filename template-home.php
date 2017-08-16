@@ -10,34 +10,34 @@
 
 get_header(); ?>
 
-<div class="hero-section" id="hero-section-1">
+<div class="hero-section white-border" id="hero-section-1">
     <div class="sect-background" style="background-image: url('<?php the_field('hero_1_image') ?>'); "></div>
     <div class="hero-content animated fadeInUp">
         <h2><?php the_field('hero_title_1'); ?></h2>
         <div>
             <?php the_field('hero_link_text_1'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_black.svg" />
         </div>
-        <a href="#" class="hero-link"></a>
+        <a href="<?php echo get_home_url(); ?>/listings/" class="hero-link"></a>
     </div>
 </div>
-<div class="hero-section" id="hero-section-2" >
+<div class="hero-section white-border" id="hero-section-2" >
     <div class="sect-background" style="background-image: url('<?php the_field('hero_image_2') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('hero_2_title'); ?></h2>
         <div>
             <?php the_field('hero_2_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="#" class="hero-link"></a>
+        <a href="<?php echo get_home_url(); ?>/lifestyle/" class="hero-link"></a>
     </div>
 </div>
-<div class="hero-section" id="hero-section-3">
+<div class="hero-section white-border" id="hero-section-3">
     <div class="sect-background" style="background-image: url('<?php the_field('hero_image_3') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('hero_3_title'); ?></h2>
         <div>
             <?php the_field('hero_3_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="#" class="hero-link"></a>
+        <a href="<?php echo get_home_url(); ?>/listings/townhomes/" class="hero-link"></a>
     </div>
 </div>
 <div class="hero-section" id="hero-section-4">
@@ -47,13 +47,13 @@ get_header(); ?>
         <div>
         <?php the_field('hero_4_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="#" class="hero-link"></a>
+        <a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/" class="hero-link"></a>
     </div>
 </div>
 <div id="home-section-5">
     <div class="row">
         <div class="col-3 col-md-2 column-1">
-            <img src="<?php the_field('section_5_image'); ?>" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/hendrick_art_1.svg" />
         </div>
         <div class="col-9 col-md-10 column-2">
             <div class="text-column">

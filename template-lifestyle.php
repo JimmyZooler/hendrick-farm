@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div class="hero-section life-section" id="life-section-1">
+<div class="hero-section white-border life-section" id="life-section-1">
     <div class="sect-background" style="background-image: url('<?php the_field('life_image_1') ?>'); "></div>
     <div class="hero-content animated fadeInUp">
         <h2><?php the_field('life_title_1'); ?></h2>
@@ -20,7 +20,7 @@ get_header(); ?>
         <a class="life-link" href="#"></a>
     </div>
 </div>
-<div class="hero-section life-section" id="life-section-2">
+<div class="hero-section white-border life-section" id="life-section-2">
     <div class="sect-background" style="background-image: url('<?php the_field('life_image_2') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('life_title_2'); ?></h2>
@@ -30,7 +30,7 @@ get_header(); ?>
         <a class="life-link" href="#"></a>
     </div>
 </div>
-<div class="hero-section life-section" id="life-section-3">
+<div class="hero-section white-border life-section" id="life-section-3">
     <div class="sect-background" style="background-image: url('<?php the_field('life_image_3') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('life_title_3'); ?></h2>
@@ -40,7 +40,7 @@ get_header(); ?>
         <a class="life-link" href="#"></a>
     </div>
 </div>
-<div class="hero-section life-section" id="life-section-4">
+<div class="hero-section white-border life-section" id="life-section-4">
     <div class="sect-background" style="background-image: url('<?php the_field('life_image_4') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('life_title_4'); ?></h2>
