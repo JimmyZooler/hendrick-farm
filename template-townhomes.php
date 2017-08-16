@@ -65,7 +65,7 @@ get_header();
                 
                 </div>
 
-                <a href="#" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=White&nbsp;Model&nbsp;Inquiry" class="button">Inquire</a>
 
             </div>
             
