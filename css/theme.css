@@ -10024,7 +10024,7 @@ h2, .h2 {
   font-weight: bold; }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
 .overlay--for-menu {
   background: rgba(0, 0, 0, 0.4);
@@ -10768,6 +10768,12 @@ h2, .h2 {
   top: 2px;
   text-decoration: none;
   display: inline-block; }
+
+.green-text {
+  color: #6c8e6e; }
+
+.green-text:hover {
+  color: #6c8e6e; }
 
 #more-details {
   padding-top: 1rem;

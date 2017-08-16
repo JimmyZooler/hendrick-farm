@@ -81,7 +81,7 @@ get_header();
 
                 <p class="block-quote"><?php the_field('right_column_quote'); ?></p>
                 
-                <p class="text-right"><a href="#" class="green-link">Learn about our community planning&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
+                <p class="text-right"><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/" class="green-link">Learn about our community planning&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
 
             </div>
 

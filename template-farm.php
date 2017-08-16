@@ -41,7 +41,7 @@ get_header();
 
                 <p class="block-quote"><?php the_field('first_quote'); ?></p>
                 
-                <p class="text-right"><a href="#" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
+                <p class="text-right"><a href="<?php echo get_home_url(); ?>/hendrick-foundation/" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
 
             </div>
 
@@ -77,7 +77,7 @@ get_header();
                 
                 <div class="para-section"><?php the_field('third_paragraph'); ?></div>
 
-                <div class="link-section"><a href="#" class="green-link"><?php the_field('second_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
+                <div class="link-section"><a href="<?php echo get_home_url(); ?>/contact" class="green-link"><?php the_field('second_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
                 
                 <div class="para-section"><?php the_field('fourth_paragraph'); ?></div>
                 
@@ -154,6 +154,11 @@ get_header();
             <div class="col-lg-5 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_12' ); ?>');"></div>
+
+            </div>
+            <div class="col-12 page-block text-right">
+        
+                <a href="<?php echo get_home_url(); ?>/lifestyle/parks-trails/" class="green-link">Discover our Parks &amp; Trails&nbsp;&nbsp;<span class="green-arrow">></span></a>
 
             </div>
 
