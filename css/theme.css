@@ -10138,7 +10138,9 @@ h2, .h2 {
       align-self: flex-end;
   border: none;
   width: 36px;
-  height: 30px;
+  height: 30px; }
+
+.page-template-template-home .navbar-toggler {
   right: 30px; }
 
 #wrapper-navbar nav button .line:nth-child(1) {
@@ -10267,6 +10269,12 @@ h2, .h2 {
   border: none; }
 
 #nav-lang {
+  display: none; }
+
+.page-template-template-home #nav-lang {
+  display: inline-block; }
+
+#nav-lang {
   list-style: none;
   padding-left: 1rem;
   margin-bottom: 4px;
@@ -10384,8 +10392,7 @@ h2, .h2 {
     background-position: top; }
   #hero-section-4 .hero-content h2 {
     color: #fff;
-    padding-right: 90px;
-    padding-left: 70px; }
+    padding-right: 170px; }
   #hero-section-4 .hero-content div {
     color: #fff; }
     #hero-section-4 .hero-content div img {
@@ -11222,6 +11229,8 @@ h2, .h2 {
     left: 10%;
     -webkit-transform: none;
             transform: none; }
+  #life-section-5 {
+    padding-top: calc(30vh); }
   #other-details .content-wrap p {
     font-size: 1.6rem; }
   .page-block p, .page-block a.green-link {

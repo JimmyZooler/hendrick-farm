@@ -134,6 +134,8 @@ h2, .h2 {
     border: none;
     width: 36px;
     height: 30px;
+}
+.page-template-template-home .navbar-toggler {
     right: 30px;
 }
 #wrapper-navbar nav button .line:nth-child(1) {
@@ -258,6 +260,12 @@ h2, .h2 {
     border: none;
 }
 
+#nav-lang {
+    display: none;
+}
+.page-template-template-home #nav-lang {
+    display: inline-block; 
+}
 #nav-lang {
     list-style: none;
     padding-left: 1rem;
@@ -388,8 +396,7 @@ h2, .h2 {
     .hero-content { 
         h2 {
             color: #fff;
-            padding-right: 90px;
-            padding-left: 70px;
+            padding-right: 170px;
         }
         div {
             color: #fff;
@@ -1499,6 +1506,10 @@ h2, .h2 {
         margin: auto;
         left: 10%;
         transform: none;
+    }
+    
+    #life-section-5 {
+        padding-top: calc(30vh);
     }
     
     #other-details {
