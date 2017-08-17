@@ -10892,7 +10892,9 @@ h2, .h2 {
   color: #6c8e6e; }
 
 .page-template-template-farm #wrapper-footer,
-.page-template-template-foundation #wrapper-footer {
+.page-template-template-foundation #wrapper-footer,
+.page-template-template-commercial #wrapper-footer,
+.page-template-template-adaptive #wrapper-footer {
   border-top: 1px solid rgba(33, 33, 33, 0.3);
   margin-top: 40px; }
 
@@ -11225,21 +11227,21 @@ h2, .h2 {
   .page-block p, .page-block a.green-link {
     font-size: 24px; }
   .page-block .homes-title {
-    font-size: 3rem; }
+    font-size: 2.8rem; }
   .page-block p.homes-quote {
     font-size: 36px; }
   .page-block .rooms-wrap {
     margin: 3rem 0; }
     .page-block .rooms-wrap .rooms {
-      font-size: 1.9rem; }
+      font-size: 1.5rem; }
   .page-block .square-footage, .page-block .price {
-    font-size: 2.2rem; }
+    font-size: 2rem; }
   .page-block .price {
     margin-bottom: 4rem; }
   .page-block .floorplans {
     margin-bottom: 1.5rem; }
   .button {
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   .button-bar h3, #more-details h2, #homes-video h2 {
     font-size: 3rem; }
   #homes-video {

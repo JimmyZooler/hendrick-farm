@@ -976,7 +976,9 @@ h2, .h2 {
     color: $brand-primary;
 }
 .page-template-template-farm #wrapper-footer,
-.page-template-template-foundation #wrapper-footer {
+.page-template-template-foundation #wrapper-footer,
+.page-template-template-commercial #wrapper-footer,
+.page-template-template-adaptive #wrapper-footer {
     border-top: 1px solid rgba(33,33,33, 0.3);
     margin-top: 40px;
 }
@@ -1513,7 +1515,7 @@ h2, .h2 {
             font-size: 24px;
         }
         .homes-title {
-            font-size: 3rem;
+            font-size: 2.8rem;
         }
         p.homes-quote {
             font-size: 36px;
@@ -1521,11 +1523,11 @@ h2, .h2 {
         .rooms-wrap {
             margin: 3rem 0;
             .rooms {
-                font-size: 1.9rem;
+                font-size: 1.5rem;
             }
         }
         .square-footage, .price {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
         .price {
             margin-bottom: 4rem;
@@ -1536,7 +1538,7 @@ h2, .h2 {
     }
     
     .button {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .button-bar h3, #more-details h2, #homes-video h2 {
