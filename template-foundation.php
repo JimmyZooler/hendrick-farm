@@ -47,7 +47,7 @@ get_header();
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_3' ); ?>');">
+                <div class="image-block image-top" style="background-image: url('<?php the_field( 'image_3' ); ?>');">
                 
                 </div>
 

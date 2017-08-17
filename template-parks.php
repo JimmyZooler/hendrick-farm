@@ -30,7 +30,7 @@ get_header();
         
         <div class="row page-block-wrapper">
 
-            <div class="col-lg-7 page-block write-up">
+            <div class="col-lg-8 page-block write-up">
                 
                 <p><?php the_field('first_paragraph'); ?></p>
 
@@ -38,9 +38,9 @@ get_header();
 
             </div>
             
-            <div class="col-lg-5 page-block">
+            <div class="col-lg-4 page-block">
 
-                <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');"></div>
+                <div class="image-block solo-image image-right" style="background-image: url('<?php the_field( 'image_1' ); ?>');"></div>
 
             </div>
 
@@ -48,19 +48,19 @@ get_header();
         
         <div class="row page-block-wrapper image-row">
 
-            <div class="col-6 col-lg-3 page-block">
+            <div class="col-6 col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_2' ); ?>');"></div>
 
             </div>
 
-            <div class="col-6 col-lg-3 page-block">
+            <div class="col-6 col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
 
             </div>
             
-            <div class="col-lg-6 page-block">
+            <div class="col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
 

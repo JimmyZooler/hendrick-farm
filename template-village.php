@@ -69,13 +69,13 @@ get_header();
         
         <div class="row page-block-wrapper">
 
-            <div class="col-lg-3 page-block">
+            <div class="col-lg-4 page-block">
 
                 <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
 
             </div>
 
-            <div class="col-lg-9 page-block write-up">
+            <div class="col-lg-8 page-block write-up">
                 
                 <p><?php the_field('right_column_paragraph'); ?></p>
 
@@ -113,7 +113,7 @@ get_header();
 
             <div class="col-lg-8 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_8' ); ?>');"></div>
+                <div class="image-block image-top" style="background-image: url('<?php the_field( 'image_8' ); ?>');"></div>
 
             </div>
             

@@ -17,7 +17,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="#"></a>
+        <a class="life-link" href="<?php echo get_home_url(); ?>/village-centre/"></a>
     </div>
 </div>
 <div class="hero-section white-border life-section" id="life-section-2">
@@ -27,7 +27,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="#"></a>
+        <a class="life-link" href="<?php echo get_home_url(); ?>/farm/"></a>
     </div>
 </div>
 <div class="hero-section white-border life-section" id="life-section-3">
@@ -37,7 +37,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="#"></a>
+        <a class="life-link" href="<?php echo get_home_url(); ?>/hendrick-foundation/"></a>
     </div>
 </div>
 <div class="hero-section white-border life-section" id="life-section-4">
@@ -47,7 +47,7 @@ get_header(); ?>
        <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="#"></a>
+        <a class="life-link" href="<?php echo get_home_url(); ?>/lifestyle/parks-trails"></a>
     </div>
 </div>
 <div class="hero-section life-section" id="life-section-5" >
@@ -57,7 +57,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="#"></a>
+        <a class="life-link" href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development"></a>
     </div>
 </div>
 <ul class="hero--pager">

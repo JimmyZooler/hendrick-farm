@@ -29,13 +29,13 @@ get_header();
 
         <div class="row page-block-wrapper">
 
-            <div class="col-lg-3 page-block">
+            <div class="col-lg-4 page-block">
 
                 <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');"></div>
 
             </div>
 
-            <div class="col-lg-9 page-block write-up">
+            <div class="col-lg-8 page-block write-up">
                 
                 <p><?php the_field('first_paragraph'); ?></p>
 
@@ -55,13 +55,13 @@ get_header();
 
             </div>
 
-            <div class="col-6 col-lg-3 page-block">
+            <div class="col-6 col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
 
             </div>
             
-            <div class="col-lg-5 page-block">
+            <div class="col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
 
@@ -89,13 +89,13 @@ get_header();
         
         <div class="row page-block-wrapper image-row">
 
-            <div class="col-lg-7 page-block">
+            <div class="col-lg-8 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_5' ); ?>');"></div>
 
             </div>
             
-            <div class="col-lg-5 page-block">
+            <div class="col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
 
@@ -105,7 +105,7 @@ get_header();
         
         <div class="row page-block-wrapper">
 
-            <div class="col-lg-7 page-block write-up">
+            <div class="col-lg-8 page-block write-up">
                 
                 <p><?php the_field('fifth_paragraph'); ?></p>
 
@@ -113,7 +113,7 @@ get_header();
 
             </div>
             
-            <div class="col-lg-5 page-block">
+            <div class="col-lg-4 page-block">
 
                 <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_7' ); ?>');"></div>
 
@@ -129,13 +129,13 @@ get_header();
 
             </div>
 
-            <div class="col-6 col-lg-3 page-block">
+            <div class="col-6 col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_9' ); ?>');"></div>
 
             </div>
             
-            <div class="col-lg-5 page-block">
+            <div class="col-lg-4 page-block">
 
                 <div class="image-block" style="background-image: url('<?php the_field( 'image_10' ); ?>');"></div>
 

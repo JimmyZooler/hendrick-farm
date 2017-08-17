@@ -695,14 +695,19 @@ h2, .h2 {
 #other-details {
     padding: 40px 30px;
     background: rgba(161,164,167,.31);
-    h2 {
-        margin-bottom: 1.8rem;
-    }
-    h3 {
-        text-transform: uppercase;
-        font-weight: 200;
-        font-style: italic;
-        margin-bottom: 1rem;
+    .content-wrap {
+        max-width: 1350px;
+        margin-left: auto;
+        margin-right: auto;
+        h2 {
+            margin-bottom: 1.8rem;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-weight: 200;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -872,11 +877,24 @@ h2, .h2 {
     }
 }
 
+.image-right {
+    background-position-x: right!important;
+}
+.image-left {
+    background-position-x: left!important;
+}
+.image-top {
+    background-position-y: top!important;
+}
+.image-bottom {
+    background-position-y: bottom!important;
+}
 /****************************************
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
     background: #fff;
+//    border-top: 1px solid rgba(33,33,33, 0.3);
     .container-fluid {
         padding-left: 2rem; 
         padding-right: 2rem;
@@ -957,7 +975,11 @@ h2, .h2 {
 #footer-social li i:hover, #footer-social li i:active {
     color: $brand-primary;
 }
-
+.page-template-template-farm #wrapper-footer,
+.page-template-template-foundation #wrapper-footer {
+    border-top: 1px solid rgba(33,33,33, 0.3);
+    margin-top: 40px;
+}
 /****************************************
 *  Media Queries
 ****************************************/
@@ -1097,7 +1119,11 @@ h2, .h2 {
     }
     
     .page-block {
-        p, a.green-link {
+        p {
+            font-size: 22px;
+            text-align: justify;
+        }
+        a.green-link {
             font-size: 22px;
         }
         p.homes-quote {
@@ -1286,7 +1312,7 @@ h2, .h2 {
     .page-block {
         padding: 40px 40px 0 0;
         .block-quote {
-            font-size: 32px;
+            font-size: 29px;
         }
         .homes-image-block {
             height: 40vw;
@@ -1484,13 +1510,13 @@ h2, .h2 {
     
     .page-block {
         p, a.green-link {
-            font-size: 28px;
+            font-size: 24px;
         }
         .homes-title {
             font-size: 3rem;
         }
         p.homes-quote {
-            font-size: 42px;
+            font-size: 36px;
         }
         .rooms-wrap {
             margin: 3rem 0;
