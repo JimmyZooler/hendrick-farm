@@ -25,7 +25,7 @@ get_header();
     
     </header>
     
-    <div class="container-fluid">
+    <div class="container-fluid fixed-width">
 
         <div class="row page-block-wrapper image-row">
 

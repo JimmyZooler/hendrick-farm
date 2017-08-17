@@ -25,7 +25,7 @@ get_header();
     
     </header>
     
-    <div class="container-fluid">
+    <div class="container-fluid fixed-width">
 
         <div class="row page-block-wrapper">
         
@@ -130,7 +130,7 @@ get_header();
     
     <div class="container-fluid hidden-md-down" id="more-details">
 
-        <div class="row page-block-wrapper">
+        <div class="row page-block-wrapper fixed-width">
         
                
                 <div class="col-12 page-block">

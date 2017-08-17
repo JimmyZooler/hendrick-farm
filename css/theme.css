@@ -10057,6 +10057,11 @@ h2, .h2 {
   border-color: #6c8e6e;
   text-decoration: none; }
 
+.fixed-width {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /****************************************
 *  Navbar Styles  
 ****************************************/
@@ -11229,10 +11234,7 @@ h2, .h2 {
     font-size: calc(38.4px + (64 - 38.4)*(100vw - 1360px)/(2560-1360)); }
   #home-section-5 .text-column p {
     font-size: calc(17.6px + (38.4 - 17.6)*(100vw - 1360px)/(2560-1360));
-    max-width: 1200px; }
-  .write-up {
-    padding-top: 70px;
-    padding-bottom: 60px; } }
+    max-width: 1200px; } }
 
 @media screen and (max-width: 576px) {
   #hero-section-1, #hero-section-3 {

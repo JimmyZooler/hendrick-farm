@@ -46,7 +46,11 @@ h2, .h2 {
     text-decoration: none;
 }
 
-
+.fixed-width {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /****************************************
 *  Navbar Styles  
 ****************************************/
@@ -1546,11 +1550,6 @@ h2, .h2 {
                 max-width: 1200px;
             }
         }
-    }
-    
-    .write-up {
-        padding-top: 70px;
-        padding-bottom: 60px;
     }
 }
 
