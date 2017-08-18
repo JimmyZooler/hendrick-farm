@@ -81,7 +81,7 @@ get_header();
                 
                 <div class="para-section"><?php the_field('fourth_paragraph'); ?></div>
                 
-                <div class="button-section text-center"><a href="#" class="button">Shop CSA</a></div>
+                <div class="button-section text-center"><a href="https://shop.hendrickfarm.ca/" class="button">Shop CSA</a></div>
 
             </div>
 
