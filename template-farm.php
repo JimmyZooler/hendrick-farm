@@ -41,7 +41,7 @@ get_header();
 
                 <p class="block-quote"><?php the_field('first_quote'); ?></p>
                 
-                <div class="green-link-wrap"><a href="<?php echo get_home_url(); ?>/hendrick-foundation/" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
+                <div class="green-link-wrap"><a href="<?php echo get_home_url(); ?>/lifestyle/hendrick-foundation/" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
 
             </div>
 

@@ -12381,7 +12381,9 @@ h2, .h2 {
       #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll input.email {
         width: 100%; }
       #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll .button {
-        width: 100%; } }
+        width: 100%; }
+  #footer-subscribe-button {
+    margin-top: 2rem !important; } }
 
 @media screen and (min-width: 992px) {
   #wrapper-navbar {
@@ -12483,8 +12485,6 @@ h2, .h2 {
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
     top: 64px; }
-  #footer-subscribe-button {
-    margin-top: 2rem !important; }
   .page-template-template-lifestyle #wrapper-navbar nav button .line,
   .page-template-template-village #wrapper-navbar nav button .line,
   .page-template-template-parks #wrapper-navbar nav button .line,

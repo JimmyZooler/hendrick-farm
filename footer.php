@@ -20,28 +20,28 @@ $container = get_theme_mod( 'understrap_container_type' );
         <footer class="site-footer" id="colophon">
             <div class="row">
                 <div class="col-sm-6 col-md-4 column">
-                    <a href="#">
+                    <a href="<?php echo get_home_url(); ?>/lifestyle/">
                         <h4 class="heading-sitemap">Lifestyle</h4>
                     </a>
                     <ul class="hidden-xs-down">
-                        <li>Village Centre</li>
-                        <li>Farm</li>
-                        <li>Hendrick Foundation</li>
-                        <li>Parks &amp; Trails</li>
-                        <li>Adaptive Development</li>
+                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/village-centre/">Village Centre</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/Farm/">Farm</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/hendrick-foundation/">Hendrick Foundation</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/parks-trails/">Parks &amp; Trails</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/">Adaptive Development</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-4 column">
-                    <a href="#">
+                    <a href="<?php echo get_home_url(); ?>/listings/">
                         <h4 class="heading-sitemap">Listings</h4>
                     </a>
                     <ul class="hidden-xs-down">
-                        <li>Single Family</li>
-                        <li>Townhouses</li>
-                        <li>Commercial</li>
+                        <li><a href="<?php echo get_home_url(); ?>/listings/single-family/">Single Family</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>/listings/townhomes/">Townhomes</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>/listings/commercial/">Commercial</a></li>
 <!--                        <li>Currently Available</li>-->
                     </ul>
-                    <a href="#">
+                    <a href="<?php echo get_home_url(); ?>/contact/">
                         <h4 class="heading-sitemap">Contact</h4>
                     </a>
                 </div>
