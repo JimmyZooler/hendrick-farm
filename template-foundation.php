@@ -13,7 +13,7 @@ get_header();
 
 <div id="page-wrapper">
 
-    <header class="page-header dark" style="background-image: url('<?php the_field('header_image') ?>'); ">
+    <header class="page-header image-bottom dark" style="background-image: url('<?php the_field('header_image') ?>'); ">
     
         <div class="heading-wrap">
             
@@ -61,8 +61,10 @@ get_header();
 
                 <p><?php the_field('first_paragraph'); ?></p>
 
-                <p class="text-right"><a href="<?php echo get_home_url(); ?>/lifestyle/farm" class="green-link"><?php the_field('link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
-
+                <div class="green-link-wrap hidden-sm-up"><a href="<?php echo get_home_url(); ?>/lifestyle/farm" class="green-link">Learn more about our<br>certified organic farm&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
+                
+                <div class="green-link-wrap hidden-xs-down"><a href="<?php echo get_home_url(); ?>/lifestyle/farm" class="green-link">Learn more about our certified organic farm&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
+                
             </div>
 
         </div>

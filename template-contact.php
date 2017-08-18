@@ -55,7 +55,7 @@ get_header();
     
     <div id="google-map">
     
-        <?php the_field('google_map'); ?>
+<!--        <?php the_field('google_map'); ?>-->
         
         <a href="https://www.google.ca/maps/dir/''/hendrick+farm+google+map/@45.5014719,-75.8732151,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x4cce1d6347f129df:0x5ff06b1b50de43a8!2m2!1d-75.8031753!2d45.5014933" target="_blank" ></a>
     
