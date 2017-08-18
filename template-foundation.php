@@ -31,7 +31,7 @@ get_header();
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_1' ); ?>');">
+                <div class="image-block image-right image-bottom" style="background-image: url('<?php the_field( 'image_1' ); ?>');">
                 
                 </div>
 
@@ -39,7 +39,7 @@ get_header();
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_2' ); ?>');">
+                <div class="image-block image-top image-left" style="background-image: url('<?php the_field( 'image_2' ); ?>');">
                 
                 </div>
 
@@ -47,7 +47,7 @@ get_header();
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block image-top" style="background-image: url('<?php the_field( 'image_3' ); ?>');">
+                <div class="image-block image-higher" style="background-image: url('<?php the_field( 'image_3' ); ?>');">
                 
                 </div>
 
@@ -77,7 +77,7 @@ get_header();
 
             <div class="col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_5' ); ?>');"></div>
+                <div class="image-block image-right" style="background-image: url('<?php the_field( 'image_5' ); ?>');"></div>
 
             </div>
             
@@ -98,7 +98,7 @@ get_header();
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
+                <div class="image-block image-left solo-image" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
 
             </div>
 

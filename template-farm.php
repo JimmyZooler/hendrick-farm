@@ -31,7 +31,7 @@ get_header();
 
             <div class="col-lg-4 page-block">
 
-                <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');"></div>
+                <div class="image-block image-higher solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');"></div>
 
             </div>
 
@@ -41,7 +41,7 @@ get_header();
 
                 <p class="block-quote"><?php the_field('first_quote'); ?></p>
                 
-                <p class="text-right"><a href="<?php echo get_home_url(); ?>/hendrick-foundation/" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
+                <div class="green-link-wrap"><a href="<?php echo get_home_url(); ?>/hendrick-foundation/" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
 
             </div>
 
@@ -51,19 +51,19 @@ get_header();
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_2' ); ?>');"></div>
+                <div class="image-block image-top" style="background-image: url('<?php the_field( 'image_2' ); ?>');"></div>
 
             </div>
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
+                <div class="image-block image-right" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
 
             </div>
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
+                <div class="image-block image-top" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
 
             </div>
 
@@ -91,13 +91,13 @@ get_header();
 
             <div class="col-lg-8 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_5' ); ?>');"></div>
+                <div class="image-block image-left" style="background-image: url('<?php the_field( 'image_5' ); ?>');"></div>
 
             </div>
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
+                <div class="image-block image-higher" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
 
             </div>
     
@@ -115,7 +115,7 @@ get_header();
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_7' ); ?>');"></div>
+                <div class="image-block image-higher solo-image" style="background-image: url('<?php the_field( 'image_7' ); ?>');"></div>
 
             </div>
 
@@ -125,13 +125,13 @@ get_header();
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_8' ); ?>');"></div>
+                <div class="image-block image-left image-bottom" style="background-image: url('<?php the_field( 'image_8' ); ?>');"></div>
 
             </div>
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_9' ); ?>');"></div>
+                <div class="image-block image-lower" style="background-image: url('<?php the_field( 'image_9' ); ?>');"></div>
 
             </div>
             
@@ -153,10 +153,10 @@ get_header();
 
             <div class="col-lg-5 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_12' ); ?>');"></div>
+                <div class="image-block image-right image-lower" style="background-image: url('<?php the_field( 'image_12' ); ?>');"></div>
 
             </div>
-            <div class="col-12 page-block text-right">
+            <div class="col-12 page-block green-link-wrap">
         
                 <a href="<?php echo get_home_url(); ?>/lifestyle/parks-trails/" class="green-link">Discover our Parks &amp; Trails&nbsp;&nbsp;<span class="green-arrow">></span></a>
 

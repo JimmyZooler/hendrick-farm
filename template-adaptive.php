@@ -31,7 +31,7 @@ get_header();
 
             <div class="col-lg-4 page-block">
 
-                <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');"></div>
+                <div class="image-block image-higher solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');"></div>
 
             </div>
 
@@ -49,19 +49,19 @@ get_header();
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_2' ); ?>');"></div>
+                <div class="image-block image-lower" style="background-image: url('<?php the_field( 'image_2' ); ?>');"></div>
 
             </div>
 
             <div class="col-6 col-lg-3 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
+                <div class="image-block image-left" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
 
             </div>
             
             <div class="col-lg-5 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
+                <div class="image-block image-lower" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
 
             </div>
 
@@ -113,7 +113,7 @@ get_header();
                 
                 <p><?php the_field('fifth_paragraph'); ?></p>
                 
-                <div class="link-section text-right">
+                <div class="link-section hide text-right">
             
                     <a href="http://www.landlab.ca/" class="green-link"><?php the_field('link_text_1'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
 

@@ -13,7 +13,7 @@ get_header();
 
 <div id="page-wrapper">
 
-    <header class="page-header dark" style="background-image: url('<?php the_field('header_image') ?>'); ">
+    <header class="page-header dark image-higher" style="background-image: url('<?php the_field('header_image') ?>'); ">
     
         <div class="heading-wrap">
             
@@ -56,13 +56,13 @@ get_header();
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
+                <div class="image-block image-left" style="background-image: url('<?php the_field( 'image_3' ); ?>');"></div>
 
             </div>
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
+                <div class="image-block image-right image-lower" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
 
             </div>
 
@@ -74,7 +74,7 @@ get_header();
                 
                 <div class="para-section"><?php the_field('second_paragraph'); ?></div>
 
-                <div class="link-section text-right"><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
+                <div class="link-section green-link-wrap"><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development" class="green-link"><?php the_field('first_link_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
 
             </div>
 
@@ -90,7 +90,7 @@ get_header();
             
             <div class="col-lg-5 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
+                <div class="image-block image-bottom" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
 
             </div>
     

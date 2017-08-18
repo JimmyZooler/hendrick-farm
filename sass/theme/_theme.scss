@@ -697,6 +697,7 @@ h2, .h2 {
 .wpcf7 .wpcf7-form-control-wrap input::placeholder, .wpcf7 .wpcf7-form-control-wrap textarea::placeholder {
     font-style: italic;
     font-weight: 300;
+    padding-right: 20px;
 }
 
 #other-details {
@@ -721,7 +722,7 @@ h2, .h2 {
 #google-map {
     height: 100vh;
     width: 100%;
-    background-image: url('../img/google_map_hendrick.jpg');
+    background-image: url('../img/google_map_2.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -763,7 +764,6 @@ h2, .h2 {
     
     a.green-link {
         color: #6c8e6e;
-        margin-right: 40px;
         font-size: 18px;
         display: inline-block;
     }
@@ -787,7 +787,7 @@ h2, .h2 {
 
 .image-block {
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 .image-row {
     .image-block {
@@ -896,6 +896,16 @@ h2, .h2 {
 .image-bottom {
     background-position-y: bottom!important;
 }
+.image-higher {
+    background-position-y: 30%!important;
+}
+.image-lower {
+    background-position-y: 75%!important;
+}
+.green-link-wrap {
+    text-align: center;
+}
+
 /****************************************
 *  Footer Styles
 ****************************************/
@@ -1134,6 +1144,7 @@ h2, .h2 {
         }
         a.green-link {
             font-size: 22px;
+            margin-right: 40px;
         }
         p.homes-quote {
             font-size: 32px;
@@ -1175,6 +1186,9 @@ h2, .h2 {
                 font-size: 0.7rem;
             }
         }
+    }
+    .green-link-wrap {
+        text-align: right;
     }
 }
 

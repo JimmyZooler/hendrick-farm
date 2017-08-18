@@ -39,7 +39,7 @@ get_header();
 
             <div class="col-lg-4 page-block">
 
-                <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');">
+                <div class="image-block image-bottom solo-image" style="background-image: url('<?php the_field( 'image_1' ); ?>');">
                 
                 </div>
 
@@ -51,7 +51,7 @@ get_header();
 
             <div class="col-lg-8 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_2' ); ?>');">
+                <div class="image-block image-left" style="background-image: url('<?php the_field( 'image_2' ); ?>');">
                 
                 </div>
 
@@ -59,7 +59,7 @@ get_header();
 
             <div class="col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_3' ); ?>');">
+                <div class="image-block image-right" style="background-image: url('<?php the_field( 'image_3' ); ?>');">
                 
                 </div>
 
@@ -71,7 +71,7 @@ get_header();
 
             <div class="col-lg-4 page-block">
 
-                <div class="image-block solo-image" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
+                <div class="image-block image-top solo-image" style="background-image: url('<?php the_field( 'image_4' ); ?>');"></div>
 
             </div>
 
@@ -97,7 +97,7 @@ get_header();
 
             <div class="col-6 col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
+                <div class="image-block image-higher" style="background-image: url('<?php the_field( 'image_6' ); ?>');"></div>
 
             </div>
             
@@ -113,13 +113,13 @@ get_header();
 
             <div class="col-lg-8 page-block">
 
-                <div class="image-block image-top" style="background-image: url('<?php the_field( 'image_8' ); ?>');"></div>
+                <div class="image-block image-higher" style="background-image: url('<?php the_field( 'image_8' ); ?>');"></div>
 
             </div>
             
             <div class="col-lg-4 page-block">
 
-                <div class="image-block" style="background-image: url('<?php the_field( 'image_9' ); ?>');"></div>
+                <div class="image-block image-left" style="background-image: url('<?php the_field( 'image_9' ); ?>');"></div>
 
             </div>
 
