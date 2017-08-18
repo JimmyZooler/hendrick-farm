@@ -61,8 +61,6 @@ get_header();
                 </div>
                 
                 <div class="hidden-md-down homes-description">
-                    
-                    <?php the_field('white_model_description'); ?>
                 
                     <a href="<?php echo get_home_url(); ?>/village-centre/" class="green-link">Learn more about the Village Centre&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
@@ -77,6 +75,12 @@ get_header();
                 <p class="square-footage"><?php the_field('commercial_square_footage'); ?></p>
 
                 <a href="mailto:sales@hendrickfarm.ca?subject=Commercial&nbsp;Spaces&nbsp;Inquiry" class="button">Inquire</a>
+                
+                <div class="homes-description">
+                
+                    <a href="<?php echo get_home_url(); ?>/village-centre/" class="green-link">Learn more about the Village Centre&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                
+                </div>
 
             </div>
         

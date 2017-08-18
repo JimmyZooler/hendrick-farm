@@ -53,7 +53,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
+                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
                 
                 </div>
 
@@ -92,7 +92,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
+                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
                 
                 </div>
 
@@ -143,7 +143,7 @@ get_header();
 
                     <div class="rooms-wrap">
 
-                        <p class="rooms">Bedrooms: 3 or 4<br>Bathrooms: 2.5</p>
+                        <p class="rooms">3 bedroom + loft / 4 bedroom<br>2.5 bathroom</p>
 
                     </div>
 
@@ -179,7 +179,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
+                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
                 
                 </div>
 
@@ -218,7 +218,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
+                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
                 
                 </div>
 
@@ -269,7 +269,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">Bedrooms: 4<br>Bathrooms: 2.5</p>
+                    <p class="rooms">4 bedroom<br>2.5 bathroom</p>
                 
                 </div>
 
@@ -314,7 +314,7 @@ get_header();
                 
                 </div>
             
-                <div class="col-lg-8 page-block">
+                <div class="col-lg-8 page-block pad-top-zero">
                 
                     <p><?php the_field('content_block_1'); ?></p>
                 
@@ -326,8 +326,11 @@ get_header();
                     </div>
                     
                 </div>
+        </div>
                 
-                <div class="col-lg-8 page-block">
+        <div class="row page-block-wrapper">
+            
+                <div class="col-lg-8 page-block pad-top-zero">
                 
                     <p><?php the_field('content_block_2'); ?></p>
                 
@@ -338,6 +341,12 @@ get_header();
                 
                     </div>
                     
+                </div>
+            
+                <div class="col-lg-8" style="padding-left: 0;">
+            
+                    <p class="more-details-copyright">COPYRIGHT © 2016. All prices, figures, sizes, specifications and information are subject to change without notice. E. & O.E. All illustrations are artist's concept only. </p>
+                
                 </div>
             
         
