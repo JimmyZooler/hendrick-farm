@@ -13,7 +13,7 @@ get_header();
 
 <div id="page-wrapper">
 
-    <header class="page-header dark" style="background-image: url('<?php the_field('header_image') ?>'); ">
+    <header class="page-header dark image-lower" style="background-image: url('<?php the_field('header_image') ?>'); ">
     
         <div class="heading-wrap">
             
