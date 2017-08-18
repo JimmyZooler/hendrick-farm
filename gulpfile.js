@@ -30,7 +30,8 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var merge2 = require('merge2');
@@ -88,7 +89,7 @@ gulp.task('scss-for-dev', function() {
         }))
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(sass())
-        .pipe(autoprefixer())
+        .pipe(postcss([ autoprefixer({ browsers: ["> 0%"] }) ]))
         .pipe(sourcemaps.write(undefined, { sourceRoot: null }))
         .pipe(gulp.dest('./css'))
 });
@@ -110,7 +111,7 @@ gulp.task('sass', function () {
             }
         }))
         .pipe(sass())
-        .pipe(autoprefixer())
+        .pipe(postcss([ autoprefixer({ browsers: ["> 0%"] }) ]))
         .pipe(gulp.dest('./css'))
         .pipe(rename('custom-editor-style.css'))
     return stream;
