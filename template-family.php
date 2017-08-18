@@ -53,7 +53,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
                 
                 </div>
 
@@ -78,7 +78,7 @@ get_header();
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -92,7 +92,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
                 
                 </div>
 
@@ -110,7 +110,7 @@ get_header();
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -118,83 +118,7 @@ get_header();
         
         </div> <!-- Lindenlea block -->
         
-        <div class="row page-block-wrapper house-block"> <!-- Kingsmere block -->
-            
-                
-            <div class="col-lg-8 page-block">
-
-                <div class="homes-image-block" style="background-image: url('<?php the_field('kingsmere_image') ?>'); ">
-                </div>
-                
-                <div class="hidden-md-down homes-description">
-                    
-                    <?php the_field('kingsmere_description'); ?>
-                
-                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
-                
-                </div>
-
-            </div>
-            
-            <div class="col-lg-4 page-block">
-
-                <h2 class="homes-title">Kingsmere</h2>
-
-                <p class="square-footage"><?php the_field('kingsmere_square_footage'); ?></p>
-
-                <div class="rooms-wrap">
-                
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
-                
-                </div>
-
-                <p class="price"><?php the_field('kingsmere_price'); ?></p>
-
-                <div class="floorplans">
-                
-                    <a href="<?php the_field('kingsmere_floorplan'); ?>" class="button">Floorplans</a>
-                
-                </div>
-
-                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button">Inquire</a>
-                
-                <div class="hidden-lg-up homes-description">
-                    
-                    <?php the_field('kingsmere_description'); ?>
-                
-                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
-                
-                </div>
-
-            </div>
-        
-        </div>
-    
         <div class="row page-block-wrapper house-block"> <!-- Blackburn block -->
-
-                <div class="hidden-md-down col-lg-4 page-block">
-
-                    <h2 class="homes-title">Blackburn</h2>
-
-                    <p class="square-footage"><?php the_field('blackburn_square_footage'); ?></p>
-
-                    <div class="rooms-wrap">
-
-                        <p class="rooms">3 bedroom<br>2.5 bathroom</p>
-
-                    </div>
-
-                    <p class="price"><?php the_field('blackburn_price'); ?></p>
-
-                    <div class="floorplans">
-
-                        <a href="<?php the_field('blackburn_floorplan'); ?>" class="button">Floorplans</a>
-
-                    </div>
-
-                    <a href="mailto:sales@hendrickfarm.ca?subject=Blackburn&nbsp;Inquiry" class="button">Inquire</a>
-
-                </div>
 
                 <div class="col-lg-8 page-block">
 
@@ -205,13 +129,13 @@ get_header();
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                        <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
 
                     </div>
 
                 </div>
 
-                <div class="hidden-lg-up page-block">
+                <div class="col-lg-4 page-block">
 
                     <h2 class="homes-title">Blackburn</h2>
 
@@ -219,7 +143,7 @@ get_header();
 
                     <div class="rooms-wrap">
 
-                        <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                        <p class="rooms">Bedrooms: 3 or 4<br>Bathrooms: 2.5</p>
 
                     </div>
 
@@ -237,13 +161,88 @@ get_header();
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                        <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
 
                     </div>
 
                 </div>
 
             </div>  <!-- Blackburn block -->
+        
+        <div class="row page-block-wrapper house-block"> <!-- Kingsmere block -->
+            
+            <div class="hidden-md-down col-lg-4 page-block">
+
+                <h2 class="homes-title">Kingsmere</h2>
+
+                <p class="square-footage"><?php the_field('kingsmere_square_footage'); ?></p>
+
+                <div class="rooms-wrap">
+                
+                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
+                
+                </div>
+
+                <p class="price"><?php the_field('kingsmere_price'); ?></p>
+
+                <div class="floorplans">
+                
+                    <a href="<?php the_field('kingsmere_floorplan'); ?>" class="button">Floorplans</a>
+                
+                </div>
+
+                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button">Inquire</a>
+
+            </div>
+                
+            <div class="col-lg-8 page-block">
+
+                <div class="homes-image-block" style="background-image: url('<?php the_field('kingsmere_image') ?>'); ">
+                </div>
+                
+                <div class="hidden-md-down homes-description">
+                    
+                    <?php the_field('kingsmere_description'); ?>
+                
+                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                
+                </div>
+
+            </div>
+            
+            <div class="hidden-lg-up page-block">
+
+                <h2 class="homes-title">Kingsmere</h2>
+
+                <p class="square-footage"><?php the_field('kingsmere_square_footage'); ?></p>
+
+                <div class="rooms-wrap">
+                
+                    <p class="rooms">Bedrooms: 3<br>Bathrooms: 2.5</p>
+                
+                </div>
+
+                <p class="price"><?php the_field('kingsmere_price'); ?></p>
+
+                <div class="floorplans">
+                
+                    <a href="<?php the_field('kingsmere_floorplan'); ?>" class="button">Floorplans</a>
+                
+                </div>
+
+                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button">Inquire</a>
+                
+                <div class="hidden-lg-up homes-description">
+                    
+                    <?php the_field('kingsmere_description'); ?>
+                
+                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                
+                </div>
+
+            </div>
+        
+        </div>
     
         <div class="row page-block-wrapper house-block"> <!-- Sawmill block -->
                 
@@ -256,7 +255,7 @@ get_header();
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -270,7 +269,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms">Bedrooms: 4<br>Bathrooms: 2.5</p>
                 
                 </div>
 
@@ -288,7 +287,7 @@ get_header();
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="#" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -300,9 +299,7 @@ get_header();
     
     <div class="button-bar">
         
-        <h3>Get into the nitty gritty.</h3>
-    
-        <a href="#" class="button">Compare Our Homes</a>
+        <a href="<?php the_field('community_map'); ?>" class="button" id="community-map-button">View Community Map</a>
     
     </div>
     
@@ -361,7 +358,7 @@ get_header();
 
                 <div class="video-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XjEv791GJlo" frameborder="0" allowfullscreen></iframe></div>
 
-                <a href="#" class="green-link text-right">Looking for more? View gallery <span class="green-arrow">></span></a>
+                <a href="https://www.youtube.com/channel/UCJ34R08mB3c1k5hnfJjPMtw" class="green-link text-right">Looking for more?&nbsp;&nbsp;<span class="green-arrow">></span></a>
 
             </div>            
             
