@@ -11152,7 +11152,7 @@ h2, .h2 {
   text-decoration: none; }
 
 .fixed-width {
-  max-width: 1350px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -12507,9 +12507,9 @@ h2, .h2 {
   .page-block {
     padding: 40px 40px 0 0; }
     .page-block .block-quote {
-      font-size: 29px; }
+      font-size: 26px; }
     .page-block .homes-image-block {
-      height: 40vw; }
+      height: 35vw; }
   .page-block-wrapper {
     padding-left: 40px; }
   .image-block {
@@ -12517,7 +12517,7 @@ h2, .h2 {
   .solo-image {
     height: 100%; }
   .house-block {
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
   .white-border {
     border-bottom: 6px solid #fff; }
   .homes-description .green-link {
@@ -12665,11 +12665,11 @@ h2, .h2 {
   #other-details .content-wrap p {
     font-size: 1.6rem; }
   .page-block p, .page-block a.green-link {
-    font-size: 24px; }
+    font-size: 23px; }
   .page-block .homes-title {
     font-size: 2.8rem; }
   .page-block p.homes-quote {
-    font-size: 36px; }
+    font-size: 34px; }
   .page-block .rooms-wrap {
     margin: 3rem 0; }
     .page-block .rooms-wrap .rooms {
@@ -12681,7 +12681,7 @@ h2, .h2 {
   .page-block .floorplans {
     margin-bottom: 1.5rem; }
   .button {
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
   .button-bar h3, #more-details h2, #homes-video h2 {
     font-size: 3rem; }
   #more-details h2 {
