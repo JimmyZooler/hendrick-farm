@@ -12241,12 +12241,53 @@ h2, .h2 {
   border-top: 1px solid rgba(33, 33, 33, 0.3);
   margin-top: 40px; }
 
+#mc_embed_signup_2 {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
+  position: relative;
+  text-align: center; }
+  #mc_embed_signup_2 h4 {
+    font-family: 'rm_prolight_italic'; }
+  #mc_embed_signup_2 form .button {
+    background: #6c8e6e;
+    color: #fff !important;
+    font-family: rm_proregular,Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    padding: 12px 24px;
+    font-size: 24px;
+    height: auto;
+    border: none;
+    margin-top: 2rem; }
+  #mc_embed_signup_2 form input.email {
+    font-size: 20px;
+    height: auto;
+    font-family: rm_proregular,Helvetica,Arial,sans-serif;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    padding: 12px 24px;
+    width: 65%;
+    float: left;
+    margin-top: 2rem; }
+
+#mc_embed_signup_2 #mc_embed_signup_scroll .button:hover {
+  background: #8db48c; }
+
 /****************************************
 *  Media Queries
 ****************************************/
 @media screen and (min-width: 540px) {
   .image-row .image-block {
     height: 80vh; } }
+
+@media screen and (max-width: 650px) {
+  #mc_embed_signup_2 form input.email {
+    width: 100%; }
+  #mc_embed_signup_2 form .button {
+    margin-top: 10px; } }
 
 @media screen and (min-width: 576px) {
   #home-section-5 .text-column {

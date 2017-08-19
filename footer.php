@@ -12,7 +12,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
+<!-- mailchimp signup for to popup -->
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup_2{background:#fff; clear:left; font:14px rm_proregular,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup_2" class="mfp-hide">
+    <form action="//hendrickfarm.us2.list-manage.com/subscribe/post?u=8942e1308cf86738c7e8fa9fc&amp;id=f68324a569" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        <h2>Subscribe to our mailing list</h2>
+        <h4>Enter your email address to get the latest updates on new products and phases.</h4>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8942e1308cf86738c7e8fa9fc_f68324a569" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+    </form>
+</div>
 
+<!--End mc_embed_signup-->
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_html( $container ); ?>">
@@ -78,7 +99,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
 -->
                 <div class="col-md-4 column">
-                    <a href="#" id="footer-subscribe-button">Subscribe</a>
+                    <a href="#mc_embed_signup_2" id="footer-subscribe-button">Subscribe</a>
                     <ul id="footer-social">
                         <li><a href="https://www.facebook.com/HendrickFarm/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
                         <li><a href="https://www.instagram.com/hendrickfarm"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
