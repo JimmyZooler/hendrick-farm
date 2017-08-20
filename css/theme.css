@@ -12257,7 +12257,7 @@ h2, .h2 {
        -moz-border-radius: 0;
             border-radius: 0;
     padding: 12px 24px;
-    font-size: 24px;
+    font-size: 23px;
     height: auto;
     border: none;
     margin-top: 2rem; }
@@ -12269,7 +12269,7 @@ h2, .h2 {
        -moz-border-radius: 0;
             border-radius: 0;
     padding: 12px 24px;
-    width: 65%;
+    width: 344px;
     float: left;
     margin-top: 2rem; }
 
@@ -12383,11 +12383,9 @@ h2, .h2 {
     font-size: 32px;
     margin-bottom: 2rem; }
   .page-block .homes-title {
-    font-size: 2.5rem; }
+    font-size: 2.4rem; }
   .page-block .square-footage, .page-block .price {
-    font-size: 2rem; }
-  .page-block .rooms {
-    font-size: 1.6rem; }
+    font-size: 1.8rem; }
   .page-block .price {
     margin: 1rem 0 2rem; }
   .page-block .homes-image-block {

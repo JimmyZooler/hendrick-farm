@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id="mc_embed_signup_2" class="mfp-hide">
     <form action="//hendrickfarm.us2.list-manage.com/subscribe/post?u=8942e1308cf86738c7e8fa9fc&amp;id=f68324a569" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
-        <h2>Subscribe to our mailing list</h2>
+        <h2>Subscribe to our newsletter.</h2>
         <h4>Enter your email address to get the latest updates on new products and phases.</h4>
         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
