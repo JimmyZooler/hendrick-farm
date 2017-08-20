@@ -11103,7 +11103,7 @@ h1.navbar-brand a:hover {
 
 body {
   font-family: "rm_proregular", Helvetica, Arial, sans-serif;
-  height: 100%;
+  height: 100vh;
   font-size: 100%; }
 
 button:focus {
@@ -11223,8 +11223,7 @@ h2, .h2 {
           -o-transition: all 0.3s;
           -moz-transition: all 0.3s;
           transition: all 0.3s;
-          position: relative;
-          height: 100%; }
+          position: relative; }
         #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile {
           margin-bottom: 40px; }
           #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile .nav-link {
@@ -11460,6 +11459,7 @@ h2, .h2 {
   .hero-section .hero-content {
     position: relative; }
     .hero-section .hero-content h2 {
+      font-size: 40px;
       font-size: -webkit-calc(40px + (64 - 40)*(100vw - 320px)/(760-320));
       font-size: calc(40px + (64 - 40)*(100vw - 320px)/(760-320));
       -moz-font-size: -moz-calc(40px + (64 - 40)*(100vw - 320px)/(760-320));
@@ -11470,6 +11470,7 @@ h2, .h2 {
       color: #000;
       font-style: italic;
       font-family: 'rm_prolight_italic';
+      font-size: 21px;
       font-size: -webkit-calc(21px + (32 - 21)*(100vw - 320px)/(1366-320));
       font-size: calc(21px + (32 - 21)*(100vw - 320px)/(1366-320));
       -moz-font-size: -moz-calc(21px + (32 - 21)*(100vw - 320px)/(1366-320)); }
@@ -12037,7 +12038,8 @@ h2, .h2 {
   font-family: 'rm_prolight_italic'; }
 
 .rooms {
-  font-family: 'rm_probold'; }
+  font-family: 'rm_probold';
+  text-align: left !important; }
 
 .floorplans {
   margin-bottom: 1rem; }
@@ -12322,11 +12324,14 @@ h2, .h2 {
     .stickied #wrapper-navbar #menu-modal-wrap {
       top: 64px; }
   .hero-section .hero-content h2 {
+    font-size: 64px;
     font-size: -webkit-calc(64px + (88 - 64)*(100vw - 760px)/(2000-760));
     font-size: -moz-calc(64px + (88 - 64)*(100vw - 760px)/(2000-760));
     font-size: calc(64px + (88 - 64)*(100vw - 760px)/(2000-760)); }
   .hero-section .hero-content a {
     padding-left: 10px;
+    font-size: 32px; }
+  .hero-section .hero-content div {
     font-size: 32px; }
   .hero-section .hero-content img {
     max-width: 40px;
