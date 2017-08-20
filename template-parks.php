@@ -101,7 +101,7 @@ get_header();
     
     <div class="button-bar">
     
-        <a href="#" class="button" id="community-map-button">View Community Map</a>
+        <a href="<?php the_field('community_map'); ?>" class="button" id="community-map-button">View Community Map</a>
     
     </div>
     
