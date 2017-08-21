@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             
                 <li>
                 
-                    <a href="http://hendrickfarm.ca/?lang=fr" >FR</a>
+                    <a href="http://fermehendrick.ca/?lang=fr" >FR</a>
                 
                 </li>
             
