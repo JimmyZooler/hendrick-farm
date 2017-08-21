@@ -117,7 +117,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="site-info">
                             <p class="hidden-sm-down">193 ch Ladyfield, Chelsea, QC J9B 0B3<span id="info-dot"> • </span>info@hendrickfarm.ca</p>
                             <p class="hidden-md-up">193 ch Ladyfield, Chelsea, QC<br>J9B 0B3<span id="info-dot"> • </span>info@hendrickfarm.ca</p>
-                            <p>© Hendrick Farm • Privacy &amp; Terms</p>
+                            <p>© Hendrick Farm • <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy &amp; Terms</a></p>
                         </div>
                 </div><!--col end -->
                 <div class="col-sm-6 col-md-4">

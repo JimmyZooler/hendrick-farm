@@ -12,7 +12,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 ?>
 
-<div class="wrapper" id="404-wrapper">
+<div class="wrapper fixed-width-page" id="404-wrapper">
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
@@ -24,7 +24,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 					<section class="error-404 not-found">
 
-						<header class="page-header">
+						<header class="">
 
 							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.',
 							'understrap' ); ?></h1>
@@ -35,41 +35,39 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?',
 							'understrap' ); ?></p>
+                            
+                            <p><a href="<?php echo get_home_url(); ?>">Return to the Home Page</a> or choose a link from the Site Map Below</p>
 
 							<?php get_search_form(); ?>
-
-							<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-							<?php if ( understrap_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-
-								<div class="widget widget_categories">
-
-									<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'understrap' ); ?></h2>
-
-									<ul>
-										<?php
-										wp_list_categories( array(
-											'orderby'    => 'count',
-											'order'      => 'DESC',
-											'show_count' => 1,
-											'title_li'   => '',
-											'number'     => 10,
-										) );
-										?>
-									</ul>
-
-								</div><!-- .widget -->
-
-							<?php endif; ?>
-
-							<?php
-							/* translators: %1$s: smiley */
-							$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s',
-							'understrap' ), convert_smilies( ':)' ) ) . '</p>';
-							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-							?>
-
-							<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+                            
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 column">
+                                    <a href="<?php echo get_home_url(); ?>/lifestyle/">
+                                        <h4 class="heading-sitemap">Lifestyle</h4>
+                                    </a>
+                                    <ul class="list-style-none">
+                                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/village-centre/">Village Centre</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/Farm/">Farm</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/hendrick-foundation/">Hendrick Foundation</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/parks-trails/">Parks &amp; Trails</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/">Adaptive Development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-4 column">
+                                    <a href="<?php echo get_home_url(); ?>/listings/">
+                                        <h4 class="heading-sitemap">Listings</h4>
+                                    </a>
+                                    <ul class="list-style-none">
+                                        <li><a href="<?php echo get_home_url(); ?>/listings/single-family/">Single Family</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/listings/townhomes/">Townhomes</a></li>
+                                        <li><a href="<?php echo get_home_url(); ?>/listings/commercial/">Commercial</a></li>
+                                    </ul>
+                                    <a href="<?php echo get_home_url(); ?>/contact/">
+                                        <h4 class="heading-sitemap">Contact</h4>
+                                    </a>
+                                </div>
+                                
+                            </div>
 
 						</div><!-- .page-content -->
 
