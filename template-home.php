@@ -55,10 +55,10 @@ get_header(); ?>
 </div>
 <div id="home-section-5">
     <div class="row">
-        <div class="col-3 col-md-2 column-1">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/hendrick_art_1.svg" />
+        <div class="col-sm-3 col-md-2 column-1">
+            <img class="hidden-xs-down" src="<?php echo get_template_directory_uri(); ?>/img/hendrick_art_1.svg" />
         </div>
-        <div class="col-9 col-md-10 column-2">
+        <div class="col-sm-9 col-md-10 column-2">
             <div class="text-column">
                 <h3><?php the_field('section_5_heading'); ?></h3>
                 <p><?php the_field('section_5_subheading'); ?></p>
