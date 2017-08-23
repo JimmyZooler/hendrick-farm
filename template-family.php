@@ -61,7 +61,7 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('lindenlea_floorplan'); ?>" class="button">Floorplans</a>
+                    <a href="<?php the_field('lindenlea_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
                 
                 </div>
 
@@ -100,7 +100,7 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('lindenlea_floorplan'); ?>" class="button">Floorplans</a>
+                    <a href="<?php the_field('lindenlea_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
                 
                 </div>
 
@@ -151,7 +151,7 @@ get_header();
 
                     <div class="floorplans">
 
-                        <a href="<?php the_field('blackburn_floorplan'); ?>" class="button">Floorplans</a>
+                        <a href="<?php the_field('blackburn_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
 
                     </div>
 
@@ -187,7 +187,7 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('kingsmere_floorplan'); ?>" class="button">Floorplans</a>
+                    <a href="<?php the_field('kingsmere_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
                 
                 </div>
 
@@ -226,7 +226,7 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('kingsmere_floorplan'); ?>" class="button">Floorplans</a>
+                    <a href="<?php the_field('kingsmere_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
                 
                 </div>
 
@@ -277,7 +277,7 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('sawmill_floorplan'); ?>" class="button">Floorplans</a>
+                    <a href="<?php the_field('sawmill_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
                 
                 </div>
 

@@ -61,7 +61,7 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('white_model_floorplan'); ?>" class="button">Floorplans</a>
+                    <a href="<?php the_field('white_model_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
                 
                 </div>
 
@@ -100,7 +100,7 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('white_model_floorplan'); ?>" class="button">Floorplans</a>
+                    <a href="<?php the_field('white_model_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
                 
                 </div>
 
