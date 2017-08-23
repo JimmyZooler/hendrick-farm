@@ -11358,6 +11358,11 @@ h2, .h2 {
           transform: translateY(62px);
   height: 62px; }
 
+.stickied #wrapper-navbar.menu-open {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none; }
+
 #wrapper-navbar.menu-open nav button .line:nth-child(1) {
   -webkit-transform: rotate(45deg);
      -moz-transform: rotate(45deg);
@@ -12455,8 +12460,6 @@ h2, .h2 {
   .hero--pager {
     display: none; }
   .stickied #menu-modal-wrap {
-    top: 62px !important; }
-  .stickied .overlay--for-menu {
     top: 62px !important; }
   #wrapper-footer div .row .column:last-child {
     border-left: transparent !important; }

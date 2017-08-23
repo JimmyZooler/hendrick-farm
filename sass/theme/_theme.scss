@@ -213,6 +213,9 @@ h2, .h2 {
         transform: translateY(62px);
         height: 62px;
     }
+    #wrapper-navbar.menu-open {
+        box-shadow: none;
+    }
 }
 
 #wrapper-navbar.menu-open {
@@ -1335,9 +1338,6 @@ h2, .h2 {
     }
     .stickied {
         #menu-modal-wrap {
-            top: 62px!important;
-        }
-        .overlay--for-menu {
             top: 62px!important;
         }
     }
