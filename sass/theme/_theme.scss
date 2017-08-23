@@ -312,6 +312,7 @@ h2, .h2 {
     border-bottom: 2px solid #6c8e6e;
 }
 
+
 /****************************************
 *  Home Page Styles
 ****************************************/
@@ -1675,6 +1676,92 @@ h2, .h2 {
         margin: auto;
         left: 10%;
         transform: none;
+    }
+    
+    .user-is-touching {
+        .navbar-toggleable-lg {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            .navbar-toggler {
+                display: inline-block!important;
+            }
+            #menu-modal-wrap {
+                text-align: left!important;
+                padding-bottom: 68px;
+                overflow-y: scroll;
+                position: fixed;
+                width: 320px;
+                height: 100vh;
+                z-index: 250;
+                right: 0;
+                transform: translateX(100%);
+                transition: transform .5s ease-out,-webkit-transform .5s ease-out;
+                justify-content: flex-start;
+                width: 40%!important;
+                background: rgba(255, 255, 255, 0.95)!important;
+                top: 68px!important;
+                .navbar-nav {
+                    overflow: auto;
+                    margin-left: 40px;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    display: flex;
+                    flex-direction: column!important;
+                    list-style: none;
+                    li {
+                        a {
+                            display: inline-block!important;
+                        }
+                        .dropdown-menu {
+                            position: static!important;
+                            padding-top: 0!important;
+                            margin-bottom: 10px!important;
+                            overflow: auto!important;
+                            display: block!important;
+                            float: none!important;
+                            background: 0 0!important;
+                        }
+                    }
+                    .logo-on-mobile {
+                        display: inline!important;
+                    }
+                    li.active:after {
+                        display: none!important;
+                    }
+                }
+            }
+            #nav-lang {
+                align-self: flex-end;
+                position: absolute;
+            }
+        }
+    }
+    
+    .user-is-touching .active-border:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        border-top: 2px solid #6c8e6e;
+        display: block;
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .user-is-touching #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
+        padding: 5px 8px;
+        display: inline-block;
+        background-color: #6c8e6e;
+        color: #fff;
+        border: 2px transparent;
+        height: auto;
+    }
+    
+    .user-is-touching.noscroll {
+        overflow: hidden;
     }
     
     #life-section-5 {

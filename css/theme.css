@@ -12704,6 +12704,106 @@ h2, .h2 {
         -ms-transform: none;
          -o-transform: none;
             transform: none; }
+  .user-is-touching .navbar-toggleable-lg {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .user-is-touching .navbar-toggleable-lg .navbar-toggler {
+      display: inline-block !important; }
+    .user-is-touching .navbar-toggleable-lg #menu-modal-wrap {
+      text-align: left !important;
+      padding-bottom: 68px;
+      overflow-y: scroll;
+      position: fixed;
+      width: 320px;
+      height: 100vh;
+      z-index: 250;
+      right: 0;
+      -webkit-transform: translateX(100%);
+         -moz-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+           -o-transform: translateX(100%);
+              transform: translateX(100%);
+      transition: transform .5s ease-out,-webkit-transform .5s ease-out;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+         -moz-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      width: 40% !important;
+      background: rgba(255, 255, 255, 0.95) !important;
+      top: 68px !important; }
+      .user-is-touching .navbar-toggleable-lg #menu-modal-wrap .navbar-nav {
+        overflow: auto;
+        margin-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -webkit-flex-direction: column !important;
+           -moz-box-orient: vertical !important;
+           -moz-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
+        list-style: none; }
+        .user-is-touching .navbar-toggleable-lg #menu-modal-wrap .navbar-nav li a {
+          display: inline-block !important; }
+        .user-is-touching .navbar-toggleable-lg #menu-modal-wrap .navbar-nav li .dropdown-menu {
+          position: static !important;
+          padding-top: 0 !important;
+          margin-bottom: 10px !important;
+          overflow: auto !important;
+          display: block !important;
+          float: none !important;
+          background: 0 0 !important; }
+        .user-is-touching .navbar-toggleable-lg #menu-modal-wrap .navbar-nav .logo-on-mobile {
+          display: inline !important; }
+        .user-is-touching .navbar-toggleable-lg #menu-modal-wrap .navbar-nav li.active:after {
+          display: none !important; }
+    .user-is-touching .navbar-toggleable-lg #nav-lang {
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+      position: absolute; }
+  .user-is-touching .active-border:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    border-top: 2px solid #6c8e6e;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .user-is-touching #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
+    padding: 5px 8px;
+    display: inline-block;
+    background-color: #6c8e6e;
+    color: #fff;
+    border: 2px transparent;
+    height: auto; }
+  .user-is-touching.noscroll {
+    overflow: hidden; }
   #life-section-5 {
     padding-top: -webkit-calc(30vh);
     padding-top: -moz-calc(30vh);
