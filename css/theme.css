@@ -12012,6 +12012,8 @@ h2, .h2 {
     font-size: 18px;
     display: inline-block; }
   .page-block .homes-quote {
+    font-style: italic;
+    font-weight: 200;
     font-family: 'rm_prolight_italic', Helvetica, Arial, sans-serif;
     font-size: 22px;
     text-align: center; }
@@ -12043,6 +12045,8 @@ h2, .h2 {
   .button-bar a {
     margin-right: 0; }
   .button-bar h3 {
+    font-style: italic;
+    font-weight: 200;
     font-family: 'rm_prolight_italic', Helvetica, Arial, sans-serif;
     margin-bottom: 2rem;
     font-size: 2rem; }
@@ -12058,6 +12062,8 @@ h2, .h2 {
   clear: both; }
 
 .square-footage, .price {
+  font-style: italic;
+  font-weight: 200;
   font-family: 'rm_prolight_italic', Helvetica, Arial, sans-serif; }
 
 .rooms {
@@ -12105,6 +12111,8 @@ h2, .h2 {
       height: 30vw; }
 
 #subscribe-bar h4 {
+  font-style: italic;
+  font-weight: 200;
   font-family: 'rm_prolight_italic', Helvetica,Arial,sans-serif; }
 
 #subscribe-bar #mc_embed_signup {
@@ -12135,18 +12143,28 @@ h2, .h2 {
   background: #8db48c; }
 
 #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll .email::-webkit-input-placeholder {
+  font-style: italic;
+  font-weight: 200;
   font-family: "rm_prolight_italic", Helvetica, Arial, sans-serif !important; }
 
 #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll .email:-moz-placeholder {
+  font-style: italic;
+  font-weight: 200;
   font-family: "rm_prolight_italic", Helvetica, Arial, sans-serif !important; }
 
 #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll .email::-moz-placeholder {
+  font-style: italic;
+  font-weight: 200;
   font-family: "rm_prolight_italic", Helvetica, Arial, sans-serif !important; }
 
 #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll .email:-ms-input-placeholder {
+  font-style: italic;
+  font-weight: 200;
   font-family: "rm_prolight_italic", Helvetica, Arial, sans-serif !important; }
 
 #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll .email::placeholder {
+  font-style: italic;
+  font-weight: 200;
   font-family: "rm_prolight_italic", Helvetica, Arial, sans-serif !important; }
 
 .image-right {
@@ -12171,6 +12189,8 @@ h2, .h2 {
   text-align: center; }
 
 .more-details-copyright {
+  font-style: italic;
+  font-weight: 200;
   font-family: 'rm_prolight_italic', Helvetica,Arial,sans-serif;
   font-size: 16px;
   margin-top: 20px; }
@@ -12273,6 +12293,8 @@ h2, .h2 {
   position: relative;
   text-align: center; }
   #mc_embed_signup_2 h4 {
+    font-style: italic;
+    font-weight: 200;
     font-family: 'rm_prolight_italic',Helvetica,Arial,sans-serif; }
   #mc_embed_signup_2 form .button {
     background: #6c8e6e;
