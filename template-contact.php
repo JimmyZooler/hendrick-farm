@@ -29,6 +29,12 @@ get_header();
             
         <div class="row">
 
+            <div class="col-md-6 tile">
+
+                <?php get_sidebar( 'right' ); ?>
+
+            </div>
+            
             <div class="col-md-6 get-in-touch tile">
 
                 <div class="tile-content-wrap">
@@ -40,12 +46,6 @@ get_header();
                     <?php the_field('left_column_address'); ?>
 
                 </div>
-
-            </div>
-
-            <div class="col-md-6 tile">
-
-                <?php get_sidebar( 'right' ); ?>
 
             </div>
 

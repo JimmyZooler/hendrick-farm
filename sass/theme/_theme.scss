@@ -691,12 +691,12 @@ h2, .h2 {
 
 .wpcf7 {
     p {
-        text-align: right;
+        text-align: left;
         label {
             margin-bottom: 0; 
             .wpcf7-form-control-wrap {
                 input, textarea {
-                    text-align: right;
+                    text-align: left;
                     border: none;
                     border-bottom: 1px solid rgba(0,0,0,.15);
                     border-radius: 0px;
@@ -716,7 +716,7 @@ h2, .h2 {
             border-radius: 0;
         }
         .ajax-loader {
-            float: left;
+            float: right;
         }
         
     }
