@@ -993,6 +993,54 @@ h2, .h2 {
 }
 
 /****************************************
+*  Currently Available Styles
+****************************************/
+
+.link-block {
+    position: relative;
+    height: 61.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 10% 20px;
+    margin-top: 40px;
+    h3 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        line-height: 100%;
+        color: #000;
+        font-family: 'rm_probold', Helvetica,Arial,sans-serif;
+    }
+    img {
+        transform: rotate(90deg);
+        max-width: 35px;
+        margin-top: -1rem;
+        transition: all 0.2s;
+    }
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.legend-column {
+    padding-top: 10px;
+    img {
+        max-width: 80%;
+    }
+}
+#map-column {
+    padding-top: 10px;
+}
+.contact-sales-wrap {
+    margin: 20px 0;
+}
+/****************************************
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
@@ -1163,6 +1211,11 @@ h2, .h2 {
             }
         }
     }
+    .link-block {
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 @media screen and (min-width: 760px) {
@@ -1256,6 +1309,14 @@ h2, .h2 {
             .page-subtitle {
                 
             }
+        }
+    }
+    .link-block {
+        h3 {
+            font-size: 3.5rem;
+        }
+        img {
+            max-width: 50px;
         }
     }
     .get-in-touch {
@@ -1517,6 +1578,19 @@ h2, .h2 {
     .homes-description {
         .green-link {
             margin-top: 10px;
+        }
+    }
+    .link-block {
+        height: 30.9vw;
+        h3 {
+            font-size: 3rem;
+        }
+    }
+    .legend-column {
+        padding-top: 20px;
+        padding-right: 40px;
+        img {
+            max-width: 100%;
         }
     }
 }
@@ -1839,6 +1913,11 @@ h2, .h2 {
     .homes-description {
         .green-link {
             margin-bottom: 0px;
+        }
+    }
+    .link-block {
+        h3 {
+            font-size: 3.5rem;
         }
     }
 }
