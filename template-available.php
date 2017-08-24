@@ -51,7 +51,7 @@ get_header();
         
     </div>
     
-    <div class="container-fluid">
+    <div class="container-fluid more-padding">
 
         <div class="row">
         

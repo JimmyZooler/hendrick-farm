@@ -921,6 +921,8 @@ h2, .h2 {
 }
 
 #subscribe-bar {
+    padding-left: 10px;
+    padding-right: 10px;
     h4 {
         font-style: italic;
         font-weight: 200;
@@ -1038,8 +1040,9 @@ h2, .h2 {
     padding-top: 10px;
 }
 .contact-sales-wrap {
-    margin: 20px 0;
+    margin: 40px 0 20px;
 }
+
 /****************************************
 *  Footer Styles
 ****************************************/
@@ -1391,6 +1394,14 @@ h2, .h2 {
     .green-link-wrap {
         text-align: right;
     }
+    .container-fluid.more-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #subscribe-bar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -1412,8 +1423,6 @@ h2, .h2 {
         }
     }
     #subscribe-bar {
-        padding-left: 40px;
-        padding-right: 40px;
         #mc_embed_signup {
             #mc_embed_signup_scroll {
                 max-width: 400px;
@@ -1593,6 +1602,13 @@ h2, .h2 {
             max-width: 100%;
         }
     }
+    .container-fluid.more-padding {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .map-column {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -1616,6 +1632,20 @@ h2, .h2 {
     .page-template-template-farm.stickied #wrapper-navbar nav button .line, 
     .page-template-template-farm #wrapper-navbar.menu-open nav button .line {
         background: #000;
+    }
+    
+    #subscribe-bar {
+        #mc_embed_signup {
+            #mc_embed_signup_scroll {
+                max-width: 450px;
+                input.email {
+                    width: 100%;
+                }
+                .button {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
