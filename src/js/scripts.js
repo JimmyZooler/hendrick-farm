@@ -73,20 +73,6 @@
       midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
     });
     
-    // Detecting iPad script
-    
-//    $document.ready(function() {
-//        function isiPad(){
-//            return (navigator.platform.indexOf("iPad") != -1);
-//        }
-//        
-//        if ( Modernizr.touch ) {
-//            alert('Touch Screen');
-//        } else { 
-//          alert('No Touch Screen');
-//        }
-//    });
-    
     $document.ready( function() {
         var $indicatorOne = $('#indicator-1'),
             $indicatorTwo = $('#indicator-2'),
@@ -352,6 +338,12 @@
         });
         $('.life-link').mouseleave( function() {
             $(this).closest('.list-section').removeClass('hover');
+        });
+        $('.available-link').mouseover( function() {
+            $(this).closest('.link-block').addClass('hover');
+        });
+        $('.available-link').mouseleave( function() {
+            $(this).closest('.link-block').removeClass('hover');
         });
 
     });

@@ -11833,14 +11833,14 @@ h2, .h2 {
   #list-section-4 .hero-content h2 {
     color: #000; }
 
-.life-section.hover .sect-background, .list-section.hover .sect-background, .hero-section.hover .sect-background {
+.life-section.hover .sect-background, .list-section.hover .sect-background, .hero-section.hover .sect-background, .link-block.hover .sect-background {
   -webkit-transform: scale(1.05, 1.05);
      -moz-transform: scale(1.05, 1.05);
       -ms-transform: scale(1.05, 1.05);
        -o-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05); }
 
-.life-section .hero-content:hover div img, .list-section .hero-content:hover div img {
+.life-section .hero-content:hover div img, .list-section .hero-content:hover div img, .link-block:hover img {
   margin-left: 30px !important; }
 
 /****************************************
@@ -12235,7 +12235,8 @@ h2, .h2 {
           justify-content: flex-start;
   text-align: center;
   padding: 10% 20px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  overflow: hidden; }
   .link-block h3 {
     font-size: 1.8rem;
     text-transform: uppercase;

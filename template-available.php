@@ -62,7 +62,7 @@ get_header();
                     <h3>Explore<br>Townhomes</h3>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
                     <div class="sect-background" style="background-image: url('<?php the_field("link_image_1"); ?>');"></div>
-                    <a href="<?php echo get_home_url(); ?>/listings/townhomes/"></a>
+                    <a class="available-link" href="<?php echo get_home_url(); ?>/listings/townhomes/"></a>
                 </div>
             </div>
             
@@ -73,7 +73,7 @@ get_header();
                     <h3>Explore Single<br>Family Homes</h3>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
                     <div class="sect-background" style="background-image: url('<?php the_field("link_image_2"); ?>');"></div>
-                    <a href="<?php echo get_home_url(); ?>/listings/townhomes/"></a>
+                    <a class="available-link" href="<?php echo get_home_url(); ?>/listings/single-family/"></a>
                 </div>
             
             </div>
