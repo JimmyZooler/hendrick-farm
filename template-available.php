@@ -39,7 +39,7 @@ get_header();
             
                 <img src="<?php the_field('currently_available_legend'); ?>" />
                 
-                <div class="text-center contact-sales-wrap">
+                <div class="contact-sales-wrap">
                 
                     <a href="mailto:sales@hendrickfarm.ca?subject=Currently&nbsp;Available&nbsp;Inquiry" class="button">Contact Sales</a>
                 

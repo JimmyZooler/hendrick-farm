@@ -1042,6 +1042,7 @@ h2, .h2 {
 }
 .contact-sales-wrap {
     margin: 40px 0 20px;
+    text-align: center;
 }
 
 /****************************************
@@ -1609,6 +1610,10 @@ h2, .h2 {
     }
     .map-column {
         padding-right: 0;
+    }
+    .contact-sales-wrap {
+        text-align: left;
+        margin-left: 10%;
     }
 }
 

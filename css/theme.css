@@ -12271,7 +12271,8 @@ h2, .h2 {
   padding-top: 10px; }
 
 .contact-sales-wrap {
-  margin: 40px 0 20px; }
+  margin: 40px 0 20px;
+  text-align: center; }
 
 /****************************************
 *  Footer Styles
@@ -12663,7 +12664,10 @@ h2, .h2 {
     padding-left: 40px;
     padding-right: 40px; }
   .map-column {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .contact-sales-wrap {
+    text-align: left;
+    margin-left: 10%; } }
 
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
