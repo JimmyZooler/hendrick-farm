@@ -12277,6 +12277,11 @@ h2, .h2 {
 /****************************************
 *  Gallery Page Styles
 ****************************************/
+.active {
+  position: relative; }
+  .active .nav-link:first-child {
+    color: #6c8e6e !important; }
+
 .container-fluid #grid {
   padding-top: 15px; }
 
@@ -12302,6 +12307,15 @@ h2, .h2 {
 
 .size-1of2 {
   width: 50%; }
+
+.mfp-figure figure {
+  padding: 0 40px; }
+
+.mfp-figure:after {
+  background: #fff !important; }
+
+img.mfp-img {
+  padding: 80px 0 80px; }
 
 /****************************************
 *  Footer Styles
