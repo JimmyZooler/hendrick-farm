@@ -1046,6 +1046,35 @@ h2, .h2 {
 }
 
 /****************************************
+*  Gallery Page Styles
+****************************************/
+
+.container-fluid #grid {
+    padding-top: 15px;
+}
+
+#grid {
+    padding: 0 15px; 
+    div {
+        text-align: center;
+    }
+}
+
+#grid[data-columns]::before {
+	content: '1 .column.size-1of1';
+}
+
+.column { 
+    float: left; 
+    padding: 0 15px;
+    div {
+        padding: 15px 0;
+    }
+}
+.size-1of3 { width: 33.333%; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+/****************************************
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
@@ -2025,6 +2054,18 @@ h2, .h2 {
         }
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 991px){
+	#grid[data-columns]::before {
+		content: '2 .column.size-1of2'!important;
+	}
+}
+@media screen and (min-width: 992px){
+	#grid[data-columns]::before {
+		content: '3 .column.size-1of3'!important;
+	}
+}
+
 /****************************************
 *  Font Styles
 ****************************************/
