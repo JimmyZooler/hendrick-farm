@@ -25,9 +25,9 @@ get_header();
     
     </header>
     
-    <div class="container-fluid fixed-width">
+    <div class="container-fluid fixed-width" id="gallery">
 
-        <div class="row page-block-wrapper">
+        <div class="row">
             
             <div id="grid" data-columns>
     
