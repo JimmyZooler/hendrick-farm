@@ -275,6 +275,7 @@
         $heroContent11.css('opacity', 0);
         $heroContent12.css('opacity', 0);
         $heroContent13.css('opacity', 0);
+        
 
           $heroContent2.waypoint(function() {
               $heroContent2.addClass('fadeInUp');
@@ -310,6 +311,16 @@
               $heroContent13.addClass('fadeInUp'); 
           }, { offset: '70%' });
 
+        // gallery image scripts
+        
+        $galleryImage = $('.gallery-image');
+        
+//        $galleryImage.css('opacity', 0);
+//        
+//        $galleryImage.waypoint(function() {
+//              $galleryImage.addClass('fadeInUp');
+//          }, { offset: '50%' }); 
+        
     });
     
     $(document).ready(function(){

@@ -38,7 +38,7 @@ get_header();
                 if( $images ): ?>
 
                         <?php foreach( $images as $image ): ?>
-                            <div class="gallery-image">
+                            <div class="gallery-image animated fadeInUp">
                                 <a href="<?php echo $image['url']; ?>">
                                      <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
                                 </a>
