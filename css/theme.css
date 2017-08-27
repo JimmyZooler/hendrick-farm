@@ -12318,6 +12318,18 @@ img.mfp-img {
   padding: 80px 0 80px; }
 
 /****************************************
+*  Landlab Page Styles
+****************************************/
+#landlab {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.3); }
+  #landlab #landlab-logo-helper {
+    margin-bottom: 20px; }
+  #landlab .link-section {
+    margin-bottom: 0; }
+
+/****************************************
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
