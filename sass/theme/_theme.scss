@@ -76,6 +76,11 @@ h2, .h2 {
     list-style: none;
     padding-left: 10px;
 }
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+
 /****************************************
 *  Navbar Styles  
 ****************************************/
@@ -421,9 +426,6 @@ h2, .h2 {
     padding-left: 10%;
     justify-content: flex-start;
     align-items: flex-end;
-    .sect-background {
-        background-position: top;
-    }
     .hero-content { 
         h2 {
             color: #fff;
@@ -1098,7 +1100,7 @@ img.mfp-img {
     padding-top: 40px;
     padding-bottom: 40px;
     #landlab-logo-helper {
-        margin-bottom: 20px;
+        padding-left: 40px;
     }
     .link-section {
         margin-bottom: 0;
@@ -1200,7 +1202,8 @@ img.mfp-img {
 .page-template-template-farm #wrapper-footer,
 .page-template-template-foundation #wrapper-footer,
 .page-template-template-commercial #wrapper-footer,
-.page-template-template-adaptive #wrapper-footer {
+.page-template-template-adaptive #wrapper-footer,
+.page-template-template-available #wrapper-footer {
     border-top: 1px solid rgba(33,33,33, 0.3);
     margin-top: 40px;
 }
@@ -1679,7 +1682,7 @@ img.mfp-img {
     }
     .contact-sales-wrap {
         text-align: left;
-        margin-left: 10%;
+        margin-left: 8.5%;
     }
 }
 

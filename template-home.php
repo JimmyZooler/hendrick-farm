@@ -41,7 +41,7 @@ get_header(); ?>
     </div>
 </div>
 <div class="hero-section" id="hero-section-4">
-    <div class="sect-background" style="background-image: url('<?php the_field('hero_image_4') ?>'); "></div>
+    <div class="sect-background image-lower" style="background-image: url('<?php the_field('hero_image_4') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('hero_4_title'); ?></h2>
         <div class="hidden-xs-down">

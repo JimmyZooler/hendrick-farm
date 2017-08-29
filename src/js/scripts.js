@@ -368,5 +368,9 @@
         });
     
     });
+    
+    $document.ready(function() {
+        $('.who-we-are .dropdown-toggle').addClass('inactiveLink');
+    });
   
 })( jQuery );

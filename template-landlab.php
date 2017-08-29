@@ -37,11 +37,11 @@ get_header();
         
         </div>
             
-        <div class="row">
+        <div class="row page-block-wrapper">
 
             <div class="col-lg-8 page-block write-up">
 
-                <p><?php the_field('paragraph_text'); ?></p>
+                <?php the_field('paragraph_text'); ?>
 
                 <div class="link-section">
                     <a href="http://www.landlab.ca/" class="green-link">
