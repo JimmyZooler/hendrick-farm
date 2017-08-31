@@ -78,7 +78,7 @@ get_header();
                     
                     <?php the_field('white_model_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -110,7 +110,7 @@ get_header();
                     
                     <?php the_field('white_model_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 

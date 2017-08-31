@@ -78,7 +78,7 @@ get_header();
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -110,7 +110,7 @@ get_header();
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -129,7 +129,7 @@ get_header();
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                        <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
 
                     </div>
 
@@ -161,7 +161,7 @@ get_header();
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                        <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
 
                     </div>
 
@@ -204,7 +204,7 @@ get_header();
                     
                     <?php the_field('kingsmere_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -236,7 +236,7 @@ get_header();
                     
                     <?php the_field('kingsmere_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -255,7 +255,7 @@ get_header();
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -287,7 +287,7 @@ get_header();
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="<?php the_field('community_map'); ?>" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -367,7 +367,7 @@ get_header();
 
                 <div class="video-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XjEv791GJlo" frameborder="0" allowfullscreen></iframe></div>
 
-                <a href="https://www.youtube.com/channel/UCJ34R08mB3c1k5hnfJjPMtw" class="green-link text-right">Looking for more?&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                <a href="<?php echo get_home_url(); ?>/gallery" class="green-link text-right">Looking for more? View Gallery&nbsp;&nbsp;<span class="green-arrow">></span></a>
 
             </div>            
             
