@@ -40,14 +40,14 @@ get_header(); ?>
         <a class="life-link" href="<?php echo get_home_url(); ?>/listings/commercial/"></a>
     </div>
 </div>
-<div class="hero-section list-section hide" id="list-section-4">
+<div class="hero-section list-section" id="list-section-4">
     <div class="sect-background" style="background-image: url('<?php the_field('list_image_4') ?>'); "></div>
     <div class="hero-content animated">
         <h2><?php the_field('list_title_4'); ?></h2>
        <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
         </div>
-        <a class="life-link" href="#"></a>
+        <a class="life-link" href="<?php echo get_home_url(); ?>/listings/currently-available/"></a>
     </div>
 </div>
 

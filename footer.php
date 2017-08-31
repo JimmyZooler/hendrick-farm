@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         
         <footer class="site-footer" id="colophon">
             <div class="row">
-                <div class="col-sm-6 col-md-4 column">
+                <div class="col-sm-4 col-md-3 column">
                     <a href="<?php echo get_home_url(); ?>/lifestyle/">
                         <h4 class="heading-sitemap">Lifestyle</h4>
                     </a>
@@ -52,7 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <li><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/">Adaptive Development</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-6 col-md-4 column">
+                <div class="col-sm-4 col-md-3 column">
                     <a href="<?php echo get_home_url(); ?>/listings/">
                         <h4 class="heading-sitemap">Listings</h4>
                     </a>
@@ -60,22 +60,24 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <li><a href="<?php echo get_home_url(); ?>/listings/single-family/">Single Family</a></li>
                         <li><a href="<?php echo get_home_url(); ?>/listings/townhomes/">Townhomes</a></li>
                         <li><a href="<?php echo get_home_url(); ?>/listings/commercial/">Commercial</a></li>
-<!--                        <li>Currently Available</li>-->
+                        <li><a href="<?php echo get_home_url(); ?>/listings/currently-available/">Currently Available</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 column">
+                    <a href="<?php echo get_home_url(); ?>/gallery/">
+                        <h4 class="heading-sitemap" id="sitemap-gallery">Gallery</h4>
+                    </a>
+                    <a href="#" class="inactiveLink" id="who-we-are-footer">
+                        <h4 class="heading-sitemap">Who We Are</h4>
+                    </a>
+                    <ul class="hidden-xs-down">
+                        <li><a href="<?php echo get_home_url(); ?>/landlab/">Landlab</a></li>
                     </ul>
                     <a href="<?php echo get_home_url(); ?>/contact/">
                         <h4 class="heading-sitemap">Contact</h4>
                     </a>
                 </div>
 <!--
-                <div class="col-sm-6 col-md-4 col-xl-2 column">
-                    <a href="#">
-                        <h4 class="heading-sitemap">Who We Are</h4>
-                    </a>
-                    <ul class="hidden-xs-down">
-                        <li>Landlab</li>
-                        <li>Team</li>
-                    </ul>
-                </div>
                 <div class="col-sm-6 col-md-4 col-xl-2 column">
                     <a href="#">
                         <h4 class="heading-sitemap">News</h4>
@@ -88,9 +90,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-3 column">
                     <a href="#">
-                        <h4 class="heading-sitemap hide">Gallery</h4>
-                    </a>
-                    <a href="#">
                         <h4 class="heading-sitemap hide">Contact</h4>
                     </a>
                     <a href="#">
@@ -98,7 +97,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </a>
                 </div>
 -->
-                <div class="col-md-4 column">
+                <div class="col-md-3 column">
                     <a href="#mc_embed_signup_2" id="footer-subscribe-button">Subscribe</a>
                     <ul id="footer-social">
                         <li><a href="https://www.facebook.com/HendrickFarm/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>

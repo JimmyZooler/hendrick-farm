@@ -12496,7 +12496,9 @@ img.mfp-img {
     #home-section-5 .text-column p {
       display: inline-block; }
   .link-block h3 {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  #sitemap-gallery {
+    margin-bottom: 16px; } }
 
 @media screen and (min-width: 760px) {
   #wrapper-navbar {
