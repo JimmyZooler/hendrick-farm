@@ -82,9 +82,9 @@ get_header();
 
                     <h3>Farm Stand Hours</h3>
 
-                    <p class="hidden-xs-down">Tuesday – Friday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 am – 5:30 pm<br>Saturday &amp; Sunday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10:00 am – 3:00 pm</p>
+                    <p class="hidden-xs-down">Tuesday – Friday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 am – 5:30 pm<br>Saturday &amp; Sunday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed</p>
 
-                    <p class="hidden-sm-up">Tuesday – Friday:<br>11:00 am – 5:30 pm<br>Saturday &amp; Sunday:<br>10:00 am – 3:00 pm</p>
+                    <p class="hidden-sm-up">Tuesday – Friday:<br>11:00 am – 5:30 pm<br>Saturday &amp; Sunday:<br>Closed</p>
 
                 </div>
 

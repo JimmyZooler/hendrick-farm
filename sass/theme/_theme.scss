@@ -163,10 +163,9 @@ h2, .h2 {
     border: none;
     width: 36px;
     height: 30px;
-}
-.page-template-template-home .navbar-toggler {
     right: 30px;
 }
+
 #wrapper-navbar nav button .line:nth-child(1) {
     top: 0;
     transition-property: transform, top;
@@ -292,9 +291,6 @@ h2, .h2 {
     border: none;
 }
 
-#nav-lang {
-    display: none;
-}
 .page-template-template-home #nav-lang {
     display: inline-block; 
 }

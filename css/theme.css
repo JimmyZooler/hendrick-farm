@@ -11267,9 +11267,7 @@ h2, .h2 {
           align-self: flex-end;
   border: none;
   width: 36px;
-  height: 30px; }
-
-.page-template-template-home .navbar-toggler {
+  height: 30px;
   right: 30px; }
 
 #wrapper-navbar nav button .line:nth-child(1) {
@@ -11442,9 +11440,6 @@ h2, .h2 {
 
 .logo-on-mobile .nav-link:before {
   border: none; }
-
-#nav-lang {
-  display: none; }
 
 .page-template-template-home #nav-lang {
   display: inline-block; }
