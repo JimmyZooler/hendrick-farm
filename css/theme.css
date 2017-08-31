@@ -11258,6 +11258,8 @@ h2, .h2 {
             background-repeat: no-repeat;
             height: 140px;
             width: 140px; }
+        #wrapper-navbar nav #menu-modal-wrap #main-menu .shop-menu-item {
+          margin-bottom: 1rem; }
         #wrapper-navbar nav #menu-modal-wrap #main-menu .dropdown-toggle:after {
           display: none !important; }
 
@@ -12811,7 +12813,8 @@ img.mfp-img {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
-    position: absolute; }
+    position: absolute;
+    z-index: 300; }
   #shop-nav {
     display: none; } }
 
@@ -12842,7 +12845,7 @@ img.mfp-img {
           margin-right: 14px; }
           #wrapper-navbar nav #menu-modal-wrap #main-menu li a {
             font-size: 18px; }
-        #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile {
+        #wrapper-navbar nav #menu-modal-wrap #main-menu .logo-on-mobile, #wrapper-navbar nav #menu-modal-wrap #main-menu .shop-menu-item {
           display: none; }
   .white-bg-modal {
     background: none !important; }
@@ -12963,6 +12966,8 @@ img.mfp-img {
           -ms-flex-item-align: end;
               align-self: flex-end;
       position: absolute; }
+    .user-is-touching .navbar-toggleable-lg #shop-nav {
+      display: none; }
   .user-is-touching .active-border:before {
     content: '';
     width: 100%;

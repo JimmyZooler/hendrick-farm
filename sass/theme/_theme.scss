@@ -150,6 +150,9 @@ h2, .h2 {
                         width: 140px;
                     }
                 }
+                .shop-menu-item {
+                    margin-bottom: 1rem;
+                }
                 .dropdown-toggle:after {
                     display: none!important;
                 }
@@ -1794,6 +1797,7 @@ img.mfp-img {
     #nav-lang {
         align-self: flex-end;
         position: absolute;
+        z-index: 300;
     }
     #shop-nav {
         display: none;
@@ -1827,7 +1831,7 @@ img.mfp-img {
                             font-size: 18px;
                         }
                     }
-                    .logo-on-mobile {
+                    .logo-on-mobile, .shop-menu-item {
                         display: none;
                     }
                 }
@@ -1934,6 +1938,9 @@ img.mfp-img {
             #nav-lang {
                 align-self: flex-end;
                 position: absolute;
+            }
+            #shop-nav {
+                display: none;
             }
         }
     }
@@ -2050,6 +2057,7 @@ img.mfp-img {
         display: none;
     }
 }
+
 @media screen and (min-width: 1360px) {
     #home-section-5 {
         img {
