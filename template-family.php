@@ -248,7 +248,7 @@ get_header();
                 
             <div class="col-lg-8 page-block">
 
-                <div class="homes-image-block" style="background-image: url('<?php the_field('sawmill_image') ?>'); ">
+                <div class="homes-image-block image-bottom" style="background-image: url('<?php the_field('sawmill_image') ?>'); ">
                 </div>
                 
                 <div class="hidden-md-down homes-description">

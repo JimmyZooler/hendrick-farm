@@ -11465,6 +11465,15 @@ h2, .h2 {
   color: #6c8e6e;
   border-bottom: 2px solid #6c8e6e; }
 
+#shop-nav {
+  list-style: none;
+  padding-left: 12px;
+  margin-bottom: 0;
+  margin-right: 5px; }
+  #shop-nav #shop-button {
+    width: 18px;
+    height: 19px; }
+
 /****************************************
 *  Home Page Styles
 ****************************************/
@@ -12279,10 +12288,16 @@ h2, .h2 {
 /****************************************
 *  Gallery Page Styles
 ****************************************/
-.active {
+.page-template-template-gallery .active {
   position: relative; }
-  .active .nav-link:first-child {
+  .page-template-template-gallery .active .nav-link:first-child {
     color: #6c8e6e !important; }
+
+.current_page_item.active a {
+  color: #6c8e6e !important; }
+
+.current_page_item.active ul li a {
+  color: #000 !important; }
 
 .container-fluid #grid {
   padding-top: 15px; }
@@ -12799,7 +12814,9 @@ img.mfp-img {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
-    position: absolute; } }
+    position: absolute; }
+  #shop-nav {
+    display: none; } }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   #wrapper-navbar #menu-modal-wrap {
@@ -13014,7 +13031,9 @@ img.mfp-img {
   .homes-description .green-link {
     margin-bottom: 0px; }
   .link-block h3 {
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+  .active-border:before {
+    display: none; } }
 
 @media screen and (min-width: 1360px) {
   #home-section-5 img {
