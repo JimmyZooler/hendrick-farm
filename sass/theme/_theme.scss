@@ -1840,15 +1840,15 @@ img.mfp-img {
     
     #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a {
         border: 2px solid #444;
-        color: #444;
+        color: #444!important;
         background: none;
         margin-left: 6px;
         padding-left: 0.8rem;
         padding-right: 0.8rem;
     }
-    #wrapper-navbar nav #menu-modal-wrap #main-menu li:last-child a:hover {
+    #wrapper-navbar nav #menu-modal-wrap #main-menu li.inquire a:hover {
         background-color: #6c8e6e;
-        color: #fff;
+        color: #fff!important;
         border-color: transparent;
     }
     
