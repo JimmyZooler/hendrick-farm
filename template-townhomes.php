@@ -121,8 +121,10 @@ get_header();
     </div>
     
     <div class="button-bar">
+        
+        <h3>Get into the nitty gritty.</h3>
     
-        <a href="<?php the_field('community_map'); ?>" class="button">See Community Map</a>
+        <a href="<?php the_field('community_map'); ?>" class="button">Compare Our Homes</a>
     
     </div>
     

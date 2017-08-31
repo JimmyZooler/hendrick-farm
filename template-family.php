@@ -299,7 +299,9 @@ get_header();
     
     <div class="button-bar">
         
-        <a href="<?php the_field('community_map'); ?>" class="button" id="community-map-button">View Community Map</a>
+        <h3>Get into the nitty gritty.</h3>
+        
+        <a href="<?php the_field('community_map'); ?>" class="button" id="community-map-button">Compare Our Homes</a>
     
     </div>
     

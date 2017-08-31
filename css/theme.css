@@ -11160,7 +11160,7 @@ h2, .h2 {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 0; }
+  padding: 120px 0 60px; }
   .fixed-width-page header {
     margin-bottom: 3rem; }
 
