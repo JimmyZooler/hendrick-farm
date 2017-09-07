@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <h4 class="heading-sitemap">Listings</h4>
                     </a>
                     <ul class="hidden-xs-down">
-                        <li><a href="<?php echo get_home_url(); ?>/listings/single-family/">Single Family</a></li>
+                        <li><a href="<?php echo get_home_url(); ?>/listings/single-family/">Single Family Homes</a></li>
                         <li><a href="<?php echo get_home_url(); ?>/listings/townhomes/">Townhomes</a></li>
                         <li><a href="<?php echo get_home_url(); ?>/listings/commercial/">Commercial</a></li>
                         <li><a href="<?php echo get_home_url(); ?>/listings/currently-available/">Currently Available</a></li>

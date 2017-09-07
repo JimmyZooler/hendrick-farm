@@ -349,9 +349,10 @@ h2, .h2 {
         position: relative;
         h2 {
             font-size: 40px;
+            font-weight: bold;
             font-size: calc(40px + (64 - 40)*(100vw - 320px)/(760-320));
             -moz-font-size: calc(40px + (64 - 40)*(100vw - 320px)/(760-320));
-            font-family: 'rm_probold';
+            font-family: 'rm_probold', Helvetica, Arial, sans-serif;
             margin-bottom: 0;
         }
         div {
@@ -1127,9 +1128,56 @@ img.mfp-img {
 #gallery {
     padding-bottom: 40px;
 } 
-.page-template-template-gallery #wrapper-footer, .page-template-template-landlab #wrapper-footer {
+.page-template-template-gallery #wrapper-footer, .page-template-template-landlab #wrapper-footer, .page-template-template-team #wrapper-footer{
     border-top: 1px solid rgba(33,33,33, 0.3);
 }
+/****************************************
+*  Team Styles
+****************************************/
+
+#team-page {
+    padding-top:3rem;
+    padding-bottom: 3rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: 'rm_probold', Helvetica, Arial, sans-serif;
+    }
+    p {
+        margin-bottom: 2.5rem;
+        font-style: italic;
+        font-weight: 200;
+        font-family: 'rm_prolight_italic',Helvetica,Arial,sans-serif;
+    }
+    #partners {
+        h2 {
+            color: rgba(0,0,0, 0.4);
+            margin-top: 3rem;
+            padding-top: 3rem;
+            margin-bottom: 1rem;
+            border-top: 1px solid rgba(0,0,0, 0.4);
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .partner-logo {
+            height: calc(100vw - 40px);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
 /****************************************
 *  Footer Styles
 ****************************************/
@@ -1310,6 +1358,11 @@ img.mfp-img {
     }
     #sitemap-gallery {
         margin-bottom: 16px;
+    }
+    #team-page {
+        .partner-logo {
+            height: calc(50vw - 60px)!important;
+        }
     }
 }
 
@@ -1704,6 +1757,17 @@ img.mfp-img {
     .contact-sales-wrap {
         text-align: left;
         margin-left: 8.5%;
+    }
+    #team-page {
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 20px;
+        }
+        .partner-logo {
+            height: calc(25vw - 80px)!important;
+        }
     }
 }
 
