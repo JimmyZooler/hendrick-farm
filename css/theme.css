@@ -12365,6 +12365,7 @@ img.mfp-img {
     font-weight: bold;
     font-family: 'rm_probold', Helvetica, Arial, sans-serif; }
   #team-page p {
+    font-size: 20px;
     margin-bottom: 2.5rem;
     font-style: italic;
     font-weight: 200;
@@ -12795,8 +12796,6 @@ img.mfp-img {
     margin-left: 8.5%; }
   #team-page h3 {
     font-size: 1.5rem; }
-  #team-page p {
-    font-size: 20px; }
   #team-page .partner-logo {
     height: -webkit-calc(25vw - 80px) !important;
     height: -moz-calc(25vw - 80px) !important;

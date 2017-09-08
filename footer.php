@@ -67,7 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <a href="<?php echo get_home_url(); ?>/gallery/">
                         <h4 class="heading-sitemap" id="sitemap-gallery">Gallery</h4>
                     </a>
-                    <a href="#" class="inactiveLink" id="who-we-are-footer">
+                    <a href="<?php echo get_home_url(); ?>/who-we-are/" id="who-we-are-footer">
                         <h4 class="heading-sitemap">Who We Are</h4>
                     </a>
                     <ul class="hidden-xs-down">

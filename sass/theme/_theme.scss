@@ -1150,6 +1150,7 @@ img.mfp-img {
         font-family: 'rm_probold', Helvetica, Arial, sans-serif;
     }
     p {
+        font-size: 20px;
         margin-bottom: 2.5rem;
         font-style: italic;
         font-weight: 200;
@@ -1770,9 +1771,6 @@ img.mfp-img {
     #team-page {
         h3 {
             font-size: 1.5rem;
-        }
-        p {
-            font-size: 20px;
         }
         .partner-logo {
             height: calc(25vw - 80px)!important;
