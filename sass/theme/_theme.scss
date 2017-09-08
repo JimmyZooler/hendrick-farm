@@ -1168,10 +1168,18 @@ img.mfp-img {
             margin-right: auto;
         }
         .partner-logo {
+            position: relative;
             height: calc(100vw - 40px);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
         }
         p {
             text-align: center;

@@ -172,7 +172,11 @@ get_header();
 
                 <div class="col-sm-6 col-lg-3">
 
-                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_1'); ?>');"></div>
+                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_1'); ?>');">
+                    
+                        <a href="http://www.landlab.ca/" ></a>
+                    
+                    </div>
 
                     <p><?php the_field('partner_1'); ?></p>
 
@@ -180,7 +184,11 @@ get_header();
 
                 <div class="col-sm-6 col-lg-3">
 
-                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_2'); ?>');"></div>
+                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_2'); ?>');">
+                    
+                        <a href="http://www.dpz.com/"></a>
+                        
+                    </div>
 
                     <p><?php the_field('partner_2'); ?></p>
 
@@ -188,7 +196,11 @@ get_header();
 
                 <div class="col-sm-6 col-lg-3">
 
-                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_3'); ?>');"></div>
+                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_3'); ?>');">
+                    
+                        <a href="http://www.exp.com/en/home"></a>
+                    
+                    </div>
 
                     <p><?php the_field('partner_3'); ?></p>
 
@@ -196,7 +208,11 @@ get_header();
 
                 <div class="col-sm-6 col-lg-3">
 
-                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_4'); ?>');"></div>
+                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_4'); ?>');">
+                    
+                        <a href="http://www.edbrunet.com/home/"></a>
+                    
+                    </div>
 
                     <p><?php the_field('partner_4'); ?></p>
 
@@ -208,7 +224,10 @@ get_header();
 
                 <div class="col-sm-6 col-lg-3">
 
-                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_5'); ?>');"></div>
+                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_5'); ?>');">
+                    
+                    
+                    </div>
 
                     <p><?php the_field('partner_5'); ?></p>
 
@@ -216,7 +235,11 @@ get_header();
 
                 <div class="col-sm-6 col-lg-3">
 
-                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_6'); ?>');"></div>
+                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_6'); ?>');">
+                    
+                        <a href="https://arpenteurgatineau.ca/"></a>
+                    
+                    </div>
 
                     <p><?php the_field('partner_6'); ?></p>
 
@@ -224,7 +247,11 @@ get_header();
 
                 <div class="col-sm-6 col-lg-3">
 
-                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_7'); ?>');"></div>
+                    <div class="partner-logo" style="background-image: url('<?php the_field('logo_7'); ?>');">
+                    
+                        <a href="https://www.desjardins.com/ca/index.jsp"></a>
+                    
+                    </div>
 
                     <p><?php the_field('partner_7'); ?></p>
 
