@@ -356,6 +356,12 @@
         $('.available-link').mouseleave( function() {
             $(this).closest('.link-block').removeClass('hover');
         });
+        $('.life-link').mouseover( function() {
+            $(this).closest('.who-section').addClass('hover');
+        });
+        $('.life-link').mouseleave( function() {
+            $(this).closest('.who-section').removeClass('hover');
+        });
 
     });
     
@@ -369,8 +375,8 @@
     
     });
     
-    $document.ready(function() {
-        $('.who-we-are .dropdown-toggle').addClass('inactiveLink');
-    });
+//    $document.ready(function() {
+//        $('.who-we-are .dropdown-toggle').addClass('inactiveLink');
+//    });
   
 })( jQuery );

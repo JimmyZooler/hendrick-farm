@@ -71,6 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <h4 class="heading-sitemap">Who We Are</h4>
                     </a>
                     <ul class="hidden-xs-down">
+                        <li><a href="<?php echo get_home_url(); ?>/team/">Team</a></li>
                         <li><a href="<?php echo get_home_url(); ?>/landlab/">Landlab</a></li>
                     </ul>
                     <a href="<?php echo get_home_url(); ?>/contact/">

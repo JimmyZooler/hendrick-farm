@@ -538,7 +538,7 @@ h2, .h2 {
     transition: transform 1.5s ease-in-out;
 }
 
-.life-section, .list-section {
+.life-section, .list-section, .who-section {
     padding-bottom: 5px;
     justify-content: center;
     align-items: flex-end;
@@ -1132,7 +1132,7 @@ img.mfp-img {
     border-top: 1px solid rgba(33,33,33, 0.3);
 }
 /****************************************
-*  Team Styles
+*  Who We Are and Team Styles
 ****************************************/
 
 #team-page {
@@ -1176,6 +1176,19 @@ img.mfp-img {
             text-align: center;
         }
     }
+}
+
+.who-section {
+    .hero-content {
+        h2 {
+            color: #fff;
+        }
+    }
+    
+}
+#who-section-1 {
+    justify-content: flex-start;
+    padding-left: 5%;
 }
 
 /****************************************
@@ -1435,7 +1448,7 @@ img.mfp-img {
             }
         }
     }
-    .life-section, .list-section {
+    .life-section, .list-section, .who-section {
         .hero-content {
             h2 {
                 color: #fff;
@@ -1637,7 +1650,7 @@ img.mfp-img {
             }
         }
     }
-    #life-section-1, #life-section-3, #life-section-5, #list-section-2, #list-section-4 {
+    #life-section-1, #life-section-3, #life-section-5, #list-section-2, #list-section-4, #who-section-1 {
         justify-content: flex-start;
         padding-left: 5%;
         .hero-content {
@@ -1649,7 +1662,7 @@ img.mfp-img {
             }
         }
     }
-    #life-section-2, #life-section-4, #list-section-1, #list-section-3 {
+    #life-section-2, #life-section-4, #list-section-1, #list-section-3, #who-section-2 {
         justify-content: flex-end;
         padding-right: 5%;
         .hero-content {

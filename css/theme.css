@@ -11724,7 +11724,7 @@ h2, .h2 {
   transition: transform 1.5s ease-in-out;
   transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out, -moz-transform 1.5s ease-in-out, -o-transform 1.5s ease-in-out; }
 
-.life-section, .list-section {
+.life-section, .list-section, .who-section {
   padding-bottom: 5px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -11737,21 +11737,21 @@ h2, .h2 {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative; }
-  .life-section .hero-content, .list-section .hero-content {
+  .life-section .hero-content, .list-section .hero-content, .who-section .hero-content {
     position: relative;
     text-align: center; }
-    .life-section .hero-content h2, .list-section .hero-content h2 {
+    .life-section .hero-content h2, .list-section .hero-content h2, .who-section .hero-content h2 {
       color: #fff; }
-    .life-section .hero-content a, .list-section .hero-content a {
+    .life-section .hero-content a, .list-section .hero-content a, .who-section .hero-content a {
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
       z-index: 2; }
-    .life-section .hero-content div, .list-section .hero-content div {
+    .life-section .hero-content div, .list-section .hero-content div, .who-section .hero-content div {
       padding-left: 5px; }
-      .life-section .hero-content div img, .list-section .hero-content div img {
+      .life-section .hero-content div img, .list-section .hero-content div img, .who-section .hero-content div img {
         max-width: 55px;
         padding-left: 0;
         margin-left: 0;
@@ -12350,7 +12350,7 @@ img.mfp-img {
   border-top: 1px solid rgba(33, 33, 33, 0.3); }
 
 /****************************************
-*  Team Styles
+*  Who We Are and Team Styles
 ****************************************/
 #team-page {
   padding-top: 3rem;
@@ -12388,6 +12388,17 @@ img.mfp-img {
     background-repeat: no-repeat; }
   #team-page #partners p {
     text-align: center; }
+
+.who-section .hero-content h2 {
+  color: #fff; }
+
+#who-section-1 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 5%; }
 
 /****************************************
 *  Footer Styles
@@ -12595,9 +12606,9 @@ img.mfp-img {
       #home-section-5 .text-column h3 {
         font-size: 1.5rem;
         font-weight: bold; }
-  .life-section .hero-content h2, .list-section .hero-content h2 {
+  .life-section .hero-content h2, .list-section .hero-content h2, .who-section .hero-content h2 {
     color: #fff; }
-  .life-section .hero-content div img, .list-section .hero-content div img {
+  .life-section .hero-content div img, .list-section .hero-content div img, .who-section .hero-content div img {
     max-width: 95px; }
   .page-header {
     height: 60vh; }
@@ -12717,27 +12728,27 @@ img.mfp-img {
     #home-section-5 .text-column p {
       font-size: 1.1rem;
       max-width: 800px; }
-  #life-section-1, #life-section-3, #life-section-5, #list-section-2, #list-section-4 {
+  #life-section-1, #life-section-3, #life-section-5, #list-section-2, #list-section-4, #who-section-1 {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
        -moz-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding-left: 5%; }
-    #life-section-1 .hero-content, #life-section-3 .hero-content, #life-section-5 .hero-content, #list-section-2 .hero-content, #list-section-4 .hero-content {
+    #life-section-1 .hero-content, #life-section-3 .hero-content, #life-section-5 .hero-content, #list-section-2 .hero-content, #list-section-4 .hero-content, #who-section-1 .hero-content {
       text-align: left; }
-      #life-section-1 .hero-content div img, #life-section-3 .hero-content div img, #life-section-5 .hero-content div img, #list-section-2 .hero-content div img, #list-section-4 .hero-content div img {
+      #life-section-1 .hero-content div img, #life-section-3 .hero-content div img, #life-section-5 .hero-content div img, #list-section-2 .hero-content div img, #list-section-4 .hero-content div img, #who-section-1 .hero-content div img {
         margin-left: 20px; }
-  #life-section-2, #life-section-4, #list-section-1, #list-section-3 {
+  #life-section-2, #life-section-4, #list-section-1, #list-section-3, #who-section-2 {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
        -moz-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-right: 5%; }
-    #life-section-2 .hero-content, #life-section-4 .hero-content, #list-section-1 .hero-content, #list-section-3 .hero-content {
+    #life-section-2 .hero-content, #life-section-4 .hero-content, #list-section-1 .hero-content, #list-section-3 .hero-content, #who-section-2 .hero-content {
       text-align: left; }
-      #life-section-2 .hero-content div img, #life-section-4 .hero-content div img, #list-section-1 .hero-content div img, #list-section-3 .hero-content div img {
+      #life-section-2 .hero-content div img, #life-section-4 .hero-content div img, #list-section-1 .hero-content div img, #list-section-3 .hero-content div img, #who-section-2 .hero-content div img {
         margin-left: 20px; }
   #list-section-1 .sect-background {
     background-position-y: 70%; }
