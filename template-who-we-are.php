@@ -32,12 +32,12 @@ get_header(); ?>
 
 <ul class="hero--pager">
     <li class="pager--indicator">
-        <a class="pager--indicator-link" href="#list-section-1">
+        <a class="pager--indicator-link" href="#who-section-1">
             <span id="indicator-1" class="active"></span>
         </a>
     </li>
     <li class="pager--indicator">
-        <a class="pager--indicator-link" href="#list-section-2">
+        <a class="pager--indicator-link" href="#who-section-2">
             <span id="indicator-2"></span>
         </a>
     </li>

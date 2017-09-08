@@ -234,6 +234,19 @@
             offset: 68
         });
         
+        $('#who-section-2').waypoint({
+          handler: function(direction) {
+              if ( direction == 'down' ) {
+                  $indicatorOne.removeClass("active");
+                  $indicatorTwo.addClass("active");
+              } else {
+                  $indicatorTwo.removeClass("active");
+                  $indicatorOne.addClass("active");
+              }
+          },
+            offset: 68
+        });
+        
         $('#wrapper-footer').waypoint({
           handler: function(direction) {
               if ( direction == 'down' ) {
@@ -261,7 +274,8 @@
                 $heroContent10 = $('#list-section-1 .hero-content'),
                 $heroContent11 = $('#list-section-2 .hero-content'),
                 $heroContent12 = $('#list-section-3 .hero-content'),
-                $heroContent13 = $('#list-section-4 .hero-content');
+                $heroContent13 = $('#list-section-4 .hero-content'),
+                $heroContent14 = $('#who-section-2 .hero-content');
         
           // hide our element on page load
           $heroContent2.css('opacity', 0);
@@ -275,6 +289,7 @@
         $heroContent11.css('opacity', 0);
         $heroContent12.css('opacity', 0);
         $heroContent13.css('opacity', 0);
+        $heroContent14.css('opacity', 0);
         
 
           $heroContent2.waypoint(function() {
@@ -309,6 +324,9 @@
           }, { offset: '70%' });
         $heroContent13.waypoint(function() {
               $heroContent13.addClass('fadeInUp'); 
+          }, { offset: '70%' });
+        $heroContent14.waypoint(function() {
+              $heroContent14.addClass('fadeInUp'); 
           }, { offset: '70%' });
 
         // gallery image scripts

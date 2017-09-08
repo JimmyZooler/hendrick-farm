@@ -11849,8 +11849,8 @@ h2, .h2 {
        -o-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05); }
 
-.life-section .hero-content:hover div img, .list-section .hero-content:hover div img, .link-block:hover img {
-  margin-left: 30px !important; }
+.life-section .hero-content:hover div img, .list-section .hero-content:hover div img, .link-block:hover img, .who-section .hero-content:hover div img {
+  margin-left: 25px !important; }
 
 /****************************************
 *  Page Styles
@@ -12392,14 +12392,6 @@ img.mfp-img {
 .who-section .hero-content h2 {
   color: #fff; }
 
-#who-section-1 {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-     -moz-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 5%; }
-
 /****************************************
 *  Footer Styles
 ****************************************/
@@ -12808,7 +12800,9 @@ img.mfp-img {
   #team-page .partner-logo {
     height: -webkit-calc(25vw - 80px) !important;
     height: -moz-calc(25vw - 80px) !important;
-    height: calc(25vw - 80px) !important; } }
+    height: calc(25vw - 80px) !important; }
+  .life-section .hero-content:hover div img, .list-section .hero-content:hover div img, .link-block:hover img, .who-section .hero-content:hover div img {
+    margin-left: 30px !important; } }
 
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
