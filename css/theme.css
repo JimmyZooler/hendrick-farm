@@ -12400,6 +12400,13 @@ img.mfp-img {
 .who-section .hero-content h2 {
   color: #fff; }
 
+.justify-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /****************************************
 *  Footer Styles
 ****************************************/
