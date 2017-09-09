@@ -115,7 +115,7 @@ get_header();
                 
                 <div class="link-section text-right">
             
-                    <a href="http://www.landlab.ca/" class="green-link"><?php the_field('link_text_1'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/" class="green-link"><?php the_field('link_text_1'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
 
                 </div>
 
