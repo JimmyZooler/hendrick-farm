@@ -55,7 +55,7 @@ get_header();
                 
                 <img src="<?php the_field('yves_image'); ?>" />
                 
-                <h3>Yves Allary</h3>
+                <h3>Yves Alary</h3>
                 
                 <p>Chief Financial Officer</p>
 

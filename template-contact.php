@@ -80,11 +80,12 @@ get_header();
 
                 <div class="col-md-6">
 
-                    <h3>Farm Stand Hours</h3>
+                    <h3>Farm Stand Hours (Fall)</h3>
 
-                    <p class="hidden-xs-down">Tuesday – Friday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 am – 5:30 pm<br>Saturday &amp; Sunday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed</p>
+                    <p class="hidden-xs-down">Tuesday – Friday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 am – 5:30 pm<br>Saturday –
+ Monday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed</p>
 
-                    <p class="hidden-sm-up">Tuesday – Friday:<br>11:00 am – 5:30 pm<br>Saturday &amp; Sunday:<br>Closed</p>
+                    <p class="hidden-sm-up">Tuesday – Friday:<br>11:00 am – 5:30 pm<br>Saturday – Monday:<br>Closed</p>
 
                 </div>
 

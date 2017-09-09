@@ -12830,7 +12830,8 @@ img.mfp-img {
   #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll {
     max-width: 450px; }
     #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll input.email {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 5px; }
     #subscribe-bar #mc_embed_signup #mc_embed_signup_scroll .button {
       width: 100%; } }
 
