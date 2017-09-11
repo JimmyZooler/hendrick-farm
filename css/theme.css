@@ -11470,6 +11470,14 @@ h2, .h2 {
   #shop-nav #shop-button {
     width: 18px;
     height: 19px; }
+    #shop-nav #shop-button svg {
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s; }
+
+#shop-nav #shop-button a:hover svg {
+  fill: #6c8e6e; }
 
 /****************************************
 *  Home Page Styles

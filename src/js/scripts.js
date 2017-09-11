@@ -331,12 +331,13 @@
 
         // gallery image scripts
         
-        $galleryImage = $('.gallery-image');
-        
+//        $galleryImage = $('.gallery-image');
+//        
 //        $galleryImage.css('opacity', 0);
 //        
 //        $galleryImage.waypoint(function() {
-//              $galleryImage.addClass('fadeInUp');
+//              $galleryImage.addClass('zoomIn');
+//              $galleryImage.css('opacity', 1);
 //          }, { offset: '50%' }); 
         
     });
