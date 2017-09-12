@@ -263,6 +263,8 @@
     // scripts for hero-section animations 
     
     $(document).ready(function(){
+        
+        if ($window.width() >= 760 ) {
             var $heroContent2 = $('#hero-section-2 .hero-content'),
                 $heroContent3 = $('#hero-section-3 .hero-content'),
                 $heroContent4 = $('#hero-section-4 .hero-content'),
@@ -277,19 +279,19 @@
                 $heroContent13 = $('#list-section-4 .hero-content'),
                 $heroContent14 = $('#who-section-2 .hero-content');
         
-          // hide our element on page load
-          $heroContent2.css('opacity', 0);
-          $heroContent3.css('opacity', 0);
-          $heroContent4.css('opacity', 0);
-          $heroContent6.css('opacity', 0);
-          $heroContent7.css('opacity', 0);
-          $heroContent8.css('opacity', 0);
-          $heroContent9.css('opacity', 0);
-          $heroContent10.css('opacity', 0);
-        $heroContent11.css('opacity', 0);
-        $heroContent12.css('opacity', 0);
-        $heroContent13.css('opacity', 0);
-        $heroContent14.css('opacity', 0);
+            // hide our element on page load
+            $heroContent2.css('opacity', 0);
+            $heroContent3.css('opacity', 0);
+            $heroContent4.css('opacity', 0);
+            $heroContent6.css('opacity', 0);
+            $heroContent7.css('opacity', 0);
+            $heroContent8.css('opacity', 0);
+            $heroContent9.css('opacity', 0);
+            $heroContent10.css('opacity', 0);
+            $heroContent11.css('opacity', 0);
+            $heroContent12.css('opacity', 0);
+            $heroContent13.css('opacity', 0);
+            $heroContent14.css('opacity', 0);
         
 
           $heroContent2.waypoint(function() {
@@ -298,40 +300,42 @@
           $heroContent3.waypoint(function() {
               $heroContent3.addClass('fadeInUp');
           }, { offset: '50%' });
-        $heroContent4.waypoint(function() {
-              $heroContent4.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent6.waypoint(function() {
-              $heroContent6.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent7.waypoint(function() {
-              $heroContent7.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent8.waypoint(function() {
-              $heroContent8.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent9.waypoint(function() {
-              $heroContent9.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent10.waypoint(function() {
-              $heroContent10.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent11.waypoint(function() {
-              $heroContent11.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent12.waypoint(function() {
-              $heroContent12.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent13.waypoint(function() {
-              $heroContent13.addClass('fadeInUp'); 
-          }, { offset: '70%' });
-        $heroContent14.waypoint(function() {
-              $heroContent14.addClass('fadeInUp'); 
-          }, { offset: '70%' });
+            $heroContent4.waypoint(function() {
+                  $heroContent4.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent6.waypoint(function() {
+                  $heroContent6.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent7.waypoint(function() {
+                  $heroContent7.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent8.waypoint(function() {
+                  $heroContent8.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent9.waypoint(function() {
+                  $heroContent9.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent10.waypoint(function() {
+                  $heroContent10.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent11.waypoint(function() {
+                  $heroContent11.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent12.waypoint(function() {
+                  $heroContent12.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent13.waypoint(function() {
+                  $heroContent13.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            $heroContent14.waypoint(function() {
+                  $heroContent14.addClass('fadeInUp'); 
+              }, { offset: '70%' });
+            
+        };
 
-        // gallery image scripts
+            // gallery image scripts
         
-        $galleryImage0 = $('#gallery-image-0'),
+            $galleryImage0 = $('#gallery-image-0'),
             $galleryImage1 = $('#gallery-image-1'),
             $galleryImage2 = $('#gallery-image-2'),
             $galleryImage3 = $('#gallery-image-3'),
@@ -409,154 +413,154 @@
             $galleryImage37.css('opacity', 0);
             $galleryImage38.css('opacity', 0);
         
-        $galleryImage0.addClass('zoomIn');
-        $galleryImage1.addClass('zoomIn');
-        $galleryImage2.addClass('zoomIn');
-        
-        $galleryImage3.waypoint(function() {
-              $galleryImage3.addClass('zoomIn');
-              $galleryImage3.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage4.waypoint(function() {
-              $galleryImage4.addClass('zoomIn');
-              $galleryImage4.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage5.waypoint(function() {
-              $galleryImage5.addClass('zoomIn');
-              $galleryImage5.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage6.waypoint(function() {
-              $galleryImage6.addClass('zoomIn');
-              $galleryImage6.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage7.waypoint(function() {
-              $galleryImage7.addClass('zoomIn');
-              $galleryImage7.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage8.waypoint(function() {
-              $galleryImage8.addClass('zoomIn');
-              $galleryImage8.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage9.waypoint(function() {
-              $galleryImage9.addClass('zoomIn');
-              $galleryImage9.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage10.waypoint(function() {
-              $galleryImage10.addClass('zoomIn');
-              $galleryImage10.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage11.waypoint(function() {
-              $galleryImage11.addClass('zoomIn');
-              $galleryImage11.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage12.waypoint(function() {
-              $galleryImage12.addClass('zoomIn');
-              $galleryImage12.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage13.waypoint(function() {
-              $galleryImage13.addClass('zoomIn');
-              $galleryImage13.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage14.waypoint(function() {
-              $galleryImage14.addClass('zoomIn');
-              $galleryImage14.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage15.waypoint(function() {
-              $galleryImage15.addClass('zoomIn');
-              $galleryImage15.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage16.waypoint(function() {
-              $galleryImage16.addClass('zoomIn');
-              $galleryImage16.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage17.waypoint(function() {
-              $galleryImage17.addClass('zoomIn');
-              $galleryImage17.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage18.waypoint(function() {
-              $galleryImage18.addClass('zoomIn');
-              $galleryImage18.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage19.waypoint(function() {
-              $galleryImage19.addClass('zoomIn');
-              $galleryImage19.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage20.waypoint(function() {
-              $galleryImage20.addClass('zoomIn');
-              $galleryImage20.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage21.waypoint(function() {
-              $galleryImage21.addClass('zoomIn');
-              $galleryImage21.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage22.waypoint(function() {
-              $galleryImage22.addClass('zoomIn');
-              $galleryImage22.css('opacity', 1);
-          }, { offset: '90%' });
-        $galleryImage23.waypoint(function() {
-              $galleryImage23.addClass('zoomIn');
-              $galleryImage23.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage24.waypoint(function() {
-              $galleryImage24.addClass('zoomIn');
-              $galleryImage24.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage25.waypoint(function() {
-              $galleryImage25.addClass('zoomIn');
-              $galleryImage25.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage26.waypoint(function() {
-              $galleryImage26.addClass('zoomIn');
-              $galleryImage26.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage27.waypoint(function() {
-              $galleryImage27.addClass('zoomIn');
-              $galleryImage27.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage28.waypoint(function() {
-              $galleryImage28.addClass('zoomIn');
-              $galleryImage28.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage29.waypoint(function() {
-              $galleryImage29.addClass('zoomIn');
-              $galleryImage29.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage30.waypoint(function() {
-              $galleryImage30.addClass('zoomIn');
-              $galleryImage30.css('opacity', 1);
-          }, { offset: '95%' });
-        $galleryImage31.waypoint(function() {
-              $galleryImage31.addClass('zoomIn');
-              $galleryImage31.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage32.waypoint(function() {
-              $galleryImage32.addClass('zoomIn');
-              $galleryImage32.css('opacity', 1);
-          }, { offset: '85%' }); 
-        $galleryImage33.waypoint(function() {
-              $galleryImage33.addClass('zoomIn');
-              $galleryImage33.css('opacity', 1);
-          }, { offset: '95%' }); 
-        $galleryImage34.waypoint(function() {
-              $galleryImage34.addClass('zoomIn');
-              $galleryImage34.css('opacity', 1);
-          }, { offset: '90%' }); 
-        $galleryImage35.waypoint(function() {
-              $galleryImage35.addClass('zoomIn');
-              $galleryImage35.css('opacity', 1);
-          }, { offset: '85%' });
-        $galleryImage36.waypoint(function() {
-              $galleryImage36.addClass('zoomIn');
-              $galleryImage36.css('opacity', 1);
-          }, { offset: '95%' });
-        $galleryImage37.waypoint(function() {
-              $galleryImage37.addClass('zoomIn');
-              $galleryImage37.css('opacity', 1);
-          }, { offset: '90%' });
-        $galleryImage38.waypoint(function() {
-              $galleryImage38.addClass('zoomIn');
-              $galleryImage38.css('opacity', 1);
-          }, { offset: '85%' });
+            $galleryImage0.addClass('zoomIn');
+            $galleryImage1.addClass('zoomIn');
+            $galleryImage2.addClass('zoomIn');
+
+            $galleryImage3.waypoint(function() {
+                  $galleryImage3.addClass('zoomIn');
+                  $galleryImage3.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage4.waypoint(function() {
+                  $galleryImage4.addClass('zoomIn');
+                  $galleryImage4.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage5.waypoint(function() {
+                  $galleryImage5.addClass('zoomIn');
+                  $galleryImage5.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage6.waypoint(function() {
+                  $galleryImage6.addClass('zoomIn');
+                  $galleryImage6.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage7.waypoint(function() {
+                  $galleryImage7.addClass('zoomIn');
+                  $galleryImage7.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage8.waypoint(function() {
+                  $galleryImage8.addClass('zoomIn');
+                  $galleryImage8.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage9.waypoint(function() {
+                  $galleryImage9.addClass('zoomIn');
+                  $galleryImage9.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage10.waypoint(function() {
+                  $galleryImage10.addClass('zoomIn');
+                  $galleryImage10.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage11.waypoint(function() {
+                  $galleryImage11.addClass('zoomIn');
+                  $galleryImage11.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage12.waypoint(function() {
+                  $galleryImage12.addClass('zoomIn');
+                  $galleryImage12.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage13.waypoint(function() {
+                  $galleryImage13.addClass('zoomIn');
+                  $galleryImage13.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage14.waypoint(function() {
+                  $galleryImage14.addClass('zoomIn');
+                  $galleryImage14.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage15.waypoint(function() {
+                  $galleryImage15.addClass('zoomIn');
+                  $galleryImage15.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage16.waypoint(function() {
+                  $galleryImage16.addClass('zoomIn');
+                  $galleryImage16.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage17.waypoint(function() {
+                  $galleryImage17.addClass('zoomIn');
+                  $galleryImage17.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage18.waypoint(function() {
+                  $galleryImage18.addClass('zoomIn');
+                  $galleryImage18.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage19.waypoint(function() {
+                  $galleryImage19.addClass('zoomIn');
+                  $galleryImage19.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage20.waypoint(function() {
+                  $galleryImage20.addClass('zoomIn');
+                  $galleryImage20.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage21.waypoint(function() {
+                  $galleryImage21.addClass('zoomIn');
+                  $galleryImage21.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage22.waypoint(function() {
+                  $galleryImage22.addClass('zoomIn');
+                  $galleryImage22.css('opacity', 1);
+              }, { offset: '90%' });
+            $galleryImage23.waypoint(function() {
+                  $galleryImage23.addClass('zoomIn');
+                  $galleryImage23.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage24.waypoint(function() {
+                  $galleryImage24.addClass('zoomIn');
+                  $galleryImage24.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage25.waypoint(function() {
+                  $galleryImage25.addClass('zoomIn');
+                  $galleryImage25.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage26.waypoint(function() {
+                  $galleryImage26.addClass('zoomIn');
+                  $galleryImage26.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage27.waypoint(function() {
+                  $galleryImage27.addClass('zoomIn');
+                  $galleryImage27.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage28.waypoint(function() {
+                  $galleryImage28.addClass('zoomIn');
+                  $galleryImage28.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage29.waypoint(function() {
+                  $galleryImage29.addClass('zoomIn');
+                  $galleryImage29.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage30.waypoint(function() {
+                  $galleryImage30.addClass('zoomIn');
+                  $galleryImage30.css('opacity', 1);
+              }, { offset: '95%' });
+            $galleryImage31.waypoint(function() {
+                  $galleryImage31.addClass('zoomIn');
+                  $galleryImage31.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage32.waypoint(function() {
+                  $galleryImage32.addClass('zoomIn');
+                  $galleryImage32.css('opacity', 1);
+              }, { offset: '85%' }); 
+            $galleryImage33.waypoint(function() {
+                  $galleryImage33.addClass('zoomIn');
+                  $galleryImage33.css('opacity', 1);
+              }, { offset: '95%' }); 
+            $galleryImage34.waypoint(function() {
+                  $galleryImage34.addClass('zoomIn');
+                  $galleryImage34.css('opacity', 1);
+              }, { offset: '90%' }); 
+            $galleryImage35.waypoint(function() {
+                  $galleryImage35.addClass('zoomIn');
+                  $galleryImage35.css('opacity', 1);
+              }, { offset: '85%' });
+            $galleryImage36.waypoint(function() {
+                  $galleryImage36.addClass('zoomIn');
+                  $galleryImage36.css('opacity', 1);
+              }, { offset: '95%' });
+            $galleryImage37.waypoint(function() {
+                  $galleryImage37.addClass('zoomIn');
+                  $galleryImage37.css('opacity', 1);
+              }, { offset: '90%' });
+            $galleryImage38.waypoint(function() {
+                  $galleryImage38.addClass('zoomIn');
+                  $galleryImage38.css('opacity', 1);
+              }, { offset: '85%' });
         
     });
     
