@@ -35,15 +35,22 @@ get_header();
 
                 $images = get_field('gallery');
 
-                if( $images ): ?>
+                if( $images ): 
+                        
+                        $count = 0; ?>
 
                         <?php foreach( $images as $image ): ?>
-                            <div class="gallery-image animated zoomIn">
+                            <div class="gallery-image animated" id="gallery-image-<?php echo $count; ?>">
                                 <a href="<?php echo $image['url']; ?>">
                                      <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
                                 </a>
                             </div>
-                        <?php endforeach; ?>
+                
+                        <?php 
+                            
+                            ++$count;
+                
+                            endforeach; ?>
 
                 <?php endif; ?>
 
