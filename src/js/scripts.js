@@ -296,40 +296,40 @@
 
           $heroContent2.waypoint(function() {
               $heroContent2.addClass('fadeInUp');
-          }, { offset: '50%' });
+          }, { offset: '80%' });
           $heroContent3.waypoint(function() {
               $heroContent3.addClass('fadeInUp');
-          }, { offset: '50%' });
+          }, { offset: '80%' });
             $heroContent4.waypoint(function() {
                   $heroContent4.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent6.waypoint(function() {
                   $heroContent6.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent7.waypoint(function() {
                   $heroContent7.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent8.waypoint(function() {
                   $heroContent8.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent9.waypoint(function() {
                   $heroContent9.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent10.waypoint(function() {
                   $heroContent10.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent11.waypoint(function() {
                   $heroContent11.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent12.waypoint(function() {
                   $heroContent12.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent13.waypoint(function() {
                   $heroContent13.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             $heroContent14.waypoint(function() {
                   $heroContent14.addClass('fadeInUp'); 
-              }, { offset: '70%' });
+              }, { offset: '80%' });
             
         };
 
