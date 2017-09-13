@@ -204,6 +204,37 @@ get_header();
         
     </div>
     
+    <div class="container-fluid more-padding">
+
+        <div class="row">
+        
+            <div class="col-lg-6 link-block-column-wrap">
+            
+                <div class="link-block">
+                
+                    <h3>Explore<br>Lifestyle</h3>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
+                    <div class="sect-background" style="background-image: url('<?php the_field("link_image_1"); ?>');"></div>
+                    <a class="available-link" href="<?php echo get_home_url(); ?>/lifestyle/"></a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 link-block-column-wrap">
+                
+                <div class="link-block">
+                    
+                    <h3>Explore Single<br>Family Homes</h3>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
+                    <div class="sect-background" style="background-image: url('<?php the_field("link_image_2"); ?>');"></div>
+                    <a class="available-link" href="<?php echo get_home_url(); ?>/listings/single-family/"></a>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    </div>
+    
     
 
 </div><!-- Wrapper end -->
