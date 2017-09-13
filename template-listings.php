@@ -12,7 +12,7 @@ get_header(); ?>
 
 <div class="hero-section white-border list-section" id="list-section-1">
     <div class="sect-background" style="background-image: url('<?php the_field('list_image_1') ?>'); "></div>
-    <div class="hero-content animated fadeInUp">
+    <div class="hero-content animated">
         <h2><?php the_field('list_title_1'); ?></h2>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />

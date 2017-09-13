@@ -265,7 +265,8 @@
     $(document).ready(function(){
         
         if ($window.width() >= 760 ) {
-            var $heroContent2 = $('#hero-section-2 .hero-content'),
+            var $heroContent1 = $('#hero-section-1 .hero-content'),
+                $heroContent2 = $('#hero-section-2 .hero-content'),
                 $heroContent3 = $('#hero-section-3 .hero-content'),
                 $heroContent4 = $('#hero-section-4 .hero-content'),
                 $heroContent5 = $('#life-section-1 .hero-content'),
@@ -277,7 +278,13 @@
                 $heroContent11 = $('#list-section-2 .hero-content'),
                 $heroContent12 = $('#list-section-3 .hero-content'),
                 $heroContent13 = $('#list-section-4 .hero-content'),
-                $heroContent14 = $('#who-section-2 .hero-content');
+                $heroContent14 = $('#who-section-2 .hero-content'),
+                $heroContent15 = $('#who-section-1 .hero-content');
+            
+//            $heroContent1.css('opacity', 0);
+//            $heroContent5.css('opacity', 0);
+//            $heroContent10.css('opacity', 0);
+//            $heroContent15.css('opacity', 0);
         
             // hide our element on page load
             $heroContent2.css('opacity', 0);
@@ -292,6 +299,11 @@
             $heroContent12.css('opacity', 0);
             $heroContent13.css('opacity', 0);
             $heroContent14.css('opacity', 0);
+            
+            $heroContent1.addClass('fadeInUp');
+            $heroContent5.addClass('fadeInUp');
+            $heroContent10.addClass('fadeInUp');
+            $heroContent15.addClass('fadeInUp');
         
 
           $heroContent2.waypoint(function() {

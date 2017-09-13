@@ -12,7 +12,7 @@ get_header(); ?>
 
 <div class="hero-section white-border" id="hero-section-1">
     <div class="sect-background" style="background-image: url('<?php the_field('hero_1_image') ?>'); "></div>
-    <div class="hero-content animated fadeInUp">
+    <div class="hero-content animated">
         <h2><?php the_field('hero_title_1'); ?></h2>
         <div>
             <?php the_field('hero_link_text_1'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_black.svg" />
