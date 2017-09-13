@@ -12506,7 +12506,8 @@ img.mfp-img {
 .page-template-template-foundation #wrapper-footer,
 .page-template-template-commercial #wrapper-footer,
 .page-template-template-adaptive #wrapper-footer,
-.page-template-template-available #wrapper-footer {
+.page-template-template-available #wrapper-footer,
+.page-template-template-townhomes #wrapper-footer {
   border-top: 1px solid rgba(33, 33, 33, 0.3);
   margin-top: 40px; }
 
