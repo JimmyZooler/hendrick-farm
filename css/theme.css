@@ -12422,6 +12422,43 @@ img.mfp-img {
           justify-content: center; }
 
 /****************************************
+*  FAQ Styles
+****************************************/
+#faq {
+  padding-bottom: 2rem; }
+  #faq #faq-content-block {
+    margin-top: 3rem;
+    margin-bottom: 4rem; }
+  #faq p {
+    font-size: 18px; }
+  #faq .question-block {
+    margin-top: 10px;
+    margin-bottom: 40px; }
+    #faq .question-block a.btn {
+      color: #6c8e6e;
+      background-color: #fff;
+      -webkit-border-radius: 0;
+         -moz-border-radius: 0;
+              border-radius: 0;
+      border: 2px solid #6c8e6e;
+      font-weight: bold;
+      padding: 4px 13px;
+      font-size: 28px; }
+    #faq .question-block a.btn:focus, #faq .question-block a.btn:hover {
+      color: #fff;
+      background-color: #6c8e6e; }
+    #faq .question-block span {
+      margin-left: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'rm_probold', Helvetica, Arial, sans-serif; }
+    #faq .question-block .answer-block .card {
+      margin-left: 68px;
+      padding-bottom: 1rem;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+/****************************************
 *  Footer Styles
 ****************************************/
 #wrapper-footer {
@@ -12507,7 +12544,8 @@ img.mfp-img {
 .page-template-template-commercial #wrapper-footer,
 .page-template-template-adaptive #wrapper-footer,
 .page-template-template-available #wrapper-footer,
-.page-template-template-townhomes #wrapper-footer {
+.page-template-template-townhomes #wrapper-footer,
+.page-template-template-faq #wrapper-footer {
   border-top: 1px solid rgba(33, 33, 33, 0.3);
   margin-top: 40px; }
 
@@ -12692,7 +12730,11 @@ img.mfp-img {
     padding-right: 20px; }
   #subscribe-bar {
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+  #faq p {
+    font-size: 22px; }
+  #faq .question-block span {
+    font-size: 30px; } }
 
 @media screen and (max-width: 760px) {
   .hero--pager {
@@ -12830,7 +12872,11 @@ img.mfp-img {
     height: -moz-calc(25vw - 80px) !important;
     height: calc(25vw - 80px) !important; }
   .life-section .hero-content:hover div img, .list-section .hero-content:hover div img, .link-block:hover img, .who-section .hero-content:hover div img {
-    margin-left: 30px !important; } }
+    margin-left: 30px !important; }
+  #faq p {
+    font-size: 26px; }
+  #faq .question-block span {
+    font-size: 32px; } }
 
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
