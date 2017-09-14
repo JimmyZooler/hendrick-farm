@@ -62,11 +62,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <li><a href="<?php echo get_home_url(); ?>/listings/commercial/">Commercial</a></li>
                         <li><a href="<?php echo get_home_url(); ?>/listings/currently-available/">Currently Available</a></li>
                     </ul>
+                    <a href="<?php echo get_home_url(); ?>/gallery/">
+                        <h4 class="heading-sitemap">Gallery</h4>
+                    </a>
                 </div>
                 <div class="col-sm-4 col-md-3 column">
-                    <a href="<?php echo get_home_url(); ?>/gallery/">
-                        <h4 class="heading-sitemap" id="sitemap-gallery">Gallery</h4>
-                    </a>
                     <a href="<?php echo get_home_url(); ?>/who-we-are/" id="who-we-are-footer">
                         <h4 class="heading-sitemap">Who We Are</h4>
                     </a>
@@ -75,7 +75,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <li><a href="<?php echo get_home_url(); ?>/landlab/">Landlab</a></li>
                     </ul>
                     <a href="<?php echo get_home_url(); ?>/contact/">
-                        <h4 class="heading-sitemap">Contact</h4>
+                        <h4 class="heading-sitemap" id="sitemap-contact">Contact</h4>
+                    </a>
+                    <a href="<?php echo get_home_url(); ?>/faq/">
+                        <h4 class="heading-sitemap">FAQ</h4>
                     </a>
                 </div>
 <!--
