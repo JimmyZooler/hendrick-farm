@@ -1228,28 +1228,32 @@ img.mfp-img {
     .question-block {
         margin-top: 10px;
         margin-bottom: 40px;
-        a.btn {
-            color: #6c8e6e;
-            background-color: #fff;
-            border-radius: 0;
-            border: 2px solid #6c8e6e;
-            font-weight: bold;
-            padding: 4px 13px;
-            font-size: 28px;
-        }
-        a.btn:focus, a.btn:hover {
-            color: #fff;
-            background-color: #6c8e6e;
-        }
-        span {
-            margin-left: 10px;
-            font-size: 24px;
-            font-weight: bold;
-            font-family: 'rm_probold', Helvetica, Arial, sans-serif;
+        .question-header {
+            display: flex;
+            a.btn {
+                color: #6c8e6e;
+                background-color: #fff;
+                border-radius: 0;
+                border: 2px solid #6c8e6e;
+                font-weight: bold;
+                padding: 3px 9px;
+                font-size: 20px;
+                margin-right: 10px;
+                align-self: flex-start;
+            }
+            a.btn:focus, a.btn:hover {
+                color: #fff;
+                background-color: #6c8e6e;
+            }
+            .question {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'rm_probold', Helvetica, Arial, sans-serif;
+            }
         }
         .answer-block {
             .card {
-                margin-left: 68px;
+                margin-left: 46px;
                 padding-bottom: 1rem;
                 border: none;
                 border-bottom: 1px solid rgba(0,0,0,.125);
@@ -1635,8 +1639,20 @@ img.mfp-img {
             font-size: 22px;
         }
         .question-block {
-            span {
-                font-size: 30px;
+            .question-header {
+                .question {
+                    font-size: 30px;
+                }
+                a.btn {
+                    padding: 4px 13px;
+                    font-size: 28px;
+                    margin-right: 20px;
+                }
+            }
+            .answer-block {
+                .card {
+                    margin-left: 70px;
+                }
             }
         }
     }
@@ -1868,8 +1884,10 @@ img.mfp-img {
             font-size: 26px;
         }
         .question-block {
-            span {
-                font-size: 32px;
+            .question-header {
+                .question {
+                    font-size: 32px;
+                }
             }
         }
     }

@@ -12434,26 +12434,35 @@ img.mfp-img {
   #faq .question-block {
     margin-top: 10px;
     margin-bottom: 40px; }
-    #faq .question-block a.btn {
-      color: #6c8e6e;
-      background-color: #fff;
-      -webkit-border-radius: 0;
-         -moz-border-radius: 0;
-              border-radius: 0;
-      border: 2px solid #6c8e6e;
-      font-weight: bold;
-      padding: 4px 13px;
-      font-size: 28px; }
-    #faq .question-block a.btn:focus, #faq .question-block a.btn:hover {
-      color: #fff;
-      background-color: #6c8e6e; }
-    #faq .question-block span {
-      margin-left: 10px;
-      font-size: 24px;
-      font-weight: bold;
-      font-family: 'rm_probold', Helvetica, Arial, sans-serif; }
+    #faq .question-block .question-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex; }
+      #faq .question-block .question-header a.btn {
+        color: #6c8e6e;
+        background-color: #fff;
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+        border: 2px solid #6c8e6e;
+        font-weight: bold;
+        padding: 3px 9px;
+        font-size: 20px;
+        margin-right: 10px;
+        -webkit-align-self: flex-start;
+            -ms-flex-item-align: start;
+                align-self: flex-start; }
+      #faq .question-block .question-header a.btn:focus, #faq .question-block .question-header a.btn:hover {
+        color: #fff;
+        background-color: #6c8e6e; }
+      #faq .question-block .question-header .question {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'rm_probold', Helvetica, Arial, sans-serif; }
     #faq .question-block .answer-block .card {
-      margin-left: 68px;
+      margin-left: 46px;
       padding-bottom: 1rem;
       border: none;
       border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
@@ -12733,8 +12742,14 @@ img.mfp-img {
     padding-right: 20px; }
   #faq p {
     font-size: 22px; }
-  #faq .question-block span {
-    font-size: 30px; } }
+  #faq .question-block .question-header .question {
+    font-size: 30px; }
+  #faq .question-block .question-header a.btn {
+    padding: 4px 13px;
+    font-size: 28px;
+    margin-right: 20px; }
+  #faq .question-block .answer-block .card {
+    margin-left: 70px; } }
 
 @media screen and (max-width: 760px) {
   .hero--pager {
@@ -12875,7 +12890,7 @@ img.mfp-img {
     margin-left: 30px !important; }
   #faq p {
     font-size: 26px; }
-  #faq .question-block span {
+  #faq .question-block .question-header .question {
     font-size: 32px; } }
 
 @media screen and (max-width: 992px) {
