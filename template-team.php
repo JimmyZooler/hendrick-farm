@@ -73,7 +73,7 @@ get_header();
         
         </div>
         
-        <div class="row justify-center">
+        <div class="row">
         
             <div class="col-sm-6 col-lg-3">
                 
@@ -105,7 +105,6 @@ get_header();
 
             </div>
             
-<!--
             <div class="col-sm-6 col-lg-3">
                 
                 <img src="<?php the_field('andre_image'); ?>" />
@@ -115,7 +114,6 @@ get_header();
                 <p>Architectural Technologist</p>
 
             </div>
--->
         
         </div>
             

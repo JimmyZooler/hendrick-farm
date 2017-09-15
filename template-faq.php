@@ -33,175 +33,41 @@ get_header();
         
         </div>
         
-        <div class="question-block">
+        <?php if( have_rows('frequently_asked_questions') ): ?>
+                
+            <?php $count = 1;
+
+            while( have_rows('frequently_asked_questions') ): the_row(); 
+
+                // vars
+                $question = get_sub_field('question');
+                $answer = get_sub_field('answer');
+                $link = get_sub_field('link');
+
+                ?>
+                
+                <div class="question-block">
         
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-1" aria-expanded="false" aria-controls="answer-block-1">
-                +
-              </a>
-              <p class="question"><?php the_field('question_1'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-1">
-              <div class="card card-body">
-                <p><?php the_field('answer_1'); ?></p>
-              </div>
-            </div>
+                    <div class="question-header">
+                      <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-<?php echo $count; ?>" aria-expanded="false" aria-controls="answer-block-<?php echo $count; ?>">
+                        +
+                      </a>
+                      <p class="question"><?php echo $question; ?></p>
+                    </div>
+
+                    <div class="collapse answer-block" id="answer-block-<?php echo $count; ?>">
+                      <div class="card card-body">
+                        <p><?php echo $answer; ?></p>
+                      </div>
+                    </div>
+
+                </div>
         
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-2" aria-expanded="false" aria-controls="answer-block-2">
-                +
-              </a>
-              <p class="question"><?php the_field('question_2'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-2">
-              <div class="card card-body">
-                <p><?php the_field('answer_2'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-3" aria-expanded="false" aria-controls="answer-block-3">
-                +
-              </a>
-              <p class="question"><?php the_field('question_3'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-3">
-              <div class="card card-body">
-                <p><?php the_field('answer_3'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-4" aria-expanded="false" aria-controls="answer-block-4">
-                +
-              </a>
-              <p class="question"><?php the_field('question_4'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-4">
-              <div class="card card-body">
-                <p><?php the_field('answer_4'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-5" aria-expanded="false" aria-controls="answer-block-5">
-                +
-              </a>
-              <p class="question"><?php the_field('question_5'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-5">
-              <div class="card card-body">
-                <p><?php the_field('answer_5'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-6" aria-expanded="false" aria-controls="answer-block-6">
-                +
-              </a>
-              <p class="question"><?php the_field('question_6'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-6">
-              <div class="card card-body">
-                <p><?php the_field('answer_6'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-7" aria-expanded="false" aria-controls="answer-block-7">
-                +
-              </a>
-              <p class="question"><?php the_field('question_7'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-7">
-              <div class="card card-body">
-                <p><?php the_field('answer_7'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-8" aria-expanded="false" aria-controls="answer-block-8">
-                +
-              </a>
-              <p class="question"><?php the_field('question_8'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-8">
-              <div class="card card-body">
-                <p><?php the_field('answer_8'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-9" aria-expanded="false" aria-controls="answer-block-9">
-                +
-              </a>
-              <p class="question"><?php the_field('question_9'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-9">
-              <div class="card card-body">
-                <p><?php the_field('answer_9'); ?></p>
-              </div>
-            </div>
-        
-        </div>
-        
-        <div class="question-block">
-        
-            <div class="question-header">
-              <a class="btn btn-primary" data-toggle="collapse" href="#answer-block-10" aria-expanded="false" aria-controls="answer-block-10">
-                +
-              </a>
-              <p class="question"><?php the_field('question_10'); ?></p>
-            </div>
-            
-            <div class="collapse answer-block" id="answer-block-10">
-              <div class="card card-body">
-                <p><?php the_field('answer_10'); ?></p>
-              </div>
-            </div>
-        
-        </div>
+            <?php ++$count;
+
+            endwhile; ?>
+
+        <?php endif; ?>
         
     </div>
     

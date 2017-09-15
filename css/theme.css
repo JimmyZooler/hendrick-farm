@@ -12743,10 +12743,10 @@ img.mfp-img {
   #faq p {
     font-size: 22px; }
   #faq .question-block .question-header .question {
-    font-size: 30px; }
+    font-size: 24px; }
   #faq .question-block .question-header a.btn {
-    padding: 4px 13px;
-    font-size: 28px;
+    padding: 2px 10px;
+    font-size: 24px;
     margin-right: 20px; }
   #faq .question-block .answer-block .card {
     margin-left: 70px; } }
@@ -12887,11 +12887,7 @@ img.mfp-img {
     height: -moz-calc(25vw - 80px) !important;
     height: calc(25vw - 80px) !important; }
   .life-section .hero-content:hover div img, .list-section .hero-content:hover div img, .link-block:hover img, .who-section .hero-content:hover div img {
-    margin-left: 30px !important; }
-  #faq p {
-    font-size: 26px; }
-  #faq .question-block .question-header .question {
-    font-size: 32px; } }
+    margin-left: 30px !important; } }
 
 @media screen and (max-width: 992px) {
   .stickied #menu-modal-wrap {
