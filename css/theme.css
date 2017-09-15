@@ -12453,8 +12453,17 @@ img.mfp-img {
         margin-right: 10px;
         -webkit-align-self: flex-start;
             -ms-flex-item-align: start;
-                align-self: flex-start; }
+                align-self: flex-start;
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none; }
       #faq .question-block .question-header a.btn:focus, #faq .question-block .question-header a.btn:hover {
+        color: #fff;
+        background-color: #6c8e6e; }
+      #faq .question-block .question-header a.btn.collapsed {
+        color: #6c8e6e;
+        background-color: #fff; }
+      #faq .question-block .question-header a.btn.activated {
         color: #fff;
         background-color: #6c8e6e; }
       #faq .question-block .question-header .question {
@@ -12464,8 +12473,7 @@ img.mfp-img {
     #faq .question-block .answer-block .card {
       margin-left: 46px;
       padding-bottom: 1rem;
-      border: none;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+      border: none; }
 
 /****************************************
 *  Footer Styles

@@ -628,6 +628,13 @@
     
     });
     
+    $(document).ready(function(){
+        
+        $('.question-block a.btn').click( function() {
+            $(this).toggleClass('activated');
+        });
+    });
+    
 //    $document.ready(function() {
 //        $('.who-we-are .dropdown-toggle').addClass('inactiveLink');
 //    });

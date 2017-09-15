@@ -1240,8 +1240,17 @@ img.mfp-img {
                 font-size: 20px;
                 margin-right: 10px;
                 align-self: flex-start;
+                box-shadow: none;
             }
             a.btn:focus, a.btn:hover {
+                color: #fff;
+                background-color: #6c8e6e;
+            }
+            a.btn.collapsed {
+                color: #6c8e6e;
+                background-color: #fff;
+            }
+            a.btn.activated {
                 color: #fff;
                 background-color: #6c8e6e;
             }
@@ -1256,7 +1265,6 @@ img.mfp-img {
                 margin-left: 46px;
                 padding-bottom: 1rem;
                 border: none;
-                border-bottom: 1px solid rgba(0,0,0,.125);
             }
         }
     }
