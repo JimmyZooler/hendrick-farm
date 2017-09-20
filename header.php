@@ -93,11 +93,15 @@ $container = get_theme_mod( 'understrap_container_type' );
             </ul>
             <ul id="nav-lang">
             
-                <li id="fr-button">
-                
-                    <a href="http://fermehendrick.ca/?lang=fr" >FR</a>
-                
-                </li>
+                <?php
+                  $languages = icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str'); 
+                    foreach ($languages as $language) :
+                      if ($language['active'] != 1) : ?>
+                      <li><a href="<?php echo $language['url']; ?>"><?php echo $language['language_code']; ?></a></li>
+                      <?php 
+                      endif;
+                    endforeach;
+                ?>
             
             </ul>
 

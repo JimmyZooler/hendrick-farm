@@ -11455,7 +11455,8 @@ h2, .h2 {
   #nav-lang li a {
     color: #000;
     border-bottom: 2px solid #000;
-    font-size: 0.6rem; }
+    font-size: 0.6rem;
+    text-transform: uppercase; }
 
 #nav-lang li a:hover {
   text-decoration: none;
