@@ -204,7 +204,7 @@ get_header();
                     
                     <?php the_field('kingsmere_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -255,7 +255,7 @@ get_header();
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -312,7 +312,7 @@ get_header();
                
                 <div class="col-12 page-block">
                 
-                    <h2><?php the_field('more_details'); ?></h2>
+                    <h2><?php the_field('more_details_heading'); ?></h2>
                 
                 </div>
             
@@ -369,7 +369,7 @@ get_header();
 
                 <div class="video-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XjEv791GJlo" frameborder="0" allowfullscreen></iframe></div>
 
-                <a href="<?php echo get_home_url(); ?>/gallery" class="green-link text-right"><?php the_field('gallery_button'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                <a href="<?php echo get_home_url(); ?>/gallery" class="green-link text-right"><?php the_field('gallery_link'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
 
             </div>            
             
