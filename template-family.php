@@ -53,7 +53,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms"><?php the_field('lindenlea_rooms'); ?></p>
                 
                 </div>
 
@@ -61,11 +61,11 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('lindenlea_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                    <a href="<?php the_field('lindenlea_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
 
             </div>
             
@@ -78,7 +78,7 @@ get_header();
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -92,7 +92,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms"><?php the_field('lindenlea_rooms'); ?></p>
                 
                 </div>
 
@@ -100,17 +100,17 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('lindenlea_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                    <a href="<?php the_field('lindenlea_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="hidden-lg-up homes-description">
                     
                     <?php the_field('lindenlea_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -129,7 +129,7 @@ get_header();
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                        <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;<span class="green-arrow">></span></a>
 
                     </div>
 
@@ -143,7 +143,7 @@ get_header();
 
                     <div class="rooms-wrap">
 
-                        <p class="rooms">3 bedroom + loft / 4 bedroom<br>2.5 bathroom</p>
+                        <p class="rooms"><?php the_field('blackburn_rooms'); ?></p>
 
                     </div>
 
@@ -151,17 +151,17 @@ get_header();
 
                     <div class="floorplans">
 
-                        <a href="<?php the_field('blackburn_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                        <a href="<?php the_field('blackburn_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
 
                     </div>
 
-                    <a href="mailto:sales@hendrickfarm.ca?subject=Blackburn&nbsp;Inquiry" class="button">Inquire</a>
+                    <a href="mailto:sales@hendrickfarm.ca?subject=Blackburn&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
 
                     <div class="hidden-lg-up homes-description">
 
                         <?php the_field('blackburn_description'); ?>
 
-                        <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                        <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;<span class="green-arrow">></span></a>
 
                     </div>
 
@@ -179,7 +179,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms"><?php the_field('kingsmere_rooms'); ?></p>
                 
                 </div>
 
@@ -187,11 +187,11 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('kingsmere_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                    <a href="<?php the_field('kingsmere_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
 
             </div>
                 
@@ -218,7 +218,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms"><?php the_field('kingsmere_rooms'); ?></p>
                 
                 </div>
 
@@ -226,17 +226,17 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('kingsmere_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                    <a href="<?php the_field('kingsmere_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="hidden-lg-up homes-description">
                     
                     <?php the_field('kingsmere_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -269,7 +269,7 @@ get_header();
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">4 bedroom<br>2.5 bathroom</p>
+                    <p class="rooms"><?php the_field('sawmill_rooms'); ?></p>
                 
                 </div>
 
@@ -277,17 +277,17 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('sawmill_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                    <a href="<?php the_field('sawmill_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Sawmill&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Sawmill&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="hidden-lg-up homes-description">
                     
                     <?php the_field('sawmill_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities <span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_button'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -299,9 +299,9 @@ get_header();
     
     <div class="button-bar">
         
-        <h3>Get into the nitty gritty.</h3>
+        <h3><?php the_field('button_bar_heading'); ?></h3>
         
-        <a href="<?php the_field('community_map'); ?>" class="button" id="community-map-button">Compare Our Homes</a>
+        <a href="<?php the_field('community_map'); ?>" class="button" id="community-map-button"><?php the_field('compare_button'); ?></a>
     
     </div>
     
@@ -312,7 +312,7 @@ get_header();
                
                 <div class="col-12 page-block">
                 
-                    <h2>More Details</h2>
+                    <h2><?php the_field('more_details'); ?></h2>
                 
                 </div>
             
@@ -347,7 +347,7 @@ get_header();
             
                 <div class="col-lg-8" style="padding-left: 0;">
             
-                    <p class="more-details-copyright">COPYRIGHT © 2016. All prices, figures, sizes, specifications and information are subject to change without notice. E. & O.E. All illustrations are artist's concept only. </p>
+                    <p class="more-details-copyright"><?php the_field('copyright_text'); ?></p>
                 
                 </div>
             
@@ -361,7 +361,7 @@ get_header();
         
             <div class="page-block col-lg-4">
                     
-                <h2>Homes &amp; Architecture</h2>
+                <h2><?php the_field('homes_and_architecture'); ?></h2>
                 
             </div>
             
@@ -369,7 +369,7 @@ get_header();
 
                 <div class="video-wrap"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XjEv791GJlo" frameborder="0" allowfullscreen></iframe></div>
 
-                <a href="<?php echo get_home_url(); ?>/gallery" class="green-link text-right">Looking for more? View Gallery&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                <a href="<?php echo get_home_url(); ?>/gallery" class="green-link text-right"><?php the_field('gallery_button'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
 
             </div>            
             
