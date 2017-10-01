@@ -123,3 +123,9 @@ if ( ! function_exists( 'all_excerpts_get_more_link' ) ) {
 	}
 }
 add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

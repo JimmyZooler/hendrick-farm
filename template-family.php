@@ -49,7 +49,7 @@ get_header();
 
                 <h2 class="homes-title">Lindenlea</h2>
 
-                <p class="square-footage"><?php the_field('lindenlea_square_footage'); ?></p>
+                <?php the_field('lindenlea_square_footage'); ?>
 
                 <div class="rooms-wrap">
                 
@@ -65,7 +65,7 @@ get_header();
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
+                <a href="<?php the_field('lindenlea_email_subject'); ?>" class="button"><?php the_field('inquire_button'); ?></a>
 
             </div>
             
@@ -88,7 +88,7 @@ get_header();
 
                 <h2 class="homes-title">Lindenlea</h2>
 
-                <p class="square-footage"><?php the_field('lindenlea_square_footage'); ?></p>
+                <?php the_field('lindenlea_square_footage'); ?>
 
                 <div class="rooms-wrap">
                 
@@ -104,7 +104,7 @@ get_header();
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Lindenlea&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
+                <a href="<?php the_field('lindenlea_email_subject'); ?>" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="hidden-lg-up homes-description">
                     
@@ -139,7 +139,7 @@ get_header();
 
                     <h2 class="homes-title">Blackburn</h2>
 
-                    <p class="square-footage"><?php the_field('blackburn_square_footage'); ?></p>
+                    <?php the_field('blackburn_square_footage'); ?>
 
                     <div class="rooms-wrap">
 
@@ -155,7 +155,7 @@ get_header();
 
                     </div>
 
-                    <a href="mailto:sales@hendrickfarm.ca?subject=Blackburn&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
+                    <a href="<?php the_field('blackburn_email_subject'); ?>" class="button"><?php the_field('inquire_button'); ?></a>
 
                     <div class="hidden-lg-up homes-description">
 
@@ -175,7 +175,7 @@ get_header();
 
                 <h2 class="homes-title">Kingsmere</h2>
 
-                <p class="square-footage"><?php the_field('kingsmere_square_footage'); ?></p>
+                <?php the_field('kingsmere_square_footage'); ?>
 
                 <div class="rooms-wrap">
                 
@@ -191,7 +191,7 @@ get_header();
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
+                <a href="<?php the_field('kingsmere_email_subject'); ?>" class="button"><?php the_field('inquire_button'); ?></a>
 
             </div>
                 
@@ -214,7 +214,7 @@ get_header();
 
                 <h2 class="homes-title">Kingsmere</h2>
 
-                <p class="square-footage"><?php the_field('kingsmere_square_footage'); ?></p>
+                <?php the_field('kingsmere_square_footage'); ?>
 
                 <div class="rooms-wrap">
                 
@@ -230,7 +230,7 @@ get_header();
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Kingsmere&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
+                <a href="<?php the_field('kingsmere_email_subject'); ?>" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="hidden-lg-up homes-description">
                     
@@ -265,7 +265,7 @@ get_header();
 
                 <h2 class="homes-title">Sawmill</h2>
 
-                <p class="square-footage"><?php the_field('sawmill_square_footage'); ?></p>
+                <?php the_field('sawmill_square_footage'); ?>
 
                 <div class="rooms-wrap">
                 
@@ -281,7 +281,7 @@ get_header();
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Sawmill&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
+                <a href="<?php the_field('sawmill_email_subject'); ?>" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="hidden-lg-up homes-description">
                     

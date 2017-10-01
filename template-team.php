@@ -27,7 +27,7 @@ get_header();
     
     <div class="container-fluid fixed-width" id="team-page">
         
-        <h2>Hendrick Farm</h2>
+        <h2><?php the_field('heading_1'); ?></h2>
         
         <div class="row">
         
@@ -37,7 +37,7 @@ get_header();
                 
                 <h3>Sean McAdam</h3>
                 
-                <p>President / Founder</p>
+                <p><?php the_field('sean_title'); ?></p>
 
             </div>
             
@@ -47,7 +47,7 @@ get_header();
                 
                 <h3>Fred Brisco</h3>
                 
-                <p>Director of Operations</p>
+                <p><?php the_field('fred_title'); ?></p>
 
             </div>
             
@@ -57,7 +57,7 @@ get_header();
                 
                 <h3>Yves Alary</h3>
                 
-                <p>Chief Financial Officer</p>
+                <p><?php the_field('yves_title'); ?></p>
 
             </div>
             
@@ -67,7 +67,7 @@ get_header();
                 
                 <h3>Doug Dawson</h3>
                 
-                <p>Architecture &amp; Design</p>
+                <p><?php the_field('doug_title'); ?></p>
 
             </div>
         
@@ -81,7 +81,7 @@ get_header();
                 
                 <h3>Alex Barrette</h3>
                 
-                <p>Sales Manager</p>
+                <p><?php the_field('alex_title'); ?></p>
 
             </div>
             
@@ -91,7 +91,7 @@ get_header();
                 
                 <h3>Julie Tremblay Roy</h3>
                 
-                <p>Director of Marketing</p>
+                <p><?php the_field('julie_title'); ?></p>
 
             </div>
             
@@ -101,7 +101,7 @@ get_header();
                 
                 <h3>Jules Ribi</h3>
                 
-                <p>Marketing Manager</p>
+                <p><?php the_field('jules_title'); ?></p>
 
             </div>
             
@@ -111,13 +111,13 @@ get_header();
                 
                 <h3>Andre Spencer</h3>
                 
-                <p>Architectural Technologist</p>
+                <p><?php the_field('andre_title'); ?></p>
 
             </div>
         
         </div>
             
-        <h2>Hendrick Foundation</h2>
+        <h2><?php the_field('heading_2'); ?></h2>
         
         <div class="row">
         
@@ -127,7 +127,7 @@ get_header();
                 
                 <h3>Sean Lacroix</h3>
                 
-                <p>Organic Farm Manager</p>
+                <p><?php the_field('lacroix_title'); ?></p>
 
             </div>
             
@@ -137,7 +137,7 @@ get_header();
                 
                 <h3>Sarah Mangos</h3>
                 
-                <p>Horticulturist</p>
+                <p><?php the_field('sarah_title'); ?></p>
 
             </div>
             
@@ -147,7 +147,7 @@ get_header();
                 
                 <h3>Adam Berkelmans</h3>
                 
-                <p>Head of Parks &amp; Trails</p>
+                <p><?php the_field('adam_title'); ?></p>
 
             </div>
             
@@ -157,7 +157,7 @@ get_header();
                 
                 <h3>Julio Rodriguez</h3>
                 
-                <p>Groundskeeper</p>
+                <p><?php the_field('julio_title'); ?></p>
 
             </div>
         
@@ -166,7 +166,7 @@ get_header();
         
         <div id="partners">
             
-            <h2>Partners</h2>
+            <h2><?php the_field('heading_3'); ?></h2>
             
             <div class="row">
 

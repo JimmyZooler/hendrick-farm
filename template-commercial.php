@@ -47,11 +47,11 @@ get_header();
             
             <div class="hidden-md-down col-lg-4 page-block">
 
-                <h2 class="homes-title">Commercial Spaces</h2>
+                <h2 class="homes-title"><?php the_field('commercial_heading'); ?></h2>
 
                 <p class="square-footage"><?php the_field('commercial_square_footage'); ?></p>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Commercial&nbsp;Spaces&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Commercial&nbsp;Spaces&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
 
             </div>
             
@@ -62,7 +62,7 @@ get_header();
                 
                 <div class="hidden-md-down homes-description">
                 
-                    <a href="<?php echo get_home_url(); ?>/village-centre/" class="green-link">Learn more about the Village Centre&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/village-centre/" class="green-link"><?php the_field('learn_more_text'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -74,11 +74,11 @@ get_header();
 
                 <p class="square-footage"><?php the_field('commercial_square_footage'); ?></p>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=Commercial&nbsp;Spaces&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=Commercial&nbsp;Spaces&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="homes-description">
                 
-                    <a href="<?php echo get_home_url(); ?>/village-centre/" class="green-link">Learn more about the Village Centre&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/village-centre/" class="green-link"><?php the_field('learn_more_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 

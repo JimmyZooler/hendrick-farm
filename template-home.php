@@ -17,7 +17,9 @@ get_header(); ?>
         <div>
             <?php the_field('hero_link_text_1'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_black.svg" />
         </div>
-        <a href="<?php echo get_home_url(); ?>/listings/" class="hero-link"></a>
+        <a href="<?php $currenturl = get_home_url();
+                            $urlArray = explode('?', $currenturl);
+                             echo $urlArray[0] . "/listings/?" . $urlArray[1]; ?>" class="hero-link"></a>
     </div>
 </div>
 <div class="hero-section white-border" id="hero-section-2" >
@@ -27,7 +29,7 @@ get_header(); ?>
         <div>
             <?php the_field('hero_2_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="<?php echo get_home_url(); ?>/lifestyle/" class="hero-link"></a>
+        <a href="<?php echo $urlArray[0] . "/lifestyle/?" . $urlArray[1]; ?>" class="hero-link"></a>
     </div>
 </div>
 <div class="hero-section white-border" id="hero-section-3">
@@ -37,7 +39,7 @@ get_header(); ?>
         <div>
             <?php the_field('hero_3_link_text'); ?><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="<?php echo get_home_url(); ?>/listings/townhomes/" class="hero-link"></a>
+        <a href="<?php echo $urlArray[0] . "/listings/townhomes/?" . $urlArray[1]; ?>" class="hero-link"></a>
     </div>
 </div>
 <div class="hero-section" id="hero-section-4">
@@ -50,7 +52,7 @@ get_header(); ?>
         <div class="hidden-sm-up">
         <?php the_field('hero_4_link_text'); ?><br><img src="wp-content/themes/hendrick-farm/img/arrow_white.svg" />
         </div>
-        <a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/" class="hero-link"></a>
+        <a href="<?php echo $urlArray[0] . "/lifestyle/adaptive-development/?" . $urlArray[1]; ?>" class="hero-link"></a>
     </div>
 </div>
 <div id="home-section-5">

@@ -41,8 +41,9 @@ get_header();
                 
                 <div class="contact-sales-wrap">
                 
-                    <a href="mailto:sales@hendrickfarm.ca?subject=Currently&nbsp;Available&nbsp;Inquiry" class="button">Contact Sales</a>
-                
+<!--                    <a href="mailto:sales@hendrickfarm.ca?subject=Currently&nbsp;Available&nbsp;Inquiry" class="button"><?php the_field('button_text'); ?></a>-->
+                    <a href="<?php the_field('mailto_link'); ?>" class="button"><?php the_field('button_text'); ?></a>
+                    
                 </div>
             
             </div>
@@ -59,7 +60,7 @@ get_header();
             
                 <div class="link-block">
                 
-                    <h3>Explore<br>Townhomes</h3>
+                    <h3><?php the_field('link_text_1'); ?></h3>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
                     <div class="sect-background" style="background-image: url('<?php the_field("link_image_1"); ?>');"></div>
                     <a class="available-link" href="<?php echo get_home_url(); ?>/listings/townhomes/"></a>
@@ -70,7 +71,7 @@ get_header();
                 
                 <div class="link-block">
                     
-                    <h3>Explore Single<br>Family Homes</h3>
+                    <h3><?php the_field('link_text_2'); ?></h3>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
                     <div class="sect-background" style="background-image: url('<?php the_field("link_image_2"); ?>');"></div>
                     <a class="available-link" href="<?php echo get_home_url(); ?>/listings/single-family/"></a>

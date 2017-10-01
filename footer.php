@@ -41,43 +41,51 @@ $container = get_theme_mod( 'understrap_container_type' );
         <footer class="site-footer" id="colophon">
             <div class="row">
                 <div class="col-sm-4 col-md-3 column">
-                    <a href="<?php echo get_home_url(); ?>/lifestyle/">
+<!--
+                    <a href="<?php $currenturl = get_home_url();
+                            $urlArray = explode('?', $currenturl);
+                             echo $urlArray[0] . "/lifestyle/?" . $urlArray[1]; ?>">
+                        <h4 class="heading-sitemap"><?php the_field('lifestyle'); ?></h4>
+                    </a>
+-->
+                    <a href="<?php $my_home_url = apply_filters( 'wpml_home_url', get_option( 'home' ) );
+                             echo $my_home_url . "/lifestyle/?"; ?>">
                         <h4 class="heading-sitemap">Lifestyle</h4>
                     </a>
                     <ul class="hidden-xs-down">
-                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/village-centre/">Village Centre</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/Farm/">Farm</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/hendrick-foundation/">Hendrick Foundation</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/parks-trails/">Parks &amp; Trails</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/">Adaptive Development</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "lifestyle/village-centre/?" . $urlArray[1]; ?>">Village Centre</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "lifestyle/Farm/?" . $urlArray[1]; ?>">Farm</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "lifestyle/hendrick-foundation/?" . $urlArray[1]; ?>">Hendrick Foundation</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "lifestyle/parks-trails/?" . $urlArray[1]; ?>">Parks &amp; Trails</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "lifestyle/adaptive-development/?" . $urlArray[1]; ?>">Adaptive Development</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-3 column">
-                    <a href="<?php echo get_home_url(); ?>/listings/">
+                    <a href="<?php echo $urlArray[0] . "/listings/?" . $urlArray[1]; ?>">
                         <h4 class="heading-sitemap">Listings</h4>
                     </a>
                     <ul class="hidden-xs-down">
-                        <li><a href="<?php echo get_home_url(); ?>/listings/single-family/">Single Family Homes</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/listings/townhomes/">Townhomes</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/listings/commercial/">Commercial</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/listings/currently-available/">Currently Available</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "listings/single-family/?" . $urlArray[1]; ?>">Single Family Homes</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "listings/townhomes/?" . $urlArray[1]; ?>">Townhomes</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "listings/commercial/?" . $urlArray[1]; ?>">Commercial</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "listings/currently-available/?" . $urlArray[1]; ?>">Currently Available</a></li>
                     </ul>
-                    <a href="<?php echo get_home_url(); ?>/gallery/">
+                    <a href="<?php echo $urlArray[0] . "gallery/?" . $urlArray[1]; ?>">
                         <h4 class="heading-sitemap">Gallery</h4>
                     </a>
                 </div>
                 <div class="col-sm-4 col-md-3 column">
-                    <a href="<?php echo get_home_url(); ?>/who-we-are/" id="who-we-are-footer">
+                    <a href="<?php echo $urlArray[0] . "who-we-are/?" . $urlArray[1]; ?>" id="who-we-are-footer">
                         <h4 class="heading-sitemap">Who We Are</h4>
                     </a>
                     <ul class="hidden-xs-down">
-                        <li><a href="<?php echo get_home_url(); ?>/team/">Team</a></li>
-                        <li><a href="<?php echo get_home_url(); ?>/landlab/">Landlab</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "who-we-are/team/?" . $urlArray[1]; ?>">Team</a></li>
+                        <li><a href="<?php echo $urlArray[0] . "who-we-are/landlab/?" . $urlArray[1]; ?>">Landlab</a></li>
                     </ul>
-                    <a href="<?php echo get_home_url(); ?>/contact/">
+                    <a href="<?php echo $urlArray[0] . "contact/?" . $urlArray[1]; ?>">
                         <h4 class="heading-sitemap" id="sitemap-contact">Contact</h4>
                     </a>
-                    <a href="<?php echo get_home_url(); ?>/faq/">
+                    <a href="<?php echo $urlArray[0] . "faq/?" . $urlArray[1]; ?>">
                         <h4 class="heading-sitemap">FAQ</h4>
                     </a>
                 </div>
@@ -120,7 +128,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <div class="site-info">
                             <p class="hidden-sm-down">193 ch Ladyfield, Chelsea, QC J9B 0B3<span id="info-dot"> • </span>info@hendrickfarm.ca</p>
                             <p class="hidden-md-up">193 ch Ladyfield, Chelsea, QC<br>J9B 0B3<span id="info-dot"> • </span>info@hendrickfarm.ca</p>
-                            <p>© Hendrick Farm • <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy &amp; Terms</a> • <a href="http://fermehendrick.ca/?lang=fr">FR</a></p>
+                            <p>© Hendrick Farm • <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy &amp; Terms</a> • <a href="http://fermehendrick.ca/?lang=fr">FR</a> • <a href="http://www.landlab.ca/brokers/">Brokers</a></p>
                         </div>
                 </div><!--col end -->
                 <div class="col-sm-6 col-md-4">

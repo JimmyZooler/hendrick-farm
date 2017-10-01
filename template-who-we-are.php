@@ -16,17 +16,19 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/landlab/"></a>
+        <a class="life-link" href="<?php $currenturl = get_home_url();
+                            $urlArray = explode('?', $currenturl);
+                             echo $urlArray[0] . "/who-we-are/landlab/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section white-border who-section" id="who-section-2">
     <div class="sect-background" style="background-image: url('<?php the_field('background_image_2') ?>'); "></div>
     <div class="hero-content animated">
-        <h2>team</h2>
+        <h2><?php the_field('hero_text_2') ?></h2>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/team/"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/who-we-are/team/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 

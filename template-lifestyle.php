@@ -17,7 +17,9 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/village-centre/"></a>
+        <a class="life-link" href="<?php $currenturl = get_home_url();
+                            $urlArray = explode('?', $currenturl);
+                             echo $urlArray[0] . "/lifestyle/village-centre/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section white-border life-section" id="life-section-2">
@@ -27,7 +29,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/farm/"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/lifestyle/farm/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section white-border life-section" id="life-section-3">
@@ -37,7 +39,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/hendrick-foundation/"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/lifestyle/hendrick-foundation/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section white-border life-section" id="life-section-4">
@@ -47,7 +49,7 @@ get_header(); ?>
        <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/lifestyle/parks-trails"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/lifestyle/parks-trails/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section life-section" id="life-section-5" >
@@ -57,7 +59,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/lifestyle/adaptive-development/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <ul class="hero--pager">

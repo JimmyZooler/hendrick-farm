@@ -76,10 +76,10 @@ get_header();
         <div id="mc_embed_signup">
             <form action="//hendrickfarm.us2.list-manage.com/subscribe/post?u=8942e1308cf86738c7e8fa9fc&amp;id=f68324a569" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php the_field('subscribe_placeholder'); ?>" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8942e1308cf86738c7e8fa9fc_7361170b5e" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Notify Me" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div class="clear"><input type="submit" value="<?php the_field('subscribe_button_text'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                 </div>
             </form>
         </div>

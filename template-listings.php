@@ -17,7 +17,9 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/listings/single-family/"></a>
+        <a class="life-link" href="<?php $currenturl = get_home_url();
+                            $urlArray = explode('?', $currenturl);
+                             echo $urlArray[0] . "/listings/single-family/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section white-border list-section" id="list-section-2">
@@ -27,7 +29,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/listings/townhomes/"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/listings/townhomes/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section white-border list-section" id="list-section-3">
@@ -37,7 +39,7 @@ get_header(); ?>
         <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/listings/commercial/"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/listings/commercial/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 <div class="hero-section list-section" id="list-section-4">
@@ -47,7 +49,7 @@ get_header(); ?>
        <div>
             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
         </div>
-        <a class="life-link" href="<?php echo get_home_url(); ?>/listings/currently-available/"></a>
+        <a class="life-link" href="<?php echo $urlArray[0] . "/listings/currently-available/?" . $urlArray[1]; ?>"></a>
     </div>
 </div>
 

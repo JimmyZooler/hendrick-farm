@@ -81,7 +81,9 @@ get_header();
 
                 <p class="block-quote"><?php the_field('right_column_quote'); ?></p>
                 
-                <p class="text-right"><a href="<?php echo get_home_url(); ?>/lifestyle/adaptive-development/" class="green-link">Learn about our community planning&nbsp;&nbsp;<span class="green-arrow">></span></a></p>
+                <p class="text-right"><a href="<?php $currenturl = get_home_url();
+                            $urlArray = explode('?', $currenturl);
+                             echo $urlArray[0] . "/lifestyle/adaptive-development/?" . $urlArray[1]; ?>" class="green-link"><?php the_field('learn_more_link_text'); ?> &nbsp;&nbsp;<span class="green-arrow">></span></a></p>
 
             </div>
 
@@ -129,7 +131,7 @@ get_header();
     
     <div class="button-bar">
     
-        <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="button" id="community-map-button">View Community Map</a>
+        <a href="<?php echo $urlArray[0] . "/listings/currently-available/?" . $urlArray[1]; ?>" class="button" id="community-map-button"><?php the_field('view_map_button_text'); ?></a>
     
     </div>
     

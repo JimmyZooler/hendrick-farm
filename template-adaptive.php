@@ -113,7 +113,7 @@ get_header();
                 
                 <p><?php the_field('fifth_paragraph'); ?></p>
                 
-                <div class="link-section text-right">
+                <div class="text-right">
             
                     <a href="<?php echo get_home_url(); ?>/who-we-are/landlab/" class="green-link"><?php the_field('link_text_1'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a>
 

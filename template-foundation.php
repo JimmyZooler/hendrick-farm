@@ -61,9 +61,9 @@ get_header();
 
                 <p><?php the_field('first_paragraph'); ?></p>
 
-                <div class="green-link-wrap hidden-sm-up"><a href="<?php echo get_home_url(); ?>/lifestyle/farm" class="green-link">Learn more about our<br>certified organic farm&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
+                <div class="green-link-wrap hidden-sm-up"><a href="<?php echo get_home_url(); ?>/lifestyle/farm" class="green-link"><?php the_field('learn_more_text_mobile'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
                 
-                <div class="green-link-wrap hidden-xs-down"><a href="<?php echo get_home_url(); ?>/lifestyle/farm" class="green-link">Learn more about our certified organic farm&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
+                <div class="green-link-wrap hidden-xs-down"><a href="<?php echo get_home_url(); ?>/lifestyle/farm" class="green-link"><?php the_field('learn_more_text'); ?>&nbsp;&nbsp;<span class="green-arrow">></span></a></div>
                 
             </div>
 

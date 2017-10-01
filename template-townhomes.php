@@ -47,13 +47,13 @@ get_header();
             
             <div class="hidden-md-down col-lg-4 page-block">
 
-                <h2 class="homes-title">White Model</h2>
+                <h2 class="homes-title"><?php the_field('white_model_title'); ?></h2>
 
-                <p class="square-footage"><?php the_field('white_model_square_footage'); ?></p>
+                <?php the_field('white_model_square_footage'); ?>
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom / 2 bedroom + loft<br>2.5 bathroom</p>
+                    <p class="rooms"><?php the_field('white_model_rooms'); ?></p>
                 
                 </div>
 
@@ -61,11 +61,11 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('white_model_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                    <a href="<?php the_field('white_model_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
                 
                 </div>
 
-                <a href="mailto:sales@hendrickfarm.ca?subject=White&nbsp;Model&nbsp;Inquiry" class="button">Inquire</a>
+                <a href="mailto:sales@hendrickfarm.ca?subject=White&nbsp;Model&nbsp;Inquiry" class="button"><?php the_field('inquire_button'); ?></a>
 
             </div>
             
@@ -78,7 +78,7 @@ get_header();
                     
                     <?php the_field('white_model_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_text'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -86,13 +86,13 @@ get_header();
             
             <div class="hidden-lg-up page-block">
 
-                <h2 class="homes-title">White Model</h2>
+                <h2 class="homes-title"><?php the_field('white_model_title'); ?></h2>
 
-                <p class="square-footage"><?php the_field('white_model_square_footage'); ?></p>
+                <?php the_field('white_model_square_footage'); ?>
 
                 <div class="rooms-wrap">
                 
-                    <p class="rooms">3 bedroom / 2 bedroom + loft<br>2.5 bathroom</p>
+                    <p class="rooms"><?php the_field('white_model_rooms'); ?></p>
                 
                 </div>
 
@@ -100,17 +100,17 @@ get_header();
 
                 <div class="floorplans">
                 
-                    <a href="<?php the_field('white_model_floorplan'); ?>" target="_blank" class="button">Floorplans</a>
+                    <a href="<?php the_field('white_model_floorplan'); ?>" target="_blank" class="button"><?php the_field('floorplan_button'); ?></a>
                 
                 </div>
 
-                <a href="#" class="button">Inquire</a>
+                <a href="#" class="button"><?php the_field('inquire_button'); ?></a>
                 
                 <div class="hidden-lg-up homes-description">
                     
                     <?php the_field('white_model_description'); ?>
                 
-                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link">View Lot Availabilities&nbsp;&nbsp;<span class="green-arrow">></span></a>
+                    <a href="<?php echo get_home_url(); ?>/listings/currently-available" class="green-link"><?php the_field('view_lot_text'); ?>&nbsp;<span class="green-arrow">></span></a>
                 
                 </div>
 
@@ -122,9 +122,9 @@ get_header();
     
     <div class="button-bar">
         
-        <h3>Get into the nitty gritty.</h3>
+        <h3><?php the_field('compare_homes_heading'); ?></h3>
     
-        <a href="<?php the_field('community_map'); ?>" class="button">Compare Our Homes</a>
+        <a href="<?php the_field('community_map'); ?>" class="button"><?php the_field('compare_homes_button'); ?></a>
     
     </div>
     
@@ -135,7 +135,7 @@ get_header();
                
                 <div class="col-12 page-block">
                 
-                    <h2>More Details</h2>
+                    <h2><?php the_field('more_details_heading'); ?></h2>
                 
                 </div>
             
@@ -169,7 +169,7 @@ get_header();
             
                 <div class="col-lg-8" style="padding-left: 0;">
             
-                    <p class="more-details-copyright">COPYRIGHT © 2016. All prices, figures, sizes, specifications and information are subject to change without notice. E. & O.E. All illustrations are artist's concept only. </p>
+                    <p class="more-details-copyright"><?php the_field('copyright_text'); ?></p>
                 
                 </div>
         
@@ -192,10 +192,10 @@ get_header();
         <div id="mc_embed_signup">
             <form action="//hendrickfarm.us2.list-manage.com/subscribe/post?u=8942e1308cf86738c7e8fa9fc&amp;id=f68324a569" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?php the_field('email_placeholder'); ?>" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8942e1308cf86738c7e8fa9fc_7361170b5e" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Notify Me" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                <div class="clear"><input type="submit" value="<?php the_field('email_button'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                 </div>
             </form>
         </div>
@@ -212,7 +212,7 @@ get_header();
             
                 <div class="link-block">
                 
-                    <h3>Explore<br>Lifestyle</h3>
+                    <h3><?php the_field('linkblock_text_left'); ?></h3>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_white.svg" />
                     <div class="sect-background" style="background-image: url('<?php the_field("link_image_1"); ?>');"></div>
                     <a class="available-link" href="<?php echo get_home_url(); ?>/lifestyle/"></a>
@@ -223,7 +223,7 @@ get_header();
                 
                 <div class="link-block">
                     
-                    <h3>Explore Single<br>Family Homes</h3>
+                    <h3><?php the_field('linkblock_text_right'); ?></h3>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/arrow_black.svg" />
                     <div class="sect-background" style="background-image: url('<?php the_field("link_image_2"); ?>');"></div>
                     <a class="available-link" href="<?php echo get_home_url(); ?>/listings/single-family/"></a>
